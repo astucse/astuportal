@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
-    //
+    protected $fillable = ['code','category','description'];
+
+    public function assignment(){
+        return $this->hasMany('App\Models\AssignedRole');
+    }
 }

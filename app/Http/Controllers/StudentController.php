@@ -4,21 +4,34 @@ namespace App\Http\Controllers;
 
 use Auth;
 use Illuminate\Http\Request;
+use App\Models\Student;
+
+use App\Helpers\ImportExport as ImportExportHelper;
 
 class StudentController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth:student');
+        $this->middleware('auth:student')->only(['index']);
+
+        $this->middleware('auth:admin')->only(['admin_view','export']);
+        
     }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function admin_view(){
+        return view('admin.students',['students'=>Student::all()]);
+    }
+    public function export(){
+        ImportExportHelper::export('student');
+    }
+
     public function index()
     {
-        return Auth::user()->name;
+        return view('student.index');
     }
 
     /**

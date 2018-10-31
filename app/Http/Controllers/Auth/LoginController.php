@@ -42,4 +42,14 @@ class LoginController extends Controller
       $request->session()->invalidate();
       return redirect('/login');
     }
+
+    public function any_login(Request $request){
+        if(Auth::guard('student')->attempt(['email'=> $request->email , 'password' => $request->password], $request->remember)){
+            return redirect()->intended(route('student.index'));
+        }
+        if(Auth::guard('employee')->attempt(['email'=> $request->email , 'password' => $request->password], $request->remember)){
+            return redirect()->intended(route('employee.index'));
+        }
+        return redirect()->back()->withInput($request->only('email'));
+    }
 }

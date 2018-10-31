@@ -265,13 +265,14 @@ class StudentTableSeeder extends Seeder
             $pass = $faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomDigit.$faker->randomDigit; 
             $student  = \App\Models\Student::create([
                 'name' => $item['name'],
-                'email' => $faker->unique()->safeEmail,
+                'email' => $faker->unique()->userName."@astuportal.net",
                 'id_number' => $item['id'],
                 'password' => Hash::make($pass), 
                 'initial_password' => $pass,
                 'remember_token' => str_random(10),
                 'sex' => $item['sex'],
                 'disability' => 0,
+                'batch_year' => $item['year']
             ]);
             // $item = [
             //         'student_id' => $student->id,'academic_year_id' =>1,'semester' => 1,

@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+// use Nwidart\Modules\Module;
+use Illuminate\Support\Facades\Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,11 +18,23 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Relation::morphMap([
-            'staff' => 'App\Models\Staff',
+            'employee' => 'App\Models\Employee',
             'student' => 'App\Models\Student',
             'admin' => 'App\Models\Admin',
+            // 'Academic\Department' => 'Modules\Academic\Entities\Department',
+            // 'Academic\School' => 'Modules\Academic\Entities\School',
         ]);   
+        // Relation::morphMap([
+        // ]);
         Schema::defaultStringLength(191);
+        // Blade::directive('p', function($expression) {
+        //     $output = $expression ? $expression : "1";
+        //     // list($expression1, $expression2) = explode(', ', $expression);
+        //     // $output = $expression1 ? $expression1 : $expression2;
+        //     return "<?php echo {$output}; ";
+        // });
+        // Nwidart\Modules->app['modules']->boot()
+        // Module::boot();
     }
 
     /**

@@ -3,17 +3,27 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Employee;
 
 class EmployeeController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth:employee')->only(['index']);
+        $this->middleware('auth:admin')->only(['admin_view','export']);
+    }
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        //
+    public function index(){
+        return view('employee.index');
+    }
+    public function admin_view(){
+        return view('admin.employees',['employees'=>Employee::all()]);
+    }
+    public function export(){
+        ImportExportHelper::export('student');
     }
 
     /**

@@ -7,11 +7,13 @@
     "require": {
         "php": "^7.1.3",
         "arrilot/laravel-widgets": "^3.12",
+        "doctrine/dbal": "^2.8",
         "fideloper/proxy": "^4.0",
         "gazugafan/laravel-changelog": "^1.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
-        "nwidart/laravel-modules": "^4.0"
+        "nwidart/laravel-modules": "^4.0",
+        "phpoffice/phpspreadsheet": "^1.4"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

@@ -21,6 +21,8 @@ class CreateStudentsTable extends Migration
             $table->string('password');
             $table->string('initial_password');
             $table->boolean('disability')->nullable();
+            $table->boolean('graduated')->default(false);
+            $table->integer('batch_year')->default(1);
             $table->enum('sex',['M','F']);
             $table->rememberToken();
             $table->timestamps();
