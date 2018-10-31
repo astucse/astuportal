@@ -1,0 +1,1 @@
+php artisan db:seed --class=\\Modules\\Structure\\Database\\Seeders\\SchoolTableSeeder

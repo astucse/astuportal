@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/meetingmanagement",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\MeetingManagement\\Providers\\MeetingManagementServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MeetingManagement\\": ""
+        }
+    }
+}

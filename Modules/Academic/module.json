@@ -1,0 +1,14 @@
+{
+    "name": "Academic",
+    "alias": "academic",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Academic\\Providers\\AcademicServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
