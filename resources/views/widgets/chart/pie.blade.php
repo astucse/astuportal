@@ -25,16 +25,16 @@
     var pieChart       = new Chart(pieChartCanvas)
     var PieData        = [
       {
-        value    : 12,
+        value    : {{$config['value1']}},
         color    : '#f56954',
         highlight: '#f56954',
-        label    : 'Men'
+        label    : "{{$config['label1']}}"
       },
       {
-        value    : 123,
+        value    : {{$config['value2']}},
         color    : '#00a65a',
         highlight: '#00a65a',
-        label    : 'Women'
+        label    : "{{$config['label2']}}"
       }
     ]
     var pieOptions     = {

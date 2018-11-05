@@ -16,6 +16,9 @@
         <div class="col-md-12">
           <div class="box">
             <div class="box-header with-border">
+            	<form action="{{route('academic.admin.schedule.create')}}" method="POST">
+            		@csrf
+            		<input type="number" name="group_id" value="{{$group->id}}" hidden>
 		        <div class="col-md-3">
 	            	<select class="form-control" name="day">
 	            		<option value="0">Day of the week</option>
@@ -43,27 +46,27 @@
 	            </div>
 	            <div class="col-md-5">
 	            	<select class="" name="from_hour">
-	            		@for($i=1;$i<12;$i++)
+	            		@for($i=0;$i<12;$i++)
 	            		<option value="{{$i}}">{{$i}}</option>
 	            		@endfor
 	            	</select>
-	            	:<select class="" name="from_ampm">
-	            		@for($i=1;$i<60;$i++)
+	            	:<select class="" name="from_minute">
+	            		@for($i=0;$i<60;$i++)
 	            		<option value="{{$i}}">{{$i}}</option>
 	            		@endfor
 	            	</select>
-	            	<select class="" name="to_hour">
+	            	<select class="" name="from_ampm">
 	            		<option value="0">AM</option>
 	            		<option value="1">PM</option>
 	            	</select>
 	            	to
 	            	<select class="" name="to_hour">
-	            		@for($i=1;$i<12;$i++)
+	            		@for($i=0;$i<12;$i++)
 	            		<option value="{{$i}}">{{$i}}</option>
 	            		@endfor
 	            	</select>
 	            	:<select class="" name="to_minute">
-	            		@for($i=1;$i<60;$i++)
+	            		@for($i=0;$i<60;$i++)
 	            		<option value="{{$i}}">{{$i}}</option>
 	            		@endfor
 	            	</select>
@@ -73,8 +76,10 @@
 	            	</select>
 	            </div>
 	            <div class="col-md-1">
-	            	<button class="form-control btn btn-primary">Create</button>
+	            	<button type="submit" class="form-control btn btn-primary">Create</button>
 	            </div>
+	        </form>
+
               <!-- <h3 class="box-title">Bordered Table</h3> -->
             </div>
             <!-- /.box-header -->
@@ -88,14 +93,45 @@
                 <tr>
                   <td>Monday</td>
                   <td>
-                  	
+                  	@foreach($monday as $d)
+                  	{{$d->starts}} - {{$d->ends}} : {{$d->course->name}}<br><br>
+                  	@endforeach
                   </td>
                   <td><span class="badge bg-red">Edit</span></td>
                 </tr>
                 <tr>
                   <td>Tuesday</td>
                   <td>
-                  	
+                  	@foreach($tuesday as $d)
+                  	{{$d->starts}} - {{$d->ends}} : {{$d->course->name}}<br><br>
+                  	@endforeach
+                  </td>
+                  <td><span class="badge bg-red">Edit</span></td>
+                </tr>
+                <tr>
+                  <td>Wednesday</td>
+                  <td>
+                  	@foreach($wednesday as $d)
+                  	{{$d->starts}} - {{$d->ends}} : {{$d->course->name}}<br><br>
+                  	@endforeach
+                  </td>
+                  <td><span class="badge bg-red">Edit</span></td>
+                </tr>
+                <tr>
+                  <td>Thursday</td>
+                  <td>
+                  	@foreach($thursday as $d)
+                  	{{$d->starts}} - {{$d->ends}} : {{$d->course->name}}<br><br>
+                  	@endforeach
+                  </td>
+                  <td><span class="badge bg-red">Edit</span></td>
+                </tr>
+                <tr>
+                  <td>Friday</td>
+                  <td>
+                  	@foreach($friday as $d)
+                  	{{$d->starts}} - {{$d->ends}} : {{$d->course->name}}<br><br>
+                  	@endforeach
                   </td>
                   <td><span class="badge bg-red">Edit</span></td>
                 </tr>

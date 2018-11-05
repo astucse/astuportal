@@ -2,8 +2,8 @@
 
 
 ## steps
-1. `git clone https://github.com/astucse/astu-portal.git`
-2. `cd astu-portal`
+1. `git clone https://github.com/astucse/astuportal.git`
+2. `cd astuportal`
 3. `composer update`
 4. `php artisan db:seed`
 
@@ -11,4 +11,4 @@
 * ~~Staff Evaluation system~~ **8/25/18**
 * ~~File sharing system~~ **8/29/18**
 * ~~Meeting management system~~ **9/6/18**
-* Modularizing the system
+* ~~Modularizing the system~~ **10/27/18**

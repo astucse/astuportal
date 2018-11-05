@@ -18,6 +18,8 @@ class AdminController extends Controller
         return view('admin.index',[
             'students' => Student::all(),
             'employees' => Employee::all(),
+            'females' => Student::where(['sex'=>'F'])->count(),
+            'males' => Student::where(['sex'=>'M'])->count(),
         ]);
     }
 

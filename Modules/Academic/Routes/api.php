@@ -16,3 +16,9 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/academic', function (Request $request) {
     return $request->user();
 });
+
+Route::prefix('academic')->group(function() {
+	Route::prefix('public')->group(function() {
+		Route::get('/schedule', 'ApiController@schedule_api');
+	});
+});

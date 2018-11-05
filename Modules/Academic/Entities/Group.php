@@ -2,6 +2,7 @@
 
 namespace Modules\Academic\Entities;
 use Modules\Academic\Entities\Curriculum;
+use Modules\Academic\Entities\Schedule;
 use Modules\Academic\Entities\CourseBreakdown;
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,6 +22,9 @@ class Group extends Model{
     public function enrollments(){
         return $this->hasMany('Modules\Academic\Entities\Enrollment');
     }
+    public function schedules(){
+        return $this->hasMany('Modules\Academic\Entities\Schedule');
+    }
     public function getBreakdownAttribute(){
         // $this->batch_year;
         $c =    Curriculum::all()->random();
@@ -34,6 +38,9 @@ class Group extends Model{
         return $b;
         return $this->belongsTo('Modules\Academic\Entities\Curriculum');
     }
+    // public function getScheduleByDayAttribute($day){
+    //     return $this->schedules;
+    // }
 
     protected $casts = [
         'freshman' => 'boolean',

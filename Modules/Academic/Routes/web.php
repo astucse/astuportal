@@ -31,6 +31,7 @@ Route::prefix('academic')->group(function() {
 
 
 		Route::get('/schedule/{id}', 'AdminController@schedule')->name('academic.admin.schedule');
+		Route::post('/schedule/create', 'AdminController@schedule_create')->name('academic.admin.schedule.create');
 		
 		Route::get('/curriculum', 'AdminController@curriculum')->name('academic.admin.curriculum');
 		Route::get('/curriculum/{id}', 'AdminController@curriculum_single')->name('academic.admin.curriculum_single');

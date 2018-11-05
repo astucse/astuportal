@@ -165,6 +165,9 @@ class ToEvaluateHelper {
             $enroll = Student::where(['id'=>$uid])->first()
                                 ->enrollments->where('group.semester', $semester)
                                             ->where('group.year', $ay)->first();
+            if($enroll===null){
+                return [];  
+            }
             $evalsess = EvaluationSession::where([
                 'active'=> true, 
                 'target_institution_type'=>$enroll->group->institution_type,

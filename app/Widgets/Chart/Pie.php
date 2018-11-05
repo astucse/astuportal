@@ -15,7 +15,11 @@ class Pie extends AbstractWidget
     // public $faker = \Faker::create();
     protected $config = [
         'id' => '1',
-        'header' => 'Header Text'
+        'header' => 'Header Text',
+        'value1' => 12,
+        'label1' => 'label1',
+        'value2' => 21,
+        'label2' => 'label2',
     ];
 
     /**

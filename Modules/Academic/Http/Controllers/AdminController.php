@@ -12,6 +12,7 @@ use  Modules\Academic\Entities\Course;
 use  Modules\Academic\Entities\Enrollment;
 use  Modules\Academic\Entities\Curriculum;
 use  Modules\Academic\Entities\CourseBreakdown;
+use  Modules\Academic\Entities\Schedule;
 use  Modules\Academic\Entities\Group;
 use  Modules\Academic\Entities\Elective;
 use Illuminate\Http\Request;
@@ -25,11 +26,38 @@ class AdminController extends Controller
         $this->middleware('auth:admin');
     }
 
+    public function schedule_api(){
+        return "kkk";
+    }
+
+    public function schedule_create(Request $request){
+        // return now();
+        $s = Schedule::create([
+            'group_id' => $request['group_id'] ,
+            'course_id' => $request['course_id'],
+            'day' => $request['day'],
+            'start' => ($request['from_hour']+12*$request['fromampm']).':'.$request['from_minute'].':00',
+            'end' => ($request['to_hour']+12*$request['fromampm']).':'.$request['to_minute'].':00',
+            // 'end' => $request['']
+        ]);
+        // return $s;
+        return redirect()->back();
+    }
+
     public  function schedule($id){
         $g = Group::find($id);
+        // return collect($g->schedules);
+        // return ;
         return view('academic::admin.schedule',[
             'group' => $g,
             'courses' => Course::all(),
+            'monday' => collect($g->schedules)->where('day','monday'),
+            'tuesday' => collect($g->schedules)->where('day','tuesday'),
+            'wednesday' => collect($g->schedules)->where('day','wednesday'),
+            'thursday' => collect($g->schedules)->where('day','thursday'),
+            'friday' => collect($g->schedules)->where('day','friday'),
+            'saturday' => collect($g->schedules)->where('day','saturday'),
+            'sunday' => collect($g->schedules)->where('day','sunday'),
         ]);
     }
 

@@ -14,7 +14,6 @@ class CreateSchedulesTable extends Migration
     public function up()
     {
         Schema::create('schedules', function (Blueprint $table) {
-            $table->uuid('uuid')->unique();
             $table->increments('id');
             $table->integer('group_id')->unsigned();
             $table->integer('course_id')->unsigned();
