@@ -1,4 +1,5 @@
 # ASTU PORTAL
+![Astu Logo](/public/logo.png)
 
 
 ## steps
