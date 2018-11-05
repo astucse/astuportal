@@ -1,5 +1,6 @@
-# ![Astu Logo](/public/logo.png) ASTU PORTAL
 
+# ![Astu Logo](/public/logo.png) ASTU PORTAL
+Astuportal is a free and opensource (FOSS) campus management system built with laravel framework. Because of the its popularity and its deploy fiendiness, the primary language of this project is php. But if you prefer python, you can find the django framework version of the project [here](http://github.com/astucse/astuportal-django)
 
 
 ## Steps
