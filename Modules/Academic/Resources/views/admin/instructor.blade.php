@@ -6,11 +6,11 @@
 
 @section('content')
 
-
+@widget('breadcumb',['header'=>'Roles management','sub-header'=>'','link0'=>'Academics','link9'=>'roles management'])
 <div class="box">
-	<div class="box-header">
-		<h3 class="box-title">Roles Management</h3>
-	</div>
+	<!-- <div class="box-header"> -->
+		<!-- <h3 class="box-title">Roles Management</h3> -->
+	<!-- </div> -->
 	<div class="box-body no-padding">
 		<table class="table table-striped">
 			<tr>
@@ -102,11 +102,10 @@
 @section('js')
 <script type="text/javascript">
   $( "#academic" ).addClass( "active" );
-  $( "#academic-Instructors" ).addClass( "active" );
+  $( "#academic-Roles" ).addClass( "active" );
 </script>
 <script src="{{url('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 <script type="text/javascript">
   $('.select2').select2();
-  $( "#settings" ).addClass( "active" );
 </script>
 @endsection

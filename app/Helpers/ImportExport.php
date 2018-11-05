@@ -16,6 +16,34 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 class ImportExport {
+    public static function export2($model,$type){
+        $fillables = $model[0]->getFillable();
+        $spreadsheet = new Spreadsheet();
+        $spreadsheet->getProperties()->setCreator('ASTU PORTAL')
+            ->setLastModifiedBy('ASTU PORTAL')
+            ->setTitle('Office 2007 XLSX Test Document')
+            ->setSubject('Office 2007 XLSX Test Document')
+            ->setDescription('Student data')
+            ->setKeywords('office 2007 openxml php')
+            ->setCategory('Test result file');
+
+        foreach ($fillables as $kk => $fillable) {
+            $spreadsheet->setActiveSheetIndex(0)
+                        ->setCellValue(chr(65 + $kk). 1, $fillable);
+        }
+        foreach ($model as $k => $s) {
+            foreach ($fillables as $kk => $fillable) {
+                $spreadsheet->setActiveSheetIndex(0)
+                            ->setCellValue(chr(65 + $kk). ($k+2), $s[$fillable]);
+            }            
+        }
+        $spreadsheet->getActiveSheet()->setTitle($type.'s');
+        $spreadsheet->setActiveSheetIndex(0);
+        $writer = IOFactory::createWriter($spreadsheet, "Xlsx");
+        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+        header('Content-Disposition: attachment; filename="'.$type.'s.xlsx"');
+        $writer->save("php://output");
+    }
     public static function export($type){
         if($type=="student"){
             $model = Student::all();

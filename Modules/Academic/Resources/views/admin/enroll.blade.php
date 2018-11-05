@@ -1,6 +1,7 @@
 @extends('layouts.admin')
 
 @section('content')
+@widget('breadcumb',['header'=>'Rnroll','link0'=>'Home','link1'=>'Academic','link2'=>'Group','link9'=>'enroll'])
     <h2>Year: {{$group->batch_year}}, Institution: {{$group->institution->name}}, Group: {{$group->name}}, Enrollments: {{$group->enrollments()->count()}}</h2>
     <div class="box">
             <div class="box-header">

@@ -22,11 +22,12 @@
       </thead>
       <tbody>
         @foreach($evaluations as $eva)
-                      <tr class="">
+        <tr class="">
           <td>{{$eva->staff->name}}</td>
           <td>{{$eva->course->code}} : {{$eva->course->name}}</td>
           <td>
-            <a href="{{route('staffevaluation.student.evaluations_single',['id'=>$eva->id])}}" class="btn btn-default" ><i class="fa fa-edit"></i> Evaluate </a> </td>
+            <a href="{{route('staffevaluation.student.evaluations_single',['id'=>$eva->id])}}" class="btn btn-default" ><i class="fa fa-edit"></i> Evaluate </a> 
+          </td>
         </tr>
         @endforeach
                   </tbody>

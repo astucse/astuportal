@@ -34,11 +34,11 @@
           @foreach($evaluationsession->student_evaluation->questions as $eeq)
           @if($eeq->type == "rate")
           <div class="box box-widget widget-user">
-            <div class="widget-user-header bg-green">
+            <div class="widget-user-header bg-aqua-active">
               <h4 class="widget-user-username" style="font-size: 18px">{{$eeq->question_amharic}}</h4>
               <h5 class="widget-user-desc">{{$eeq->category->name}}</h5>
             </div>
-            <div class="box-footer-sm">
+            <div class="box-footer">
               <div class="row">
                 <div class="col-sm-2 border-right">
                   <div class="description-block">
@@ -79,9 +79,9 @@
             </div>
           </div>
         @else
-          <div class="box box-widget widget-user">
-            <div class="widget-user-header bg-green">
-            <h3 class="widget-user-username" style="font-size: 18px">{{$eeq->question_amharic}}</h3>
+        <div class="box box-widget widget-user">
+          <div class="widget-user-header bg-aqua-active">
+            <h3 class="widget-user-username">{{$eeq->question_amharic}}</h3>
             <h5 class="widget-user-desc"></h5>
           </div>
           <div class="box-footer">

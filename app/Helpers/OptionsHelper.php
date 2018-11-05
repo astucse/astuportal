@@ -17,5 +17,8 @@ use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 class OptionsHelper {
-    
+    public static function current_curriculum(){
+    	$id = Option::where(['code' =>'Academic_curriculum'])->first()->value;
+    	return \Modules\Academic\Entities\Curriculum::find($id);
+    }
 }

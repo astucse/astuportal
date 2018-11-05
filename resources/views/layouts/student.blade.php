@@ -47,7 +47,7 @@ Astu Portal: @yield('title')
         @if(null !== config($m->getLowerName().'.student-routes'))
         @if(sizeof(config($m->getLowerName().'.student-routes'))>0)
         <li id="{{$m->getLowerName()}}" class="treeview">
-          <a href="">
+          <a href=""> 
             <i class="fa fa-files-o"></i>
             <span>{{config($m->getLowerName().'.name')}}</span>
             <span class="pull-right-container">

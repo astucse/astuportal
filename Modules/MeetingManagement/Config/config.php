@@ -1,9 +1,10 @@
 <?php
 
 return [
-    'name' => 'MeetingManagement',
+    'name-text' => 'MeetingManagement',
+    'name' => 'Meeting Management',
     'admin-routes' => [
-    	(object)['r'=>url('/meetingmanagement/admin'), 'n' => 'Index' ],
+    	// (object)['r'=>url('/meetingmanagement/admin'), 'n' => 'Index' ],
     ],
     'student-routes' => [
     ],

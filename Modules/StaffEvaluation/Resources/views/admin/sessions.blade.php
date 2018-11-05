@@ -193,7 +193,7 @@
 @section('js')
 <script type="text/javascript"> 
   $( "#staffevaluation" ).addClass( "active" );
-  $( "#staffevaluation-Evaluation\ Sessions" ).addClass( "active" );
+  $( "#staffevaluation-EvaluationSessions" ).addClass( "active" );
 </script>
 <script src="{{url('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 

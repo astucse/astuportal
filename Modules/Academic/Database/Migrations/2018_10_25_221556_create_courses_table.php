@@ -19,7 +19,12 @@ class CreateCoursesTable extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('crhr')->default(0);
+            $table->integer('prequisite_id')->unsigned()->nullable();
+            $table->integer('prequisite_id2')->unsigned()->nullable();
             $table->timestamps();
+        });
+        Schema::table('courses', function (Blueprint $table){
+            $table->foreign('prequisite_id')->references('id')->on('courses');
         });
     }
 

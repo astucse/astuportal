@@ -22,7 +22,7 @@ Route::post('/login/student', 'Auth\StudentLoginController@login')->name('studen
 Route::post('/login/employee', 'Auth\EmployeeLoginController@login')->name('employee.login');
 Route::post('/login/admin', 'Auth\AdminLoginController@login')->name('admin.login');
 Route::post('/login/any', 'Auth\LoginController@any_login')->name('any.login');
-
+	
 Route::get('/login/student', 'Auth\StudentLoginController@showLoginForm')->name('login.student');
 Route::get('/login/employee', 'Auth\EmployeeLoginController@showLoginForm')->name('login.employee');
 Route::get('/login/admin', 'Auth\AdminLoginController@showLoginForm')->name('login.admin');

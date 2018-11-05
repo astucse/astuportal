@@ -1,9 +1,19 @@
-@extends('layouts.employee')
+@extends('employee)
 
 
 @section('content')
-<h1>Dashboard</h1>
+<section class="content-header">
+  <h1>
+    Dashboard
+    <small></small>
+  </h1>
+  <ol class="breadcrumb">
+  	<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Dashboard</li>
+  </ol>
+</section>
 
-<h2>{{Auth::user()->roles()->get()}}</h2>
+
+
 
 @endsection

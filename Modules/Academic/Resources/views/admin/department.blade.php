@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h2>Department</h2>
+@widget('breadcumb',['header'=>'Department','sub-header'=>'','link0'=>'Academics','link9'=>'departments'])
+    <!-- <h2>Department</h2> -->
     
     <?php
     $d = array();

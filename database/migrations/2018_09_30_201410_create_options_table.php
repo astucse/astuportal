@@ -15,9 +15,15 @@ class CreateOptionsTable extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code')->unique();
+            $table->string('code');
             $table->string('value');
             $table->string('description')->nullable();
+            $table->string('parameter_1')->nullable();
+            $table->string('parameter_2')->nullable();
+            $table->string('parameter_3')->nullable();
+            $table->string('parameter_4')->nullable();
+            $table->string('parameter_5')->nullable();
+            $table->string('parameter_6')->nullable();
             $table->timestamps();
 
             $table->unsignedInteger('change_id')->nullable();

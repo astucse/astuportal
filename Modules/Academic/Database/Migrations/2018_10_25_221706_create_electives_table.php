@@ -16,18 +16,10 @@ class CreateElectivesTable extends Migration
         Schema::create('electives', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('options')->default(1);
-            $table->integer('year');
             $table->integer('crhr')->nullable();
-            $table->enum('semester',[1,2,3]);
-            $table->integer('institution_id')->unsigned()->nullable();
-            $table->string('institution_type')->nullable();
             $table->string('courses')->nullable();
-            $table->integer('curriculum_id')->unsigned();
             $table->enum('type',['free','mandatory','general']);
             $table->timestamps();
-
-            $table->foreign('curriculum_id')
-                  ->references('id')->on('curricula');
         });
     }
 

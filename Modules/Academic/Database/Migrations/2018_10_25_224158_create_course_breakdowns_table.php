@@ -20,6 +20,7 @@ class CreateCourseBreakdownsTable extends Migration
             $table->integer('institution_id')->unsigned()->nullable();
             $table->string('institution_type')->nullable();
             $table->string('courses')->nullable();
+            $table->string('electives')->nullable();
             $table->integer('curriculum_id')->unsigned();
             $table->timestamps();
 

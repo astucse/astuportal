@@ -9,7 +9,7 @@
     <div class="nav-tabs-custom">
       <ul class="nav nav-tabs pull-right">
         <h3>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
+        <li class="pull-left header"><i class="fa  fa-user-secret"></i> 
         Instructor: {{$evaluationsession->staff->name}} <br>
         </li>
         <li class="pull-left header"><i class="fa fa-th"></i> 
@@ -33,10 +33,10 @@
 
 <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li><a href="#tab_1" data-toggle="tab">General</a></li>
+              <li class="active"><a href="#tab_1" data-toggle="tab">General</a></li>
               <li><a href="#tab_2" data-toggle="tab">Collegues</a></li>
               <li><a href="#tab_3" data-toggle="tab">Heads</a></li>
-              <li class="active"><a href="#tab_4" data-toggle="tab">Students</a></li>
+              <li><a href="#tab_4" data-toggle="tab">Students</a></li>
               <!-- <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li> -->
             </ul>
             <div class="tab-content">

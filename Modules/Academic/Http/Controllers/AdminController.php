@@ -10,15 +10,89 @@ use  Modules\Academic\Entities\Department;
 use  Modules\Academic\Entities\School;
 use  Modules\Academic\Entities\Course;
 use  Modules\Academic\Entities\Enrollment;
+use  Modules\Academic\Entities\Curriculum;
+use  Modules\Academic\Entities\CourseBreakdown;
 use  Modules\Academic\Entities\Group;
+use  Modules\Academic\Entities\Elective;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-
+use App\Helpers\ImportExport as ImportExportHelper;
+use App\Helpers\OptionsHelper;
 class AdminController extends Controller
 {
     public function __construct(){
         $this->middleware('auth:admin');
+    }
+
+    public  function schedule($id){
+        $g = Group::find($id);
+        return view('academic::admin.schedule',[
+            'group' => $g,
+            'courses' => Course::all(),
+        ]);
+    }
+
+    public function breakdown_elective_add(Request $request){
+        $e = Elective::create([
+            'options' => $request['options'],
+            'crhr' => $request['crhr'],
+            'courses' => implode(",",$request['courses']),
+            'type' => $request['type']
+        ]);
+        $c = CourseBreakdown::find($request['breakdown_id']);
+        $c->electives = $c->electives.",".$e->id;
+        $c->save();
+        return redirect()->back();
+    }
+
+    public function momomo(Request $request){
+        $c = Course::find($request['course']);
+        if ($request['pre']==0) {
+            $c->prequisite_id = null;
+        }else{
+            $c->prequisite_id = $request['pre'];
+        }
+        $c->save();
+        return response()->json([
+            'status' => 'success',
+            'data' => $request['course']
+        ]);
+    }
+
+    public function breakdown_course_add(Request $request){
+        $cbd = CourseBreakdown::find($request['breakdown_id']);
+        $cbd->courses = $cbd->courses."".implode(",", $request['courses']);
+        $cbd->save();
+        return redirect()->back();
+    }
+
+
+    public function curriculum(){
+        $id = OptionsHelper::current_curriculum()->id;
+        return redirect()->route('academic.admin.curriculum_single',['id'=>$id]);
+    }
+    public function curriculum_single($id){
+        $soeec_id   = School::where(['code'=>'SoEEC'])->first()->id;
+        $cse_id     = Department::where(['code'=>'CSE'])->first()->id;
+        $pce_id     = Department::where(['code'=>'PCE'])->first()->id;
+        $ece_id     = Department::where(['code'=>'ECE'])->first()->id;
+        return view('academic::admin.curriculum',[
+            'courses' => Course::all(),
+            'curriculum' => Curriculum::find($id),
+            'curriculums' => Curriculum::all(),
+            'coursebreakdown1' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>1])->get(),
+            'coursebreakdown10' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>2,'semester'=>1,'institution_id' => $soeec_id,'institution_type' => 'Academic\School'])->get(),
+            // 'coursebreakdown12' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>1,'semester'=>2]),
+            'coursebreakdown_cse' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $cse_id,'institution_type' => 'Academic\Department'])->get(),
+            'coursebreakdown_ece' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $ece_id,'institution_type' => 'Academic\Department'])->get(),
+            'coursebreakdown_pce' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $pce_id,'institution_type' => 'Academic\Department'])->get(),
+            // 'coursebreakdowns' => CourseBreakdown::where(['curriculum_id'=>$id]),
+            // 'coursebreakdowns' => CourseBreakdown::where(['curriculum_id'=>$id]),
+        ]);
+    }
+    public function course_export(){
+        ImportExportHelper::export2(Course::all(),"Course");
     }
     public function index(){
         return view('academic::admin.index');

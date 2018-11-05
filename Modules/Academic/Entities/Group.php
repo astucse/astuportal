@@ -1,12 +1,16 @@
 <?php
 
 namespace Modules\Academic\Entities;
-
+use Modules\Academic\Entities\Curriculum;
+use Modules\Academic\Entities\CourseBreakdown;
 use Illuminate\Database\Eloquent\Model;
 
-class Group extends Model
-{
-    protected $fillable = ['name','batch_year','semester','year','freshman','school','institution_id','institution_type'];
+class Group extends Model{
+
+    protected $fillable = [
+        'name','batch_year','semester','year','freshman','school','institution_id','institution_type','curriculum_id'
+    ];
+
     public $table_attributes = ['name','freshman','pre-school','institution'];
     public $table_attribute_relations = ['name','freshman','school','institution.name'];
 
@@ -16,6 +20,19 @@ class Group extends Model
 
     public function enrollments(){
         return $this->hasMany('Modules\Academic\Entities\Enrollment');
+    }
+    public function getBreakdownAttribute(){
+        // $this->batch_year;
+        $c =    Curriculum::all()->random();
+        $b = CourseBreakdown::where([
+            'year' => $this->batch_year,
+            'semester'=> $this->semester, 
+            'institution_id' => $this->institution_id, 
+            'institution_type' => $this->institution_type, 
+            'curriculum_id' => $c->id
+        ])->first();
+        return $b;
+        return $this->belongsTo('Modules\Academic\Entities\Curriculum');
     }
 
     protected $casts = [

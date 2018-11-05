@@ -15,7 +15,10 @@ class AdminController extends Controller
         $this->middleware('auth:admin');
     }
     public function index(){
-        return view('admin.index');
+        return view('admin.index',[
+            'students' => Student::all(),
+            'employees' => Employee::all(),
+        ]);
     }
 
     public function create_roles(Request $request){

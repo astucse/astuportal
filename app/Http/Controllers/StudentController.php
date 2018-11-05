@@ -29,8 +29,7 @@ class StudentController extends Controller
         ImportExportHelper::export('student');
     }
 
-    public function index()
-    {
+    public function index(){
         return view('student.index');
     }
 

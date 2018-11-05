@@ -16,3 +16,12 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+// Artisan::command('build {project}', function ($project) {
+//     $this->info("Building {$project}!");
+// });
+Artisan::command('seed:module {module} {file?}', function ($module, $file="haha") {
+    Artisan::call('db:seed', [
+        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$file.'TableSeeder'
+    ]);
+});

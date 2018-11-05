@@ -28,6 +28,18 @@ Route::prefix('academic')->group(function() {
 		// Route::post('/group', 'AdminController@group_submit')->name('academic.admin.group.post');
 		Route::post('/enroll', 'AdminController@enroll_submit')->name('academic.admin.enroll.post');
 		Route::post('/group', 'AdminController@group_create')->name('academic.admin.group.create');
+
+
+		Route::get('/schedule/{id}', 'AdminController@schedule')->name('academic.admin.schedule');
+		
+		Route::get('/curriculum', 'AdminController@curriculum')->name('academic.admin.curriculum');
+		Route::get('/curriculum/{id}', 'AdminController@curriculum_single')->name('academic.admin.curriculum_single');
+		Route::get('/course/export', 'AdminController@course_export')->name('academic.admin.course.export');
+
+		Route::post('/breakdown/course/add', 'AdminController@breakdown_course_add')->name('academic.admin.breakdown.course.add');
+		Route::post('/breakdown/elective/add', 'AdminController@breakdown_elective_add')->name('academic.admin.breakdown.elective.add');
+		/////////////////////////////////////////////////////////////
+		Route::post('/momomomomomo', 'AdminController@momomo')->name('momomo');
 		// Route::get('/', 'AcademicController@index')->name('academic.admin.index');
 
 

@@ -1,21 +1,20 @@
 @extends('layouts.admin')
 
 @section('content')
-    <h2>Groups</h2>
-    <small>Year: {{$current_year}}</small>
+@widget('breadcumb',['header'=>'Groups','sub-header'=>'Year: '.$current_year,'link0'=>'Academics','link9'=>'groups'])
 
 <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#tab_1" data-toggle="tab">Pre Engineering</a></li>
+              <li class=""><a href="#tab_1" data-toggle="tab">Pre Engineering</a></li>
               <li><a href="#tab_2" data-toggle="tab">Pre Science</a></li>
-              <li class="dropdown">
+              <li class="dropdown active">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                   SoEEC <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
                   <li role="presentation"><a role="menuitem" href="#tab_30" data-toggle="tab">PreSchool</a></li>
                   <li role="presentation" class="divider"></li>
-                  <li role="presentation"><a role="menuitem" href="#tab_31" data-toggle="tab">CSE</a></li>
+                  <li class="active" role="presentation"><a role="menuitem" href="#tab_31" data-toggle="tab">CSE</a></li>
                   <li role="presentation"><a role="menuitem" href="#tab_32" data-toggle="tab">ECE</a></li>
                   <li role="presentation"><a role="menuitem" href="#tab_33" data-toggle="tab">PCE</a></li>
                 </ul>
@@ -54,7 +53,7 @@
               <li class="pull-right"><a href="#" class="text-muted"><i class="fa fa-gear"></i></a></li>
             </ul>
             <div class="tab-content">
-              <div class="tab-pane active" id="tab_1">
+              <div class="tab-pane" id="tab_1">
                 A
               </div>
               <div class="tab-pane" id="tab_2">
@@ -63,7 +62,7 @@
               <div class="tab-pane" id="tab_30">
                   D
               </div>
-              <div class="tab-pane" id="tab_31">
+              <div class="tab-pane active" id="tab_31">
                 @for($i=3;$i<6;$i++)
                 <div class="box">
                     <div class="box-header">
@@ -94,6 +93,7 @@
                           <td>
                             <a href="{{route('academic.admin.enroll',['group'=>$g->id])}}" class="badge bg-red">Register</a>
                             <a href="{{route('academic.admin.enroll-detail',['group'=>$g->id])}}" class="badge bg-red">Detail</a>
+                            <a href="{{route('academic.admin.schedule',['group'=>$g->id])}}" class="badge bg-red">Schedule</a>
                         </td>
                         </tr>
                         @endif

@@ -2,6 +2,7 @@
 
 @section('content')
 
+@widget('breadcumb',['header'=>'Setting','sub-header'=>'','link0'=>'Home','link1'=>'Staff Evaluation','link9'=>'Setting'])
 		<h3>Equation</h3>
 		<div class="row">
           <form action="{{route('staffevaluation.admin.quation.update')}}" method="POST">

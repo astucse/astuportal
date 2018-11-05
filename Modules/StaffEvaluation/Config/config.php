@@ -3,7 +3,8 @@
 
 
 return [
-    'name' => 'StaffEvaluation',
+    'name-text' => 'StaffEvaluation',
+    'name' => 'Staff Evaluation',
     'admin-routes' => [
     	(object)['r'=>url('/staffevaluation/admin'), 'n' => 'Index' ],
     	(object)['r'=>url('/staffevaluation/admin/evaluations'), 'n' => 'Evaluations' ],
