@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 class Schedule extends Model
 {
+	protected $table = "academic-schedules";
+
     protected $fillable = ['group_id','course_id','day','start','end','uuid'];
     public function course(){
         return $this->belongsTo('Modules\Academic\Entities\Course');

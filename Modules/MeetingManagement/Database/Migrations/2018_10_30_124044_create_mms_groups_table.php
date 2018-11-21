@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGroupsTable extends Migration
+class CreateMmsGroupsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,9 +21,9 @@ class CreateGroupsTable extends Migration
             $table->timestamps();
 
             $table->foreign('creator_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
             $table->foreign('admin_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -34,6 +34,6 @@ class CreateGroupsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('meeting-management-groups');
     }
 }

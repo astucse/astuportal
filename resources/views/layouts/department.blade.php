@@ -12,12 +12,12 @@ Astu Portal: @yield('title')
 
   <link rel="stylesheet" href="{{ url('bower_components/Ionicons/css/ionicons.min.css') }}">
 
+@yield('css')
+@stack('css-scripts')
   <link rel="stylesheet" href="{{ url('dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-purple.css') }}">
 
 
-@yield('css')
-@stack('css-scripts')
 </head>
 
 
@@ -25,7 +25,7 @@ Astu Portal: @yield('title')
 <div class="wrapper">
 
   <header class="main-header">
-    <a href="" class="logo">
+    <a href="{{route('department.index')}}" class="logo">
       <span class="logo-mini"><b>A</b>P</span>
       <span class="logo-lg"><b>ASTU</b><small>PORTAL</small></span>
     </a>
@@ -48,6 +48,19 @@ Astu Portal: @yield('title')
   <aside class="main-sidebar" id="menu">
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
+        <li id="users" class="treeview">
+          <a href="">
+            <i class="fa fa-files-o"></i>
+            <span>Users</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li id="students"><a href="{{route('department.students.view')}}"><i class="fa fa-circle-o"></i>Students</a></li>
+            <li id="employees"><a href="{{route('department.employees.view')}}"><i class="fa fa-circle-o"></i>Employees</a></li>
+          </ul>
+        </li>
         @foreach(Module::collections() as $m)
         @if(null !== config($m->getLowerName().'.department-routes'))
         @if(sizeof(config($m->getLowerName().'.department-routes'))>0)
@@ -89,10 +102,12 @@ Astu Portal: @yield('title')
 
 
 </div>
+@if(!isset($nojs))
 <script src="{{ url('bower_components/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('dist/js/adminlte.min.js') }}" type="text/javascript"></script>
+@endif
 
  @yield('js')
  @stack('js-scripts')

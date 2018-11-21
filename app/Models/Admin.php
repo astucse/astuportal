@@ -7,6 +7,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Admin extends Authenticatable
 {
+	protected $table = "astu-admins";
+
     protected $fillable = [
         'id', 'type', 'email', 'name', 'password'
     ];

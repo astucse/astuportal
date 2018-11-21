@@ -13,16 +13,16 @@ class CreateCollegueEvaluationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('collegue_evaluations', function (Blueprint $table) {
+        Schema::create('ses-collegue_evaluations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('evaluation_session_id')->unsigned();
             $table->integer('staff_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('evaluation_session_id')
-                  ->references('id')->on('evaluation_sessions');
+                  ->references('id')->on('ses-evaluation_sessions');
             $table->foreign('staff_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -33,6 +33,6 @@ class CreateCollegueEvaluationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('collegue_evaluations');
+        Schema::dropIfExists('ses-collegue_evaluations');
     }
 }

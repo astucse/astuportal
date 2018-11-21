@@ -13,7 +13,7 @@ class CreateAnsweredQuestionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('answered_questions', function (Blueprint $table) {
+        Schema::create('ses-answered_questions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('session_token');
             $table->integer('evaluation_session_id')->unsigned();
@@ -24,9 +24,9 @@ class CreateAnsweredQuestionsTable extends Migration
             $table->timestamps();
 
             $table->foreign('evaluation_session_id')
-                  ->references('id')->on('evaluation_sessions');
+                  ->references('id')->on('ses-evaluation_sessions');
             $table->foreign('question_id')
-                  ->references('id')->on('questions');
+                  ->references('id')->on('ses-questions');
         });
     }
 
@@ -37,6 +37,6 @@ class CreateAnsweredQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('answered_questions');
+        Schema::dropIfExists('ses-answered_questions');
     }
 }

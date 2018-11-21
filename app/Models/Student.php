@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class Student extends Authenticatable
 {
+    protected $table = "astu-students";
     protected $fillable = [
         'id', 'id_number', 'name', 'email', 'password', 'initial_password', 'disability','graduated','batch_year', 'sex'
     ];
@@ -26,6 +28,12 @@ class Student extends Authenticatable
         return $this->hasMany('Modules\StaffEvaluation\Entities\EvaluationSession', 'student_id', 'evaluation_session_id');
     }
 
+    public function getOriginalPasswordAttribute(){
+        if (Hash::check($this->initial_password, $this->password)) {
+            return true;
+        }
+        return false;
+    }
     public function getGroupAttribute(){
         $g = null;
         foreach ($this->enrollments as $e) {

@@ -19,6 +19,8 @@ class OptionTableSeeder extends Seeder
             ['code' =>'SES_STUDENT_PERCENT', 'value'=> '50'],
             ['code' =>'SES_COLLEGUE_PERCENT', 'value'=> '15'],
             ['code' =>'SES_HEAD_PERCENT', 'value'=> '35'],
+            ['code' =>'SES_GOOD_POINT', 'value'=> '4'],
+            ['code' =>'SES_BAD_POINT', 'value'=> '2'],
         ];                          
         foreach ($items as $item) {
            \App\Models\Option::create($item);

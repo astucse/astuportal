@@ -20,8 +20,20 @@ Artisan::command('inspire', function () {
 // Artisan::command('build {project}', function ($project) {
 //     $this->info("Building {$project}!");
 // });
-Artisan::command('seed:module {module} {file?}', function ($module, $file="haha") {
-    Artisan::call('db:seed', [
-        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$file.'TableSeeder'
-    ]);
+Artisan::command('seed:module {module} {file?}', function ($module, $file="all") {
+	if($file=="all"){
+		// $in  =  '\\Modules\\'.$module.'\\Database\\Seeders\\Seed.php';
+		$in  =  'Modules/'.$module.'/Database/Seeders/Seed.php';
+		$myArray = include "$in";
+		foreach ($myArray as $seedFile) {
+			Artisan::call('db:seed', [
+		        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$seedFile
+		    ]);
+		}
+	}else{
+	    Artisan::call('db:seed', [
+	        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$file.'TableSeeder'
+	    ]);
+	}
+    $this->info("Seeded!!! ".$file);
 });

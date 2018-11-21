@@ -11,6 +11,6 @@ class EmployeeTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Employee::class, 40)->create();
+        factory(App\Models\Employee::class, 70)->create();
     }
 }

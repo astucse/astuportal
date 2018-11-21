@@ -13,12 +13,13 @@ class CreateEvaluationSessionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('evaluation_sessions', function (Blueprint $table) {
+        Schema::create('ses-evaluation_sessions', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('student_evaluation_id')->unsigned();
             $table->integer('collegue_evaluation_id')->unsigned();
             $table->integer('head_evaluation_id')->unsigned();
             $table->integer('staff_id')->unsigned();
+            $table->integer('assignment_id')->unsigned();
             $table->boolean('active')->default(true);
 
             $table->integer('academic_year');
@@ -37,17 +38,21 @@ class CreateEvaluationSessionsTable extends Migration
             $table->timestamps();
 
             $table->foreign('student_evaluation_id')
-                  ->references('id')->on('evaluations');
+                  ->references('id')->on('ses-evaluations');
             $table->foreign('collegue_evaluation_id')
-                  ->references('id')->on('evaluations');
+                  ->references('id')->on('ses-evaluations');
             $table->foreign('head_evaluation_id')
-                  ->references('id')->on('evaluations');
-            $table->foreign('staff_id')
-                  ->references('id')->on('employees');
-            $table->foreign('target_head_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('ses-evaluations');
             $table->foreign('course_id')
-                  ->references('id')->on('courses');
+                  ->references('id')->on('academic-courses');
+                  
+            $table->foreign('staff_id')
+                  ->references('id')->on('astu-employees');
+            $table->foreign('target_head_id')
+                  ->references('id')->on('astu-employees');
+            $table->foreign('assignment_id')
+                  ->references('id')->on('academic-assignments');
+                  // 
         });
     }
 
@@ -58,6 +63,6 @@ class CreateEvaluationSessionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('evaluation_sessions');
+        Schema::dropIfExists('staff-evaluation-evaluation_sessions');
     }
 }

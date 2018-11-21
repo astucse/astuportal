@@ -16,7 +16,7 @@ class AcademicDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        $this->call("YearSeeder");
+        // $this->call("YearSeeder");
         // $this->call("\Modules\Academic\Database\Seeders\SchoolTableSeeder");
     }
 }

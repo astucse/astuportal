@@ -11,12 +11,12 @@ Staff evaluation Admin: @yield('title')
   <link rel="stylesheet" href="{{ url('bower_components/font-awesome/css/font-awesome.min.css') }}">
 
   <link rel="stylesheet" href="{{ url('bower_components/Ionicons/css/ionicons.min.css') }}">
-
+  @yield('css')
   <link rel="stylesheet" href="{{ url('dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-yellow.css') }}">
 
 
-@yield('css')
+
 @stack('css-scripts')
 </head>
 
@@ -69,7 +69,7 @@ Staff evaluation Admin: @yield('title')
           </a>
           <ul class="treeview-menu">
             @foreach(config($m->getLowerName().'.admin-routes') as $route )
-            <li id="{{$m->getLowerName()}}-{{$route->n}}"><a href="{{$route->r}}"><i class="fa fa-circle-o"></i>{{$route->n}}</a></li>
+            <li id="<?=str_replace(' ','',$m->getLowerName().'-'.$route->n)?>"><a href="{{$route->r}}"><i class="fa fa-circle-o"></i>{{$route->n}}</a></li>
             @endforeach
           </ul>
         </li>
@@ -79,6 +79,9 @@ Staff evaluation Admin: @yield('title')
 
 
         <!-- <li id=""><a href=""><i class="fa fa-group"></i> <span> lll</span></a></li> -->
+        <!-- <li>
+          <a href="{{ route('index') }}" ><i class="fa fa-sign-out"></i><span>Setting</span></a>
+        </li> -->
         <li>
           <a class="dropdown-item" href="{{ route('logout') }}" ><i class="fa fa-sign-out"></i><span>Logout</span></a>
         </li>
@@ -96,10 +99,13 @@ Staff evaluation Admin: @yield('title')
 
 
 </div>
+
+@if(!isset($nojs))
 <script src="{{ url('bower_components/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('dist/js/adminlte.min.js') }}" type="text/javascript"></script>
+@endif
 
  @yield('js')
  @stack('js-scripts')

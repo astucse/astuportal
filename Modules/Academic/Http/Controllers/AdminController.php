@@ -105,6 +105,11 @@ class AdminController extends Controller
         $cse_id     = Department::where(['code'=>'CSE'])->first()->id;
         $pce_id     = Department::where(['code'=>'PCE'])->first()->id;
         $ece_id     = Department::where(['code'=>'ECE'])->first()->id;
+
+
+        $cse_curriculum = CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $cse_id,'institution_type' => 'Academic\Department'])->get();
+        // print_r($cse_curriculum[7]->electivess[0]->coursess);
+        // exit();
         return view('academic::admin.curriculum',[
             'courses' => Course::all(),
             'curriculum' => Curriculum::find($id),
@@ -112,7 +117,7 @@ class AdminController extends Controller
             'coursebreakdown1' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>1])->get(),
             'coursebreakdown10' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>2,'semester'=>1,'institution_id' => $soeec_id,'institution_type' => 'Academic\School'])->get(),
             // 'coursebreakdown12' => CourseBreakdown::where(['curriculum_id'=>$id,'year'=>1,'semester'=>2]),
-            'coursebreakdown_cse' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $cse_id,'institution_type' => 'Academic\Department'])->get(),
+            'coursebreakdown_cse' => $cse_curriculum,
             'coursebreakdown_ece' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $ece_id,'institution_type' => 'Academic\Department'])->get(),
             'coursebreakdown_pce' => CourseBreakdown::where(['curriculum_id'=>$id,'institution_id' => $pce_id,'institution_type' => 'Academic\Department'])->get(),
             // 'coursebreakdowns' => CourseBreakdown::where(['curriculum_id'=>$id]),

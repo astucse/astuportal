@@ -2,12 +2,13 @@
 
 @section('css')
 <link href="{{url('bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet">
-
 @endsection
 
 @section('content')
 
 
+@widget('breadcumb',['header'=>'Staff Evaluation Overview ','sub-header'=>'','link0'=>'Home','link1'=>'Staff Evaluation','link9'=>'Evaluation Sessions'])
+<br>
 <div class="nav-tabs-custom">
       <ul class="nav nav-tabs pull-right">
         <li class="pull-left header"><i class="fa fa-th"></i> Create New Evaluation Session
@@ -63,15 +64,18 @@
             	@endfor
             </select>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-12">
+            
+          </div>
+          <div class="col-xs-3">
             Student Evaluation
             <select class="form-control" name="student_evaluation_id" required>
-            	@foreach($studentEvaluations as $e)
-            	<option value="{{$e->id}}">{{$e->name}}</option>
-            	@endforeach
+              @foreach($studentEvaluations as $e)
+              <option value="{{$e->id}}">{{$e->name}}</option>
+              @endforeach
             </select>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-3">
             Head Evaluation
             <select class="form-control" name="head_evaluation_id" required>
             	@foreach($headEvaluations as $e)
@@ -79,7 +83,7 @@
             	@endforeach
             </select>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-3">
             Collegue Evaluation
             <select class="form-control" name="collegue_evaluation_id" required>
             	@foreach($collegueEvaluations as $e)
@@ -87,7 +91,7 @@
             	@endforeach
             </select>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-3">
             Target Head
             <select class="form-control " name="target_head_id" required>
               @foreach($departmentHeads as $s)
@@ -96,7 +100,7 @@
             </select>
           </div>
 
-          <div class="col-xs-8">
+          <div class="col-xs-12">
             Target Collegues
             <select class="form-control select2" multiple="multiple" name="target_collegues[]" required>
             	@foreach($staff as $s)

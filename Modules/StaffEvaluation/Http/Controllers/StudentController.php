@@ -35,6 +35,7 @@ class StudentController extends Controller{
     }
     public function evaluate(Request $request){
         ToEvaluateHelper::answerevaluation($request, 'student');
+        // return $request['question1']."kk";
         return redirect()->route('staffevaluation.student.evaluations');
     }
     public function evaluations_single($id){

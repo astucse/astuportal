@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class School extends Model
 {
+	protected $table = "academic-schools";
+
     protected $fillable = ['name'];
     public $table_attributes = ['name','code'];
     public $table_attribute_relations = ['name','code'];

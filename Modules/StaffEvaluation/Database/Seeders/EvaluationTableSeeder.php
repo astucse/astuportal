@@ -18,9 +18,9 @@ class EvaluationTableSeeder extends Seeder
 
         // $this->call("OthersTableSeeder");
         $item2 = [
-            ['target' => 'student','name' => 'To be completed by Students'],
-            ['target' => 'collegue','name' => 'To be completed by Colleagues'],
-            ['target' => 'head','name' => 'TO BE COMPLETED BY IMMEDIATE SUPERVISOR']
+            ['target' => 'student','name' => 'Instructor 1'],
+            ['target' => 'collegue','name' => 'Instructor 1'],
+            ['target' => 'head','name' => 'Instructor 1']
         ];
         foreach ($item2 as $item) {
             \Modules\StaffEvaluation\Entities\Evaluation::create([

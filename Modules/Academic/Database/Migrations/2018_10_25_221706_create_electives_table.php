@@ -13,11 +13,12 @@ class CreateElectivesTable extends Migration
      */
     public function up()
     {
-        Schema::create('electives', function (Blueprint $table) {
+        Schema::create('academic-electives', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('options')->default(1);
             $table->integer('crhr')->nullable();
             $table->string('courses')->nullable();
+            $table->string('code')->unique();
             $table->enum('type',['free','mandatory','general']);
             $table->timestamps();
         });
@@ -30,6 +31,6 @@ class CreateElectivesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('electives');
+        Schema::dropIfExists('academic-electives');
     }
 }

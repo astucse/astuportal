@@ -13,7 +13,7 @@ class CreateEnrollmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('enrollments', function (Blueprint $table) {
+        Schema::create('academic-enrollments', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('student_id')->unsigned();
             $table->integer('group_id')->unsigned()->nullable();
@@ -21,9 +21,9 @@ class CreateEnrollmentsTable extends Migration
 
             $table->timestamps();
             $table->foreign('student_id')
-                  ->references('id')->on('students');
+                  ->references('id')->on('astu-students');
             $table->foreign('group_id')
-                  ->references('id')->on('groups');
+                  ->references('id')->on('academic-groups');
         });
     }
 
@@ -34,6 +34,6 @@ class CreateEnrollmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('enrollments');
+        Schema::dropIfExists('academic-enrollments');
     }
 }

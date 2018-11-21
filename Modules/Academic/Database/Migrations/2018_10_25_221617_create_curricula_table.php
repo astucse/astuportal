@@ -13,7 +13,7 @@ class CreateCurriculaTable extends Migration
      */
     public function up()
     {
-        Schema::create('curricula', function (Blueprint $table) {
+        Schema::create('academic-curricula', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->integer('version')->unique();
@@ -28,6 +28,6 @@ class CreateCurriculaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('curricula');
+        Schema::dropIfExists('academic-curricula');
     }
 }

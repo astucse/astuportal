@@ -13,7 +13,7 @@ class CreateChangesTable extends Migration
      */
     public function up()
     {
-        Schema::create('changes', function (Blueprint $table) {
+        Schema::create('astu-changes', function (Blueprint $table) {
             $table->increments('id');
             $table->timestamps();
             $table->unsignedInteger('user_id')->nullable();
@@ -31,6 +31,6 @@ class CreateChangesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('changes');
+        Schema::dropIfExists('astu-changes');
     }
 }

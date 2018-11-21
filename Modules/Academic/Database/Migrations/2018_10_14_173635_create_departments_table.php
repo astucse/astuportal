@@ -13,14 +13,16 @@ class CreateDepartmentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('departments', function (Blueprint $table) {
+        
+        Schema::create('academic-departments', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->integer('duration')->default(5);
             $table->string('code')->unique();
             $table->integer('school_id')->unsigned();
             $table->text('description')->nullable();
             $table->foreign('school_id')
-                  ->references('id')->on('schools');
+                  ->references('id')->on('academic-schools');
             $table->unsignedInteger('change_id')->nullable();
 
             $table->timestamps();
@@ -34,6 +36,6 @@ class CreateDepartmentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('departments');
+        Schema::dropIfExists('academic-departments');
     }
 }

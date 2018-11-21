@@ -13,7 +13,7 @@ class CreateCoursesTable extends Migration
      */
     public function up()
     {
-        Schema::create('courses', function (Blueprint $table) {
+        Schema::create('academic-courses', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code')->unique();
             $table->string('name');
@@ -23,8 +23,9 @@ class CreateCoursesTable extends Migration
             $table->integer('prequisite_id2')->unsigned()->nullable();
             $table->timestamps();
         });
-        Schema::table('courses', function (Blueprint $table){
-            $table->foreign('prequisite_id')->references('id')->on('courses');
+        Schema::table('academic-courses', function (Blueprint $table){
+            $table->foreign('prequisite_id')->references('id')->on('academic-courses');
+            $table->foreign('prequisite_id2')->references('id')->on('academic-courses');
         });
     }
 
@@ -35,6 +36,6 @@ class CreateCoursesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('courses');
+        Schema::dropIfExists('academic-courses');
     }
 }

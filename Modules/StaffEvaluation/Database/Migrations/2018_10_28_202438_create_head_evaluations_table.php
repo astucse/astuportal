@@ -13,16 +13,16 @@ class CreateHeadEvaluationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('head_evaluations', function (Blueprint $table) {
+        Schema::create('ses-head_evaluations', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('evaluation_session_id')->unsigned();
             $table->integer('staff_id')->unsigned();
             $table->timestamps();
 
             $table->foreign('evaluation_session_id')
-                  ->references('id')->on('evaluation_sessions');
+                  ->references('id')->on('ses-evaluation_sessions');
             $table->foreign('staff_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -33,6 +33,6 @@ class CreateHeadEvaluationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('head_evaluations');
+        Schema::dropIfExists('ses-head_evaluations');
     }
 }

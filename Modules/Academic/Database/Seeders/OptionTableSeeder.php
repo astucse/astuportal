@@ -17,9 +17,9 @@ class OptionTableSeeder extends Seeder
         Model::unguard();
 
         $items = [
-            // ['code' =>'Academic_year', 'value'=> '2011'],
-            // ['code' =>'Academic_semester', 'value'=> '1'],
-            // ['code' =>'Academic_curriculum', 'value'=> '1'],
+            ['code' =>'Academic_year', 'value'=> '2011'],
+            ['code' =>'Academic_semester', 'value'=> '1'],
+            ['code' =>'Academic_curriculum', 'value'=> '1'],
         ];                          
         foreach ($items as $item) {
            \App\Models\Option::create($item);

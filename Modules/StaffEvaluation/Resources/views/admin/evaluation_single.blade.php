@@ -1,22 +1,23 @@
 @extends('layouts.admin')
 
 @section('content')
-
+@widget('breadcumb',['header'=>'Evaluations','sub-header'=>'','link0'=>'Home','link1'=>'Staff Evaluation','link9'=> $evaluation->name,'link2'=>'Evaluations'])
+<br>
 <div class="nav-tabs-custom">
       <ul class="nav nav-tabs pull-right">
         <li class="pull-left header">
-          <i class="fa fa-th"></i>Evaluation title: <b>{{$evaluation->name}}</b></li>
+          <i class="fa fa-th"></i>Create Evaluation<b></b></li>
       </ul>
       <div class="tab-content">
         <div class="row">
-          <form action="http://localhost/astu-portal/public/admin/super/system/ses/question/add" method="POST">
-          <input type="hidden" name="_token" value="ELRzNdAakegtIihQ02Lhb1267OsfqBy6SviXO06U">
+          <form action="{{route('staffevaluation.admin.question.create')}}" method="POST">
+            @csrf
+            <input type="number" name="evaluation_id" value="{{$evaluation->id}}" hidden>
           <div class="col-xs-12">
             <div class="form-group">
               <label>English Question</label>
               <input name="english_question" type="text" class="form-control" placeholder="Enter ...">
-              <input name="evaluation_id" type="text" value="2"  hidden>
-            </div>
+              </div>
           </div>
           <div class="col-xs-12">
             <div class="form-group">
@@ -36,7 +37,7 @@
           <div class="col-xs-12">
             <div class="form-group">
               <label>Category</label>
-              <select class="form-control" name="category_id">
+              <select class="form-control" name="question_category_id">
                 @foreach($categories as $c)
                 <option value="{{$c->id}}">{{$c->name}}</option>
                 @endforeach

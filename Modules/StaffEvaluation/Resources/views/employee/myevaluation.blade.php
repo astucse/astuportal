@@ -49,7 +49,8 @@
     <table id="AdminsTable" class="table table-bordered table-striped">
       <thead>
         <tr>
-        <th>Instructor</th>
+        <th>Year</th>
+        <th>Semester</th>
         <th>Course</th>
         <th>Result</th>
         <th></th>
@@ -58,7 +59,8 @@
       <tbody>
         @foreach($evaluations['past'] as $eva)
                       <tr class="">
-          <td>{{$eva->staff->name}}</td>
+          <td>{{$eva->academic_year}}</td>
+          <td>{{$eva->semester}}</td>
           <td>{{$eva->course->code}} : {{$eva->course->name}}</td>
           <td>{{$eva->results['all']}}</td>
           <td>

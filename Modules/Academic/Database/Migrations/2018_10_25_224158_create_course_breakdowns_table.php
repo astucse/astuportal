@@ -13,7 +13,7 @@ class CreateCourseBreakdownsTable extends Migration
      */
     public function up()
     {
-        Schema::create('course_breakdowns', function (Blueprint $table) {
+        Schema::create('academic-course_breakdowns', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('year');
             $table->enum('semester',[1,2,3]);
@@ -25,7 +25,7 @@ class CreateCourseBreakdownsTable extends Migration
             $table->timestamps();
 
             $table->foreign('curriculum_id')
-                  ->references('id')->on('curricula');
+                  ->references('id')->on('academic-curricula');
         });
     }
 
@@ -36,6 +36,6 @@ class CreateCourseBreakdownsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course_breakdowns');
+        Schema::dropIfExists('academic-course_breakdowns');
     }
 }

@@ -7,15 +7,46 @@ use Illuminate\Database\Eloquent\Model;
 
 class CourseBreakdown extends Model
 {
-    protected $fillable = ['year','semester','institution_id','institution_type','courses','electives','curriculum_id'];
+    protected $table = "academic-course_breakdowns";
+
+    protected $fillable = [
+        'year','semester','institution_id','institution_type','courses','electives','curriculum_id'
+    ];
 
     public function getCoursessAttribute(){
     	$arr = explode(',', $this->courses);
-    	return Course::find($arr);
+        $ans = [];
+        foreach ($arr as $value) {
+            if(Course::where('code',$value)->count()==0){
+                array_push($ans, Course::find(1));
+            }else{
+                array_push($ans, Course::where('code',$value)->first());
+            }
+        }
+
+    	if( sizeof($ans)==1 && $ans[0]==null ){
+            return [];
+        }
+        return Collect($ans);
     }
     public function getElectivessAttribute(){
-    	$arr = explode(',', $this->electives);
-    	return Elective::find($arr);
+        $arr = explode(',', $this->electives);
+        $ans = [];
+        foreach ($arr as $value) {
+            if(Elective::where('code',$value)->first()!=null)
+                array_push($ans, Elective::where('code',$value)->first());
+        }
+        if( sizeof($ans)==1 && $ans[0]==null ){
+            return [];
+        }
+        return Collect($ans);
+    }
+    public function getAllCoursessAttribute(){
+        $ans  = $this->coursess;
+        foreach ($this->electivess as $elective) {
+            $ans = $ans->merge($elective->coursess);
+        }
+        return $ans->unique();
     }
     public function getTotalCrhrAttribute(){
     	$k = $this->Coursess->reduce(function ($carry, $item) {

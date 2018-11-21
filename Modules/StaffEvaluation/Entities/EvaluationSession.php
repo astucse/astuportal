@@ -11,7 +11,11 @@ use Illuminate\Database\Eloquent\Model;
 use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
 class EvaluationSession extends Model
 {
-    protected $fillable = ['id','student_evaluation_id','collegue_evaluation_id','head_evaluation_id','staff_id','active','academic_year','semester','course_id','target_institution_id','target_institution_type','target_groups','target_year','target_collegues','target_head_id'];
+    protected $table = "ses-evaluation_sessions";
+    protected $fillable = [
+        'id','student_evaluation_id','collegue_evaluation_id','head_evaluation_id',
+        'staff_id','active','academic_year','semester','course_id','target_institution_id','target_institution_type','target_groups','target_year','target_collegues','target_head_id', 'assignment_id'
+    ];
 
     // public function scopeType($query, $type)
     // {
@@ -19,6 +23,9 @@ class EvaluationSession extends Model
     // }
     public function student_evaluation(){
         return $this->belongsTo('Modules\StaffEvaluation\Entities\Evaluation','student_evaluation_id');
+    }
+    public function assignment(){
+        return $this->belongsTo('Modules\Academic\Entities\Assignment');
     }
     public function head_evaluation(){
         return $this->belongsTo('Modules\StaffEvaluation\Entities\Evaluation','head_evaluation_id');
@@ -58,7 +65,6 @@ class EvaluationSession extends Model
         $a = AnsweredQuestion::where(['evaluation_session_id'=>$this->id,'target'=>'student'])->get()->groupBy('question_category.id')->transform(function($item, $k) {
             return $item->groupBy('question_id');
         });
-
         return $a;
     }
     public function getCollegueAnswersAttribute(){
@@ -101,6 +107,35 @@ class EvaluationSession extends Model
              }
          }
         return $arr4;
+    }
+    public function getResultByCategoryAttribute(){
+        $ca = Category::all();
+        $ans = AnsweredQuestion::where([
+            'evaluation_session_id' => $this->id,
+            'write_answer' => NULL,
+            // 'target' => 'student'
+        ])->get();
+        $ans = Collect($ans)->groupBy('target');
+
+        $dd = ['student'=>[],'collegue'=>[],'head'=>[]];
+        foreach ($ans as $target=>$answers) {
+            $anss = [];
+            foreach ($ca as $c) {
+                $ppp=0;
+                $l=0;
+                foreach ($answers as $result) {
+                    if($result->questionCategory->is($c)){
+                        $ppp+=$result->rate_answer;
+                        $l++;
+                    }
+                }
+                if($ppp>0){
+                    array_push($anss,[ 'name'=> "'".$c->name."'",'result'=>$ppp/$l ]);
+                }
+            }
+            $dd[$target]= $anss;
+        }
+        return $dd;
     }
     // protected  static function boot(){
     //   parent::boot();

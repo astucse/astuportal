@@ -13,7 +13,7 @@ class CreateQuestionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('questions', function (Blueprint $table) {
+        Schema::create('ses-questions', function (Blueprint $table) {
             $table->increments('id');
             $table->text('question_english');
             $table->text('question_amharic')->nullable();
@@ -23,9 +23,9 @@ class CreateQuestionsTable extends Migration
             $table->timestamps();
 
             $table->foreign('evaluation_id')
-                  ->references('id')->on('evaluations');
+                  ->references('id')->on('ses-evaluations');
             $table->foreign('question_category_id')
-                  ->references('id')->on('categories');
+                  ->references('id')->on('ses-categories');
         });
     }
 
@@ -36,6 +36,6 @@ class CreateQuestionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('questions');
+        Schema::dropIfExists('staff-evaluation-questions');
     }
 }

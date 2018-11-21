@@ -24,7 +24,7 @@ class CreateAgendasTable extends Migration
             $table->foreign('meeting_id')
                   ->references('id')->on('meeting-management-meetings');
             $table->foreign('raised_by_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -35,6 +35,6 @@ class CreateAgendasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('agendas');
+        Schema::dropIfExists('meeting-management-agendas');
     }
 }

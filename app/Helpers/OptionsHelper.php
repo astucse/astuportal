@@ -21,4 +21,10 @@ class OptionsHelper {
     	$id = Option::where(['code' =>'Academic_curriculum'])->first()->value;
     	return \Modules\Academic\Entities\Curriculum::find($id);
     }
+    public static function current_semester(){
+    	return Option::where(['code' =>'Academic_semester'])->first()->value;
+    }
+    public static function current_year(){
+    	return Option::where(['code' =>'Academic_year'])->first()->value;
+    }
 }

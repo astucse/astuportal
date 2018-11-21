@@ -8,11 +8,26 @@ use App\Models\AssignedRole;
 use App\Models\Employee;
 use App\Models\Student;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Hash;
+use Faker\Factory as Faker;
 class AdminController extends Controller
 {
 	public function __construct(){
         $this->middleware('auth:admin');
+    }
+    public function reset_password($type,$id){
+        $faker = Faker::create();
+        $pass = $faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomDigit.$faker->randomDigit; 
+        if($type=="student"){
+            $u = Student::find($id);
+        }else{
+            $u = Employee::find($id);
+        }
+        $u->initial_password = $pass;
+        $u->password = Hash::make($pass);
+        $u->save();
+        return redirect()->back(); 
+        
     }
     public function index(){
         return view('admin.index',[

@@ -2,16 +2,36 @@
 
 @section('content')
 
+@widget('breadcumb',['header'=>'Students','link0'=>'Home','link1'=>'Users','link9'=>'students'])
+<section class="content">
+  
+  <div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title">Actions</h3>
+    </div>
+    <div class="box-body">
+      Export : <a class="btn btn-primary" href="{{route('admin.students.export')}}">Export</a><br>
+      <!-- <form enctype="multipart/form-data" action="@{{route('admin.super.import', ['type'=>'student'])}}" method="POST">
+        {{ csrf_field() }}
+        <input type="file" name="zzzz" id="zzzz" class="">
+        <button type="submit" class="btn btn-primary">Import</button>
+      </form> -->
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+      <!-- Footer -->
+    </div>
+    <!-- /.box-footer-->
+  </div>
+  <!-- /.box -->
+
+
 <div class="nav-tabs-custom">
-      <ul class="nav nav-tabs pull-right">
+      <!-- <ul class="nav nav-tabs pull-right">
         <li class="pull-left header"><i class="fa fa-th"></i> Students</li>
-        <a class="btn btn-primary" href="{{route('admin.students.export')}}">Export</a>
-        <form enctype="multipart/form-data" action="@{{route('admin.super.import', ['type'=>'student'])}}" method="POST">
-          {{ csrf_field() }}
-          <input type="file" name="zzzz" id="zzzz" class="form-control">
-          <button type="submit" class="btn btn-primary">Import</button>
-        </form>
-      </ul>
+        
+        
+      </ul> -->
       <div class="tab-content">
         <table id="StudentsTable" class="table table-bordered table-striped">
           <thead>
@@ -31,8 +51,8 @@
               <td>{{$s->sex}}</td>
               <td>{{$s->initial_password}}</td>
               <td>
-                <button type="button" data-id="{{$s}}" class="edit-staff btn btn-default" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i>Edit</button>
-                <!-- <a href="" class="btn btn-default" ><i class="fa fa-edit"></i> Edit </a>  -->
+                <!-- <button type="button" data-id="{{$s}}" class="edit-staff btn btn-default" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i>Edit</button> -->
+                <a href="{{route('user.password_reset',['type'=>'student','id'=>$s->id])}}" class="btn btn-default" ><i class="fa fa-edit"></i> Reset Password </a> 
               </td>
             </tr>
             @endforeach
@@ -75,6 +95,9 @@
         </div>
       </div>
     </div>
+
+
+</section>
 @endsection
 
 

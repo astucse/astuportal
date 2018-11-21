@@ -33,6 +33,42 @@ class AdminController extends Controller
         $this->middleware('auth:admin');
     }
 
+    public function index(){
+        return view('staffevaluation::admin.index',[
+            'sessions' => EvaluationSession::all(),
+        ]);
+    }
+
+    public function good_bad_update(Request $request){
+        $s_p = Option::where(['code'=> 'SES_GOOD_POINT'])->get()[0];
+        $s_p->value = $request['point_good'];
+        $s_p->save();
+        $h_p = Option::where(['code'=> 'SES_BAD_POINT'])->get()[0];
+        $h_p->value = $request['point_bad'];
+        $h_p->save();
+        return redirect()->back();
+    }
+
+    public function evaluations_create(Request $request){
+        Evaluation::create([
+            'name' => $request['name'],
+            'target' => $request['target']
+        ]);
+        return redirect()->back();
+    }
+
+    public function question_create(Request $request){
+        Question::create([
+            'question_english' => $request['english_question'],
+            'question_amharic' => $request['amharic_question'],
+            'type' => $request['type'],
+            'evaluation_id' =>  $request['evaluation_id'],
+            'question_category_id'  => $request['question_category_id']
+        ]);
+        return redirect()->back();
+    }
+
+
     public function evaluation_toggle($id, $action){
         $es = EvaluationSession::find($id);
         if($action == "stop"){
@@ -45,9 +81,6 @@ class AdminController extends Controller
         return redirect()->back();
     }
 
-    public function index(){
-        return view('staffevaluation::admin.index');
-    }
     public function session_single($id){
         $es = EvaluationSession::find($id);
         $evaluatedHeads = Employee::find(collect($es->answered_heads()->get())->pluck('staff_id'));
@@ -175,6 +208,8 @@ class AdminController extends Controller
             'weight_student' => Option::where('code','SES_STUDENT_PERCENT')->first()->value,
             'weight_collegue' => Option::where('code','SES_COLLEGUE_PERCENT')->first()->value,
             'weight_head' => Option::where('code','SES_HEAD_PERCENT')->first()->value,
+            'point_good' => Option::where('code','SES_GOOD_POINT')->first()->value,
+            'point_bad' => Option::where('code','SES_BAD_POINT')->first()->value,
         ]);
     }
     public function equation_update(Request $request){

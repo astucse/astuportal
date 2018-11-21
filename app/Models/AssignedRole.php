@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class AssignedRole extends Model
 {
-    protected $table = "role_user";
+    protected $table = "astu-role_user";
     protected $fillable = ['role_id','roletaker_id','roletaker_type','rolegiver_id','rolegiver_type'];
 
     public function role(){

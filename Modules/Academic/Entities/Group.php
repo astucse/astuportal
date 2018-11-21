@@ -6,7 +6,9 @@ use Modules\Academic\Entities\Schedule;
 use Modules\Academic\Entities\CourseBreakdown;
 use Illuminate\Database\Eloquent\Model;
 
-class Group extends Model{
+class Group extends Model
+{
+    protected $table = "academic-groups";
 
     protected $fillable = [
         'name','batch_year','semester','year','freshman','school','institution_id','institution_type','curriculum_id'

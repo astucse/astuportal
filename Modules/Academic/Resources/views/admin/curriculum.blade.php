@@ -218,17 +218,23 @@
                                 </tr>
                                 @endforeach
                                 @foreach($cbd->Electivess as $e)
+                                @if($cbd->Electivess->count() != 0 )
                                 <tr>
                                     <td></td>
                                     <td>Elective</td>
                                     <td>
-                                      @foreach($cbd->Coursess as $c)
+                                      @foreach($e->Coursess as $c)
                                       <li>{{$c->code}} : {{$c->name}}</li>
                                       @endforeach
                                     </td>
-                                    <td>{{$e->crhr}}</td>
+                                    <td>
+                                      @isset($e->crhr)
+                                      {{$e->crhr}}
+                                      @endisset
+                                    </td>
                                     <td></td>
                                 </tr>
+                                @endif
                                 @endforeach
                                 <tr>
                                   <td>-</td>

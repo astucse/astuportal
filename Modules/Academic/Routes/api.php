@@ -20,5 +20,6 @@ Route::middleware('auth:api')->get('/academic', function (Request $request) {
 Route::prefix('academic')->group(function() {
 	Route::prefix('public')->group(function() {
 		Route::get('/schedule', 'ApiController@schedule_api');
+		Route::get('/assigned_instructors', 'ApiController@assigned_instructors_api');
 	});
 });

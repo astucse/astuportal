@@ -13,7 +13,7 @@ class CreateRoleUserTable extends Migration
      */
     public function up()
     {
-        Schema::create('role_user', function (Blueprint $table) {
+        Schema::create('astu-role_user', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('role_id')->unsigned();
             
@@ -24,7 +24,7 @@ class CreateRoleUserTable extends Migration
             $table->timestamps();
 
             $table->foreign('role_id')
-                  ->references('id')->on('roles');
+                  ->references('id')->on('astu-roles');
 
         });
     }
@@ -36,6 +36,6 @@ class CreateRoleUserTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('role_user');
+        Schema::dropIfExists('astu-role_user');
     }
 }

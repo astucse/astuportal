@@ -26,7 +26,7 @@ class CreateMeetingsTable extends Migration
             $table->foreign('group_id')
                   ->references('id')->on('meeting-management-groups');
             $table->foreign('raised_by_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -37,6 +37,6 @@ class CreateMeetingsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('meetings');
+        Schema::dropIfExists('meeting-management-meetings');
     }
 }

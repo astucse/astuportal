@@ -13,7 +13,7 @@ class CreateSchedulesTable extends Migration
      */
     public function up()
     {
-        Schema::create('schedules', function (Blueprint $table) {
+        Schema::create('academic-schedules', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('group_id')->unsigned();
             $table->integer('course_id')->unsigned();
@@ -23,9 +23,9 @@ class CreateSchedulesTable extends Migration
             $table->timestamps();
 
             $table->foreign('group_id')
-                  ->references('id')->on('groups');
+                  ->references('id')->on('academic-groups');
             $table->foreign('course_id')
-                  ->references('id')->on('courses');
+                  ->references('id')->on('academic-courses');
         });
     }
 
@@ -36,6 +36,6 @@ class CreateSchedulesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('schedules');
+        Schema::dropIfExists('academic-schedules');
     }
 }

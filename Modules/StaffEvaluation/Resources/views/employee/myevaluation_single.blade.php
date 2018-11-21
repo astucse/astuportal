@@ -7,12 +7,25 @@
     <li class="pull-left header"><i class="fa fa-th"></i>My Evaluation: {{$evaluation->results['all']}}</li>
   </ul>
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab_0" data-toggle="tab">Students</a></li>
+    <li class="active"><a href="#tab_00" data-toggle="tab">Overview</a></li>
+    <li ><a href="#tab_0" data-toggle="tab">Students</a></li>
     <li><a href="#tab_1" data-toggle="tab">Collegue</a></li>
     <li><a href="#tab_2" data-toggle="tab">Head</a></li>
   </ul>
   <div class="tab-content">
-    <div class="tab-pane active" id="tab_0">
+    <div class="tab-pane active" id="tab_00">
+      <?php $i=1 ;?>
+      @foreach($evaluation->resultByCategory as $e=>$ee)
+      @widget('Chart.bar',[
+          'id' => $i,
+          'header' => $e,
+          'data' =>'['.implode(",",Collect($evaluation->resultByCategory[$e])->pluck('result')->toArray()).']',
+          'labels' => '['.implode(",",Collect($evaluation->resultByCategory[$e])->pluck('name')->toArray()).']'
+      ])
+      <?php $i++; ?>
+      @endforeach
+    </div>
+    <div class="tab-pane" id="tab_0">
       Average: {{$evaluation->results['student']}}<br>
       Evaluators: {{$evaluation->answered_students->count()}}<br>
       <br>

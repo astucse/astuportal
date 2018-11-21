@@ -13,7 +13,7 @@ class CreateEvaluationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('evaluations', function (Blueprint $table) {
+        Schema::create('ses-evaluations', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->enum('target',['student','collegue','head']);
@@ -28,6 +28,6 @@ class CreateEvaluationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('evaluations');
+        Schema::dropIfExists('ses-evaluations');
     }
 }

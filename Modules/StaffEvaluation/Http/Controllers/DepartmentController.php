@@ -10,6 +10,9 @@ use App\Models\Role;
 use Modules\Academic\Entities\Course;
 use Modules\Academic\Entities\School;
 use Modules\Academic\Entities\Department;
+use Modules\Academic\Entities\Group;
+use Modules\Academic\Entities\Assignment;
+use Modules\Academic\Entities\CourseBreakdown;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -32,6 +35,100 @@ class DepartmentController extends Controller
      */
     public function index(){
         return view('staffevaluation::department.index');
+    }
+
+    public function evaluation_toggle($id, $action){
+        $es = EvaluationSession::find($id);
+        if($action == "stop"){
+            $es->active = false;
+        }
+        if($action == "start"){
+            $es->active = true;   
+        }
+        $es->save();
+        return redirect()->back();
+    }
+
+    public function session_single($id){
+        $es = EvaluationSession::find($id);
+        $evaluatedHeads = Employee::find(collect($es->answered_heads()->get())->pluck('staff_id'));
+        $evaluatedStudents = Student::find(collect($es->answered_students()->get())->pluck('student_id'));
+        $evaluatedCollegues = Employee::find(collect($es->answered_collegues()->get())->pluck('staff_id'));
+
+        return view('staffevaluation::admin.session_single',[
+            'result' => ToEvaluateHelper::result($es),
+            'evaluated' => [
+                'students' => $evaluatedStudents,
+                'collegues' => $evaluatedCollegues,
+                'heads' => $evaluatedHeads,
+            ],
+            'notevaluated' => [
+                'students' => collect(ToEvaluateHelper::eligibles($es,"student"))->diff($evaluatedStudents),
+                'heads' => collect(ToEvaluateHelper::eligibles($es,"head"))->diff($evaluatedHeads),
+                'collegues' => collect(ToEvaluateHelper::eligibles($es,"collegue"))->diff($evaluatedCollegues),
+            ],
+            'evaluations' => [
+                'students' => AnsweredQuestion::where(['evaluation_session_id'=>$id,'target'=>'student']),
+                'collegues' => AnsweredQuestion::where(['evaluation_session_id'=>$id,'target'=>'collegue']),
+                'heads' => AnsweredQuestion::where(['evaluation_session_id'=>$id,'target'=>'head']),
+            ],
+            'evaluationsession' => $es,
+        ]);
+    }
+
+    public function sessions_create(Request $request){
+        $institution = Auth::user()->MyInstitution;
+        $academic_year = 2011;
+        $semester = "1";
+        $assignment = Assignment::find($request['assignment_id']);
+        
+        EvaluationSession::create([
+            'academic_year' => $assignment->academic_year,
+            'student_evaluation_id' => $request['student_evaluation_id'],
+            'head_evaluation_id' => $request['head_evaluation_id'],
+            'collegue_evaluation_id' => $request['collegue_evaluation_id'],
+            'target_head_id' => Auth::user()->id,
+            'target_collegues' => implode(",", $request['target_collegues']),
+            'staff_id' => $assignment->instructor->id,
+            'semester' => $assignment->semester,
+            'target_year' => $assignment->batch_year,
+            'target_institution_type' => 'Academic\Department',
+            'target_institution_id' => $institution->id,
+            'course_id' => $assignment->course->id,
+            'target_groups' => implode(",", $request['group']),
+            'assignment_id' => $assignment->id
+        ]);
+        
+        return redirect()->back();
+    }
+
+    public function evaluation_sessions(){
+        $institution = Auth::user()->MyInstitution;
+
+        $studentEvaluations = Evaluation::where(['target' => 'student'])->get();
+        $collegueEvaluations = Evaluation::where(['target' => 'collegue'])->get();
+        $headEvaluations = Evaluation::where(['target' => 'head'])->get();
+
+        $a = Assignment::where([
+            // 'batch_year', 
+            'institution_id' => $institution->id, 
+            'institution_type' => 'Academic\\Department'
+        ])->get();
+        // return sizeof($a);
+        return view('staffevaluation::department.evaluation_sessions',[
+            'assignments' => $a,
+            'staff' => Employee::all(),
+            'studentEvaluations' => $studentEvaluations,
+            'collegueEvaluations' => $collegueEvaluations,
+            'headEvaluations' => $headEvaluations,
+
+            'sessions' => EvaluationSession::where([
+                'academic_year' => 2011,
+                'semester' => 1,
+                'target_institution_type' => 'Academic\Department',
+                'target_institution_id' => $institution->id,
+            ])->get()
+        ]);
     }
 
     public function evaluate(Request $request){

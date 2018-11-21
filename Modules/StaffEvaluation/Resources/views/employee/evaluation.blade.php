@@ -43,6 +43,6 @@
 @section('js')
 <script type="text/javascript"> 
   $( "#staffevaluation" ).addClass( "active" );
-  $( "#staffevaluation-Evaluations" ).addClass( "active" );
+  $( "#staffevaluation-CollegueEvaluations" ).addClass( "active" );
 </script>
 @endsection

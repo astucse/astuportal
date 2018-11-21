@@ -37,18 +37,24 @@ AstuPortal: @yield('title')
         <ul class="nav navbar-nav">
           @if( Auth::user()->isDepartmentHead )
           <li class="user user-menu">
-            <a target="_blank" href="{{url('staffevaluation/department/')}}">
+            <a target="_blank" href="{{route('department.index')}}">
               <span class="hidden-xs">Open Department Dashboard</span>
             </a>
           </li>
           @endif
           @if(Auth::user()->isSchoolDean)
           <li class="user user-menu">
-            <a target="_blank" href="#">
+            <a target="_blank" href="{{route('school.index')}}">
               <span class="hidden-xs">Open School Dashboard</span>
             </a>
           </li>
           @endif
+          <li class="user user-menu">
+            <a href="{{route('employee.profile')}}">
+              <img src="{{route('employee.image',['id'=>Auth::user()->id])}}" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{Auth::user()->name}}</span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -82,7 +88,7 @@ AstuPortal: @yield('title')
 
         <!-- <li id=""><a href=""><i class="fa fa-group"></i> <span> lll</span></a></li> -->
         <li>
-          <a class="dropdown-item" href="{{ route('logout') }}" ><i class="fa fa-sign-out"></i><span>Logout</span>({{(Auth::user()->name)}})</a>
+          <a class="dropdown-item" href="{{ route('logout') }}" ><i class="fa fa-sign-out"></i><span>Logout</span></a>
         </li>
       </ul>
     </section>

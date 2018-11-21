@@ -23,7 +23,7 @@ class CreateParticipantsTable extends Migration
             $table->foreign('meeting_id')
                   ->references('id')->on('meeting-management-meetings');
             $table->foreign('member_id')
-                  ->references('id')->on('employees');
+                  ->references('id')->on('astu-employees');
         });
     }
 
@@ -34,6 +34,6 @@ class CreateParticipantsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('participants');
+        Schema::dropIfExists('meeting-management-participants');
     }
 }

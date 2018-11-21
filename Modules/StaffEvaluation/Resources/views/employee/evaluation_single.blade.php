@@ -4,28 +4,43 @@
 @endsection
 @section('content')
 
-<div class="row">
-  <div class="col-md-12">
-    <div class="nav-tabs-custom">
-      <ul class="nav nav-tabs pull-right">
-        <h3>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
-        Instructor: {{$evaluationsession->staff->name}} <br>
-        </li>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
-        Year: {{$evaluationsession->academic_year}}<br>
-        </li>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
-        Semester: {{$evaluationsession->semester}} <br>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
-        Course Title: {{$evaluationsession->course->name}} <br>
-        <li class="pull-left header"><i class="fa fa-th"></i> 
-        Course code: {{$evaluationsession->course->code}} <br>
-        </h3>
-      </li>
-      </ul>
-      <div class="tab-content">
-        <div class="row">
+
+
+<section class="content">
+
+      <div class="row">
+        <div class="col-md-4">
+
+          <!-- Profile Image -->
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+              <img class="profile-user-img img-responsive img-circle" src="{{route('employee.image',['id'=>$evaluationsession->staff->id])}}" alt="User profile picture">
+
+              <h3 class="profile-username text-center">{{$evaluationsession->staff->name}}</h3>
+
+              <p class="text-muted text-center">Instructor</p>
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>Course code</b> <a class="pull-right">{{$evaluationsession->course->code}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Title</b> <a class="pull-right">{{$evaluationsession->course->name}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Semester</b> <a class="pull-right">{{$evaluationsession->semester}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Year</b> <a class="pull-right">{{$evaluationsession->academic_year}}</a>
+                </li>
+              </ul>
+              <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+      </div>
+      <div class="col-md-8">
+        
           <form action="{{route('staffevaluation.collegue.evaluate') }}" method="POST">
           {{ csrf_field() }}
           <input type="number" name="evaluationsession_id" value="{{$evaluationsession->id}}" hidden>
@@ -99,9 +114,8 @@
           </form>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+    </section>
+
 
 
 @stop
@@ -110,6 +124,6 @@
 @section('js')
 <script type="text/javascript"> 
   $( "#staffevaluation" ).addClass( "active" );
-  $( "#staffevaluation-Evaluations" ).addClass( "active" );
+  $( "#staffevaluation-CollegueEvaluations" ).addClass( "active" );
 </script>
 @endsection

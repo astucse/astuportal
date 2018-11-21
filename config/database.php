@@ -37,6 +37,7 @@ return [
             'driver' => 'sqlite',
             'database' => env('DB_DATABASE', database_path('database.sqlite')),
             'prefix' => '',
+            'database' => '/opt/lampp/htdocs/astuportal/database/database.sqlite'
         ],
 
         'mysql' => [
@@ -52,6 +53,7 @@ return [
             'prefix' => '',
             'strict' => true,
             'engine' => null,
+            'foreign_key_constraints' => true,
         ],
 
         'pgsql' => [
