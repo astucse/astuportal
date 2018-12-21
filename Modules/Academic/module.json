@@ -8,7 +8,7 @@
     "providers": [
         "Modules\\Academic\\Providers\\AcademicServiceProvider"
     ],
-    "aliases": {},
+    "aliases": [],
     "files": [],
     "requires": []
 }

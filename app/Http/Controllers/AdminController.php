@@ -15,6 +15,17 @@ class AdminController extends Controller
 	public function __construct(){
         $this->middleware('auth:admin');
     }
+    public function module_status_toggle($module){
+        $module2 = $module;
+        $module = \Module::findOrFail($module2);
+        if ($module->disabled()) {
+            $module->enable();
+        } else {
+            $module->disable();
+        }
+        return redirect()->back();
+    }
+    
     public function reset_password($type,$id){
         $faker = Faker::create();
         $pass = $faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomLetter.$faker->randomDigit.$faker->randomDigit; 

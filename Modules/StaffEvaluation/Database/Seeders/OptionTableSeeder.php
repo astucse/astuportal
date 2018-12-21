@@ -21,6 +21,12 @@ class OptionTableSeeder extends Seeder
             ['code' =>'SES_HEAD_PERCENT', 'value'=> '35'],
             ['code' =>'SES_GOOD_POINT', 'value'=> '4'],
             ['code' =>'SES_BAD_POINT', 'value'=> '2'],
+            ['code' =>'SES_GOOD_REPORT_LETTER', 'value'=> '1','parameter_1'=>'1'],
+            ['code' =>'SES_MEDIUM_REPORT_LETTER', 'value'=> '1','parameter_1'=>'1'],
+            ['code' =>'SES_BAD_REPORT_LETTER', 'value'=> '1','parameter_1'=>'1'],
+            ['code' =>'SES_GOOD_REPORT_LETTER', 'value'=> '1','parameter_1'=>'2'],
+            ['code' =>'SES_MEDIUM_REPORT_LETTER', 'value'=> '1','parameter_1'=>'2'],
+            ['code' =>'SES_BAD_REPORT_LETTER', 'value'=> '1','parameter_1'=>'2'],
         ];                          
         foreach ($items as $item) {
            \App\Models\Option::create($item);

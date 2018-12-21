@@ -38,7 +38,7 @@
 <div class="col-lg-3 col-xs-6">
   <div class="small-box bg-red">
     <div class="inner">
-      <h3>24</h3>
+      <h3>?</h3>
       <p>Unique Visitors</p>
     </div>
     <div class="icon">
@@ -54,7 +54,7 @@
 <div class="col-lg-3 col-xs-6">
   <div class="small-box bg-red">
     <div class="inner">
-      <h3>147</h3>
+      <h3>?</h3>
       <p>Page Views</p>
     </div>
     <div class="icon">
@@ -82,19 +82,36 @@
               <th style="width: 10px">#</th>
               <th>Title</th>
               <th>Status</th>
+              <th>Action</th>
             </tr>
+            <?php $module_index =1;?>
+            @foreach(Module::all() as $k=>$m)
             <tr>
-              <td>1</td><td>Academic</td><td><a class="badge bg-green">Active</a></td>
+              <td>{{$module_index}}</td>
+              <td>{{$m}}</td>
+              <td>
+                @if($m->enabled())
+                <a class="badge bg-green">Active</a>
+                @else
+                <a class="badge bg-red">Inactive</a>
+                @endif
+              </td>
+              <td>
+                    <a class="btn label label-success" href="{{route('admin.module.status_toggle',['module'=>$m])}}" >Change status</a>
+              </td>
             </tr>
-            <tr>
+            <?php $module_index++;?>
+            @endforeach
+
+<!--             <tr>
               <td>2</td><td>Meeting management</td><td><a class="badge bg-green">Active</a></td>
             </tr>
             <tr>
               <td>3</td><td>Staff Evaluation</td><td><a class="badge bg-green">Active</a></td>
             </tr>
             <tr>
-              <td>4</td><td>File Sharing</td><td><a class="badge bg-red">Inactive</a></td>
-            </tr>
+              <td>4</td><td>File Sharing</td><td></td>
+            </tr> -->
           </table>
         </div>
       </div>

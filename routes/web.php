@@ -50,7 +50,8 @@ Route::post('/student/image/upload', 'StudentController@image_upload')->name('st
 Route::get('/employee', 'EmployeeController@index')->name('employee.index');
 Route::get('/employee/profile', 'EmployeeController@profile')->name('employee.profile');
 Route::get('/employee/image/{id}', 'EmployeeController@image')->name('employee.image');
-Route::post('/employee/image/upload', 'EmployeeController@image_upload')->name('employee.image.upload');
+// Route::post('/employee/image/upload', 'EmployeeController@image_upload')->name('employee.image.upload');
+Route::post('/employee/profile/edit', 'EmployeeController@profile_edit')->name('employee.profile.edit');
 
 
 Route::group(['prefix'=>'department' ], function () {
@@ -70,13 +71,19 @@ Route::group(['prefix'=>'admin' ], function () {
 	Route::get('/users/students', 'StudentController@admin_view')->name('admin.students.view');
 	Route::get('/users/employees', 'EmployeeController@admin_view')->name('admin.employees.view');
 	
+	Route::post('/import/employee','EmployeeController@import')->name('admin.import.employee');
 
 	Route::get('/users/employees/export', 'EmployeeController@export')->name('admin.employees.export');
-      Route::get('/users/students/export', 'StudentController@export')->name('admin.students.export');
+	Route::get('/users/students/export', 'StudentController@export')->name('admin.students.export');
 
 	Route::post('/roles/create', 'AdminController@create_roles')->name('admin.roles.create');
+
+	Route::get('/module/status_toggle/{module}','AdminController@module_status_toggle')->name('admin.module.status_toggle');
 });
 
+
+Route::get('/images/general/{stuff}', 'MiscController@general_images')->name('stuff.image');
+	
 // Route::get('/student', function () {
 //     return view('home');
 // })->name('student.index');

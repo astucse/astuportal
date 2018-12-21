@@ -24,6 +24,9 @@ use  Modules\StaffEvaluation\Entities\AnsweredQuestion;
 use Auth;
 use Illuminate\Routing\Controller;
 use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
+use App\Helpers\OptionsHelper;
+use App\Helpers\OfficeHelper;
+use PDF;
 class DepartmentController extends Controller
 {
     public function __construct(){
@@ -35,6 +38,24 @@ class DepartmentController extends Controller
      */
     public function index(){
         return view('staffevaluation::department.index');
+    }
+
+    public function setting(){
+
+        $reports = OptionsHelper::ses_reports(Auth::user()->MyInstitution->id);
+        return view('staffevaluation::department.setting',['reports'=>$reports]);
+    }
+    public function update_report(Request $request){
+        $id = Auth::user()->MyInstitution->id;        $g = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$id])->first();
+        $m = Option::where(['code' => 'SES_MEDIUM_REPORT_LETTER','parameter_1'=>$id])->first();
+        $b = Option::where(['code' => 'SES_BAD_REPORT_LETTER','parameter_1'=>$id])->first();
+        $g->value = $request['good'];
+        $b->value = $request['bad'];
+        $m->value = $request['medium'];
+        $g->save();
+        $b->save();
+        $m->save();
+        return redirect()->back();
     }
 
     public function evaluation_toggle($id, $action){
@@ -49,13 +70,32 @@ class DepartmentController extends Controller
         return redirect()->back();
     }
 
+    public function session_report($id){
+        $idI = Auth::user()->MyInstitution->id;
+        $a = EvaluationSession::find($id);
+        $v = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+
+        $v = str_replace("&lt;&lt;Instructor&gt;&gt;",$a->staff->name,$v);
+        $v = str_replace("&lt;&lt;Student&gt;&gt;",$a->results['student'],$v);
+        $v = str_replace("&lt;&lt;Collegue&gt;&gt;",$a->results['collegue'],$v);
+        $v = str_replace("&lt;&lt;Head&gt;&gt;",$a->results['head'],$v);
+        $v = str_replace("&lt;&lt;Result&gt;&gt;",$a->results['all'],$v);
+        // replace  
+
+        // return $v;  
+        // return $a;
+        $pdf = PDF::loadView('staffevaluation::department.report', ['content'=>$v]);
+        return $pdf->download('report.pdf');
+        // return OfficeHelper::word("the title",$v);
+    }
+
     public function session_single($id){
         $es = EvaluationSession::find($id);
         $evaluatedHeads = Employee::find(collect($es->answered_heads()->get())->pluck('staff_id'));
         $evaluatedStudents = Student::find(collect($es->answered_students()->get())->pluck('student_id'));
         $evaluatedCollegues = Employee::find(collect($es->answered_collegues()->get())->pluck('staff_id'));
 
-        return view('staffevaluation::admin.session_single',[
+        return view('staffevaluation::department.session_single',[
             'result' => ToEvaluateHelper::result($es),
             'evaluated' => [
                 'students' => $evaluatedStudents,

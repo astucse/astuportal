@@ -17,6 +17,7 @@
       <?php $i=1 ;?>
       @foreach($evaluation->resultByCategory as $e=>$ee)
       @widget('Chart.bar',[
+          'type' => 'plotly',
           'id' => $i,
           'header' => $e,
           'data' =>'['.implode(",",Collect($evaluation->resultByCategory[$e])->pluck('result')->toArray()).']',
@@ -171,9 +172,9 @@
 </script>
 <script src="{{ url('adminlte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
 <script src="{{ url('adminlte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
-<script src="{{ url('adminlte/plugins/datatables/dataTables.buttons.min.js') }}"></script>
+<!-- <script src="{{ url('adminlte/plugins/datatables/dataTables.buttons.min.js') }}"></script> -->
 <script src="{{ url('adminlte/plugins/datatables/dataTables.select.min.js') }}"></script>
-<script src="{{ url('adminlte/plugins/datatables/dataTables.editor.min.js') }}"></script>
+<!-- <script src="{{ url('adminlte/plugins/datatables/dataTables.editor.min.js') }}"></script> -->
 <script>
   $(function () {
     $('#Table1').DataTable({

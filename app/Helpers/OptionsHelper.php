@@ -27,4 +27,12 @@ class OptionsHelper {
     public static function current_year(){
     	return Option::where(['code' =>'Academic_year'])->first()->value;
     }
+
+    public static function ses_reports($id){
+        return [
+            'good' => Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$id])->first()->value,
+            'medium' => Option::where(['code' => 'SES_MEDIUM_REPORT_LETTER','parameter_1'=>$id])->first()->value,
+            'bad' => Option::where(['code' => 'SES_BAD_REPORT_LETTER','parameter_1'=>$id])->first()->value,
+        ];
+    }
 }

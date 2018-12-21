@@ -14,6 +14,9 @@ class School extends Model
     public function groups(){
         return $this->morphMany('Modules\Academic\Entities\Group', 'institution');
     }
+    public function departments(){
+        return $this->hasMany('Modules\Academic\Entities\Department');
+    }
     public function roles(){
         return $this->morphMany('App\Role', 'rolegiver');
     }

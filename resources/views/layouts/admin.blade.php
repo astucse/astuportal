@@ -57,23 +57,25 @@ Staff evaluation Admin: @yield('title')
           </ul>
         </li>
 
-        @foreach(Module::collections() as $m)
-        @if(null !== config($m->getLowerName().'.admin-routes'))
+        @foreach(Module::all() as $m)
           <li id="{{$m->getLowerName()}}" class="treeview">
           <a href="">
             <i class="fa fa-files-o"></i>
-            <span>{{config($m->getLowerName().'.name')}}</span>
+            <span>{{$m}}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
+        @if(null !== config($m->getLowerName().'.admin-routes'))
             @foreach(config($m->getLowerName().'.admin-routes') as $route )
             <li id="<?=str_replace(' ','',$m->getLowerName().'-'.$route->n)?>"><a href="{{$route->r}}"><i class="fa fa-circle-o"></i>{{$route->n}}</a></li>
             @endforeach
+        @else
+          <li><a >Please activate the module first</a></li>  
+        @endif
           </ul>
         </li>
-        @endif
         @endforeach
 
 

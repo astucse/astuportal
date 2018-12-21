@@ -12,6 +12,7 @@ class Bar extends AbstractWidget
      * @var array
      */
     protected $config = [
+        'type' => 'plotly',
         'id' => '1',
         'header' => 'Header Text',
         'value1' => 12,
@@ -30,9 +31,16 @@ class Bar extends AbstractWidget
     {
         //
         // $faker = new Faker(); 
-        return view('widgets.chart.bar', [
-            'config' => $this->config,
-            // 'color' => $faker->randomElement(array ('#4f5bc2','#00a65a','#2ee5d8')),
-        ]);
+        if ($this->config['type']=='plotly') {
+            return view('widgets.chart.bar_plotly', [
+                'config' => $this->config,
+                // 'color' => $faker->randomElement(array ('#4f5bc2','#00a65a','#2ee5d8')),
+            ]);
+        }else{
+            return view('widgets.chart.bar', [
+                'config' => $this->config,
+                // 'color' => $faker->randomElement(array ('#4f5bc2','#00a65a','#2ee5d8')),
+            ]);
+        }
     }
 }

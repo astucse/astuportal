@@ -4,20 +4,16 @@ namespace App\Http\Controllers;
 use Intervention\Image\Facades\Image;
 use Illuminate\Http\Request;
 use App\Models\Employee;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
-
+use App\Helpers\ImportExportHelper;
 use Auth;
 class EmployeeController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth:employee')->only(['index','profile','image_upload']);
+        $this->middleware('auth:employee')->only(['index','profile','image_upload','profile_edit']);
         $this->middleware('auth:admin')->only(['admin_view','export']);
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index(){
         return view('employee.index');
     }
@@ -26,89 +22,43 @@ class EmployeeController extends Controller
     }
     public function image($id){
         $s = Employee::findOrFail($id)->sex;
-        // $contents = storage_path('profile/employee/'.$id.'.jpg');
         if(Storage::exists('profile/employee/'.$id.'.jpg'))
             return response()->file(storage_path().'/app/profile/employee/'.$id.'.jpg');
         else
             return response()->file(public_path().'/avatars/employee'.$s.'.jpg');
-        // return Image::make($storagePath)->response();
-        // return $contents;
     }
     public function image_upload(Request $request){
         $path = $request->file('picture')->storeAs('profile/employee',Auth::user()->id.".jpg");
 
         return redirect()->back();
     }
+
+    public function profile_edit(Request $request){
+        $res = ["error"=>[],"success"=>[]];
+        if($request->file('picture')){
+            $path = $request->file('picture')->storeAs('profile/employee',Auth::user()->id.".jpg");
+        }
+        if($request['inputPassword1']!=null && $request['inputPassword2']!=null){
+            if ($request['inputPassword1']!=$request['inputPassword2']) {
+                array_push($res["error"], "password do not match");
+            }else{
+                array_push($res["success"], "password changed succesfully");
+                $e = Employee::find(Auth::user()->id);
+                $e->password = Hash::make($request['inputPassword1']);
+                $e->save();
+            }
+        }
+        return redirect()->back()->with('editResponse',$res);
+    }
     public function admin_view(){
         return view('admin.employees',['employees'=>Employee::all()]);
     }
     public function export(){
-        ImportExportHelper::export('student');
+        ImportExportHelper::export('employee');
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
+    public function import(Request $request){
+        $res =  ImportExportHelper::super_import($request,'employee');
+        // print_r($res);
+        return redirect()->back()->with('importResponse', $res);
     }
 }

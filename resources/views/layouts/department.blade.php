@@ -17,7 +17,6 @@ Astu Portal: @yield('title')
   <link rel="stylesheet" href="{{ url('dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-purple.css') }}">
 
-
 </head>
 
 
@@ -108,8 +107,7 @@ Astu Portal: @yield('title')
 <script src="{{ url('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
 <script src="{{ url('dist/js/adminlte.min.js') }}" type="text/javascript"></script>
 @endif
-
- @yield('js')
- @stack('js-scripts')
+@stack('js-scripts')
+@yield('js')
 </body>
 </html>

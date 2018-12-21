@@ -45,7 +45,28 @@
           <!-- /.box -->
       </div>
       <div class="col-md-9">
-      	<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{route('employee.image.upload')}}">
+        @if(null !== session('editResponse'))
+        @if(sizeof(session('editResponse')['error'])  > 0 )
+        <div class="alert alert-danger alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <h4><i class="icon fa fa-ban"></i> Error!</h4>
+          @foreach(session('editResponse')['error'] as $error)
+          <p>{{$error}}</p>
+          @endforeach
+        </div>
+        @endif
+        @if(sizeof(session('editResponse')['success'])  > 0 )
+        <div class="alert alert-success alert-dismissible">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <h4><i class="icon fa fa-check"></i> Success!</h4>
+          @foreach(session('editResponse')['success'] as $success)
+          <p>{{$success}}</p>
+          @endforeach
+        </div>
+        @endif
+        @endif
+
+      	<form class="form-horizontal" method="POST" enctype="multipart/form-data" action="{{route('employee.profile.edit')}}">
       		@csrf
           <div class="form-group">
             <label for="inputName" class="col-sm-2 control-label">Name</label>
@@ -58,6 +79,24 @@
             <label for="inputEmail" class="col-sm-2 control-label">Email</label>
             <div class="col-sm-10">
               <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="{{Auth::user()->email}}" disabled>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputID" class="col-sm-2 control-label">Id number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputId" placeholder="Id" value="{{Auth::user()->id_number}}" disabled>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword1" class="col-sm-2 control-label">New password</label>
+            <div class="col-sm-10">
+              <input type="password" placeholder="*********" class="form-control" id="inputPassword1" name="inputPassword1">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword2" class="col-sm-2 control-label">Confirm New password</label>
+            <div class="col-sm-10">
+              <input type="password" placeholder="*********" class="form-control" id="inputPassword2" name="inputPassword2">
             </div>
           </div>
           <div class="form-group">

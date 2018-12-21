@@ -4,14 +4,32 @@
 
 <div class="nav-tabs-custom">
       <ul class="nav nav-tabs pull-right">
-        <li class="pull-left header"><i class="fa fa-th"></i> Students</li>
+        <li class="pull-left header"><i class="fa fa-th"></i> Employees</li>
         <a class="btn btn-primary" href="{{route('admin.employees.export')}}">Export</a>
-        <form enctype="multipart/form-data" action="@{{route('admin.super.import', ['type'=>'student'])}}" method="POST">
+        <form enctype="multipart/form-data" action="{{route('admin.import.employee')}}" method="POST">
           {{ csrf_field() }}
-          <input type="file" name="zzzz" id="zzzz" class="form-control">
+          <input type="file" name="thefile" id="thefile" class="form-control">
           <button type="submit" class="btn btn-primary">Import</button>
         </form>
       </ul>
+      @if(null !== session('importResponse'))
+      @if(sizeof(session('importResponse')['error'])  > 0 )
+      <div class="alert alert-danger alert-dismissible">
+          <h4>Error!</h4>
+          @foreach(session('importResponse')['error'] as $error)
+          <p>{{$error}}</p>
+          @endforeach
+      </div>
+      @endif
+      @if(sizeof(session('importResponse')['success'])  > 0 )
+      <div class="alert alert-success alert-dismissible">
+          <h4>Success!</h4>
+          @foreach(session('importResponse')['success'] as $success)
+          <p>{{$success}}</p>
+          @endforeach
+      </div>
+      @endif
+      @endif
       <div class="tab-content">
         <table id="StudentsTable" class="table table-bordered table-striped">
           <thead>

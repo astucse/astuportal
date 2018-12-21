@@ -25,5 +25,9 @@ return [
     'department-routes' => [
         (object)['r'=>url('/staffevaluation/department/evaluation_sessions'), 'n' => 'Sessions' ],
         (object)['r'=>url('/staffevaluation/department/evaluations'), 'n' => 'Evaluate' ],
+        (object)['r'=>url('/staffevaluation/department/setting'), 'n' => 'Setting' ],
+    ],
+    'school-routes' => [
+        (object)['r'=>url('/staffevaluation/school/evaluation_sessions'), 'n' => 'Sessions' ],
     ],
 ];

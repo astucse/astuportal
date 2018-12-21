@@ -52,14 +52,31 @@ Route::prefix('staffevaluation')->group(function() {
 		Route::get('/evaluation/{id}', 'DepartmentController@evaluation_single')->name('staffevaluation.department.evaluations_single');
 
 		Route::post('/evaluate', 'DepartmentController@evaluate')->name('staffevaluation.head.evaluate');
+		Route::get('/setting', 'DepartmentController@setting')->name('staffevaluation.department.setting');
+		Route::post('/setting/report', 'DepartmentController@update_report')->name('staffevaluation.department.setting.report.update');
 
 		Route::get('/evaluation_sessions', 'DepartmentController@evaluation_sessions')->name('staffevaluation.department.evaluation_sessions');
 
 		// 
 		Route::post('/sessions', 'DepartmentController@sessions_create')->name('staffevaluation.department.sessions.create');
 
+
+		Route::get('/session/{id}/letter', 'DepartmentController@session_report')->name('staffevaluation.department.session_report');
+
 		Route::get('/session/{id}', 'DepartmentController@session_single')->name('staffevaluation.department.session_single');
 		Route::get('/evaluation/{id}/{action}', 'DepartmentController@evaluation_toggle')->name('staffevaluation.department.evaluation_toggle');
+	});
+
+
+	Route::prefix('school')->group(function() {
+		
+		Route::get('/evaluation_sessions', 'SchoolController@evaluation_sessions')->name('staffevaluation.school.evaluation_sessions');
+
+		// 
+		// Route::post('/sessions', 'DepartmentController@sessions_create')->name('staffevaluation.department.sessions.create');
+
+		// Route::get('/session/{id}', 'DepartmentController@session_single')->name('staffevaluation.department.session_single');
+		// Route::get('/evaluation/{id}/{action}', 'DepartmentController@evaluation_toggle')->name('staffevaluation.department.evaluation_toggle');
 	});
 		
 });

@@ -3,12 +3,12 @@
     "alias": "meetingmanagement",
     "description": "",
     "keywords": [],
-    "active": 1,
+    "active": 0,
     "order": 0,
     "providers": [
         "Modules\\MeetingManagement\\Providers\\MeetingManagementServiceProvider"
     ],
-    "aliases": {},
+    "aliases": [],
     "files": [],
     "requires": []
 }

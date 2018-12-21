@@ -16,7 +16,7 @@ class CreateOptionsTable extends Migration
         Schema::create('astu-options', function (Blueprint $table) {
             $table->increments('id');
             $table->string('code');
-            $table->string('value');
+            $table->longText('value');
             $table->string('description')->nullable();
             $table->string('parameter_1')->nullable();
             $table->string('parameter_2')->nullable();

@@ -12,14 +12,18 @@ use Auth;
 use App\Helpers\OptionsHelper;
 
 use Modules\Academic\Entities\Group;
+use Modules\Academic\Entities\School;
 class SchoolController extends Controller
 {
     public function __construct(){
         $this->middleware(['auth:employee','schoolDean']);
     }
     public  function index(){
-        // return 
-    	return view('school.index');
+        $institution = Auth::user()->MyInstitution;
+        // return $institution->departments;
+        return view('school.index',[
+            'school' => School::find($institution->id)
+        ]);
     }
     public  function students(){
     	// $institution = Auth::user()->MyInstitution;

@@ -12,7 +12,7 @@ class Employee extends Authenticatable
 {
     protected $table = "astu-employees";
     protected $fillable = [
-        'id', 'id_number', 'name', 'email', 'password', 'initial_password', 'disability', 'sex'
+        'id_number', 'name', 'email', 'password', 'initial_password', 'disability', 'sex'
     ];
     public function roles(){
         return $this->morphMany('App\Models\AssignedRole', 'roletaker');
@@ -53,6 +53,35 @@ class Employee extends Authenticatable
         $ids = collect($this->roles()->get())->pluck('role_id');
         $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
         return $ids->contains($school_dean);
+    }
+
+    public function getPerformanceAttribute(){
+        $collection = \Modules\StaffEvaluation\Entities\EvaluationSession::where(['staff_id'=>$this->id])->get();
+        $c = $collection->groupBy(['academic_year','semester']);
+        foreach ($c as $years) {
+            foreach ($years as $semesters) {
+                $value = 0;
+                foreach ($semesters as $evaluation) {
+                    $value+=$evaluation->results['all'];
+                }
+                if(sizeof($semesters)==0)
+                    $semesters['result'] = 0;
+                else
+                    $semesters['result'] = $value/sizeof($semesters);
+            }
+        }
+        return $c;
+        // return Modules\StaffEvaluation\Entities\EvaluationSession::where(['staff_id'=>Auth::user()->id])->groupBy('academic_year');
+        // return $collection->groupBy(function ($item, $key) {
+            // return $item->academic_year;
+            // return $item->groupBy(function ($item, $key) {
+            //     return "";
+            // });
+         // });
+
+        // $ids = collect($this->roles()->get())->pluck('role_id');
+        // $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
+        // return $ids->contains($school_dean);
     }
     // public function getMyInstitutionAttribute(){
     //     $ids = collect($model->roles()->get())->pluck('role_id');
