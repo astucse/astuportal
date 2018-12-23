@@ -91,7 +91,7 @@ class ImportExportHelper {
                 if($k==1){
                     for ($i=65; $i < 91; $i++) {
                         $cha =  \IntlChar::chr($i);
-                        if ($row[$cha]==null) {
+                        if ( !isset($row[$cha])) {
                             break;
                         }
                         $totalColumns++;
@@ -103,8 +103,12 @@ class ImportExportHelper {
                         $cha =  \IntlChar::chr($i);
                         $arrayName[$sheetData[1][$cha]] = $row[$cha];
                     }
+                    // print_r($arrayName);
+                    // exit();
                     if(!isset($arrayName['email'])){
                         $arrayName['email'] = $faker->unique()->userName.$faker->unique()->numberBetween(1000, 9999)."@astuportal.net";
+                        // echo "jj";
+                        // exit();
                     }
                     if(!isset($arrayName['id_number'])){
                         $arrayName['id_number'] = "STAFF/".$faker->unique()->numberBetween(1000, 9999)."/0".random_int(6, 11);

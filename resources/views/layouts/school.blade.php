@@ -48,7 +48,7 @@ Astu Portal: @yield('title')
   <aside class="main-sidebar" id="menu">
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
-        <li id="users" class="treeview">
+        <!-- <li id="users" class="treeview">
           <a href="">
             <i class="fa fa-files-o"></i>
             <span>Users</span>
@@ -60,7 +60,7 @@ Astu Portal: @yield('title')
             <li id="students"><a href="{{route('department.students.view')}}"><i class="fa fa-circle-o"></i>Students</a></li>
             <li id="employees"><a href="{{route('department.employees.view')}}"><i class="fa fa-circle-o"></i>Employees</a></li>
           </ul>
-        </li>
+        </li> -->
         @foreach(Module::collections() as $m)
         @if(null !== config($m->getLowerName().'.school-routes'))
         @if(sizeof(config($m->getLowerName().'.school-routes'))>0)

@@ -71,15 +71,18 @@ class DepartmentController extends Controller
     }
 
     public function session_report($id){
+        $s = OptionsHelper::current_semester();
+        $y = OptionsHelper::current_year();
+        $staff = Employee::find($id);
+        $performance = $staff->net_performance[$y][$s];
         $idI = Auth::user()->MyInstitution->id;
-        $a = EvaluationSession::find($id);
+        // $a = EvaluationSession::find($id);
         $v = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
-
-        $v = str_replace("&lt;&lt;Instructor&gt;&gt;",$a->staff->name,$v);
-        $v = str_replace("&lt;&lt;Student&gt;&gt;",$a->results['student'],$v);
-        $v = str_replace("&lt;&lt;Collegue&gt;&gt;",$a->results['collegue'],$v);
-        $v = str_replace("&lt;&lt;Head&gt;&gt;",$a->results['head'],$v);
-        $v = str_replace("&lt;&lt;Result&gt;&gt;",$a->results['all'],$v);
+        $v = str_replace("&lt;&lt;Instructor&gt;&gt;",$staff->name,$v);
+        $v = str_replace("&lt;&lt;Student&gt;&gt;",$performance['student'],$v);
+        $v = str_replace("&lt;&lt;Collegue&gt;&gt;",$performance['collegue'],$v);
+        $v = str_replace("&lt;&lt;Head&gt;&gt;",$performance['head'],$v);
+        $v = str_replace("&lt;&lt;Result&gt;&gt;",$performance['all'],$v);
         // replace  
 
         // return $v;  
@@ -155,19 +158,25 @@ class DepartmentController extends Controller
             'institution_type' => 'Academic\\Department'
         ])->get();
         // return sizeof($a);
+        $sessionss =  EvaluationSession::where([
+            'academic_year' => 2011,
+            'semester' => 1,
+            'target_institution_type' => 'Academic\Department',
+            'target_institution_id' => $institution->id,
+        ])->get()->groupBy('staff_id');
+        // dd($sessions);
+        // foreach ($sessionss as $key => $sessions) {
+        //     echo " ".$sessions[0]->staff;
+        //     echo "<br>";
+        // }
+        // return "";
         return view('staffevaluation::department.evaluation_sessions',[
             'assignments' => $a,
             'staff' => Employee::all(),
             'studentEvaluations' => $studentEvaluations,
             'collegueEvaluations' => $collegueEvaluations,
             'headEvaluations' => $headEvaluations,
-
-            'sessions' => EvaluationSession::where([
-                'academic_year' => 2011,
-                'semester' => 1,
-                'target_institution_type' => 'Academic\Department',
-                'target_institution_id' => $institution->id,
-            ])->get()
+            'sessionss' => $sessionss,
         ]);
     }
 

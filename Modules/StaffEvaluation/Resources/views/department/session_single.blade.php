@@ -53,8 +53,8 @@
                 Collegue {{$result['collegue']}}<br>
                 Head {{$result['head']}}<br>
 
-                <h3>Generate</h3>
-                <a href="{{route('staffevaluation.department.session_report',['id'=>$evaluationsession->id])}}" class="btn btn-primary">Generate Letter</a>
+<!--                 <h3>Generate</h3>
+                <a href="{{route('staffevaluation.department.session_report',['id'=>$evaluationsession->id])}}" class="btn btn-primary">Generate Letter</a> -->
 
               </div>
               <div class="tab-pane" id="tab_2">

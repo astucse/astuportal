@@ -58,30 +58,52 @@ class Employee extends Authenticatable
     public function getPerformanceAttribute(){
         $collection = \Modules\StaffEvaluation\Entities\EvaluationSession::where(['staff_id'=>$this->id])->get();
         $c = $collection->groupBy(['academic_year','semester']);
-        foreach ($c as $years) {
-            foreach ($years as $semesters) {
-                $value = 0;
-                foreach ($semesters as $evaluation) {
-                    $value+=$evaluation->results['all'];
-                }
-                if(sizeof($semesters)==0)
-                    $semesters['result'] = 0;
-                else
-                    $semesters['result'] = $value/sizeof($semesters);
+        return $c;
+    }
+    public function getNetPerformanceAttribute(){
+        $c= $this->performance;
+        $ans  = [];
+        foreach ($c as $year=>$yearPerformance) {
+            foreach ($yearPerformance as $semester=>$semesterPerformance) {
+                $ans[$year][$semester] = 4;
+                // $semester = 4;
             }
         }
-        return $c;
-        // return Modules\StaffEvaluation\Entities\EvaluationSession::where(['staff_id'=>Auth::user()->id])->groupBy('academic_year');
-        // return $collection->groupBy(function ($item, $key) {
-            // return $item->academic_year;
-            // return $item->groupBy(function ($item, $key) {
-            //     return "";
-            // });
-         // });
-
-        // $ids = collect($this->roles()->get())->pluck('role_id');
-        // $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
-        // return $ids->contains($school_dean);
+        foreach ($c as $years) {
+            foreach ($years as $semesters) {
+                $valueAll = 0;
+                $valueStudent = 0;
+                $valueCollegue = 0;
+                $valueHead = 0;
+                foreach ($semesters as $evaluation) {
+                    $valueAll+=$evaluation->results['all'];
+                    $valueStudent+=$evaluation->results['student'];
+                    $valueCollegue+=$evaluation->results['collegue'];
+                    $valueHead+=$evaluation->results['head'];
+                }
+                $ans[$year][$semester] = [];
+                if(sizeof($semesters)==0){
+                    $ans[$year][$semester]['all'] = 0;
+                    $ans[$year][$semester]['student'] = 0;
+                    $ans[$year][$semester]['collegue'] = 0;
+                    $ans[$year][$semester]['head'] = 0;
+                    // $semesters['resultAll'] = 0;
+                    // $semesters['resultStudent'] = 0;
+                    // $semesters['resultCollegue'] = 0;
+                    // $semesters['resultHead'] = 0;
+                }else{
+                    $ans[$year][$semester]['all'] = $valueAll/sizeof($semesters);
+                    $ans[$year][$semester]['student'] = $valueStudent/sizeof($semesters);
+                    $ans[$year][$semester]['collegue'] = $valueCollegue/sizeof($semesters);
+                    $ans[$year][$semester]['head'] = $valueHead/sizeof($semesters);
+                    // $semesters['resultAll'] = ;
+                    // $semesters['resultStudent'] = ;
+                    // $semesters['resultCollegue'] = ;
+                    // $semesters['resultHead'] = ;
+                }
+            }
+        }
+        return $ans;
     }
     // public function getMyInstitutionAttribute(){
     //     $ids = collect($model->roles()->get())->pluck('role_id');

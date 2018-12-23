@@ -104,26 +104,29 @@
         <table id="EvaluationTable" class="table table-bordered table-striped">
           <thead>
             <tr>
-            <!-- <th>Evaluation Name</th> -->
-            <th>Instructor Name</th>
+            <th>Instructor / Course </th>
             <th>Active</th>
-            <!-- <th>Target Institution</th> -->
             <th>Target Year</th>
             <th>Target groups</th>
-            <th>Target head</th>
-            <th>Target collegue</th>
+            <!-- <th>Target head</th> -->
+            <th>Collegue</th>
             <th>Actions</th>
             </tr>
           </thead>
           <tbody>
+            @foreach($sessionss as $staff_id=>$sessions)
+            <tr class="">
+              <td><br>{{$sessions[0]->staff->name}}</td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <a href="{{route('staffevaluation.department.session_report',['id'=>$staff_id])}}" class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i> Generate Letter </a> </td>
+            </tr>
             @foreach($sessions as $es)
             <tr class="">
-              <!-- <td>
-                <li>{{$es->student_evaluation->name}}</li>
-                <li>{{$es->collegue_evaluation->name}}</li>
-                <li>{{$es->head_evaluation->name}}</li>
-              </td> -->
-              <td>{{$es->staff->name}}</td>
+              <td>{{$es->course->code}} : {{$es->course->name}}</td>
               <td>
                 @if($es->active == 1)
                   Yes
@@ -131,16 +134,9 @@
                   No
                 @endif
               </td>
-              <!-- <td>
-                @if($es->target_year==1)
-                Freshman Division
-                @else
-                {{$es->target_institution->name}}
-                @endif
-              </td> -->
               <td>{{$es->target_year}}</td>
               <td>{{$es->target_groups}}</td>
-              <td>{{$es->target_head->name}}</td>
+              <!-- <td>{{$es->target_head->name}}</td> -->
               <td>
                 @foreach($es->collegues as $c)
                 <li>{{$c->name}}</li>
@@ -148,13 +144,15 @@
               </td>
               <td>
                 @if($es->active)  
-                <a href="{{route('staffevaluation.department.evaluation_toggle',['id'=> $es->id, 'toggle'=> 'stop'])}}" class="btn btn-default" ><i class="fa fa-edit"></i> End </a> 
+                <a href="{{route('staffevaluation.department.evaluation_toggle',['id'=> $es->id, 'toggle'=> 'stop'])}}" class="btn btn-sm btn-default" ><i class="fa fa-edit"></i> End </a> 
                 @else
-                <a href="{{route('staffevaluation.department.evaluation_toggle',['id'=> $es->id, 'toggle'=> 'start'])}}" class="btn btn-default" ><i class="fa fa-edit"></i>  Start </a> 
+                <a href="{{route('staffevaluation.department.evaluation_toggle',['id'=> $es->id, 'toggle'=> 'start'])}}" class="btn btn-sm btn-default" ><i class="fa fa-edit"></i>  Start </a> 
                 @endif
-                <a href="{{route('staffevaluation.department.session_single',['id'=>$es->id])}}" class="btn btn-default" ><i class="fa fa-edit"></i> Detail </a> 
+                <br>
+                <a href="{{route('staffevaluation.department.session_single',['id'=>$es->id])}}" class="btn btn-sm btn-default" ><i class="fa fa-edit"></i> Detail </a> 
               </td>
             </tr>
+            @endforeach
             @endforeach
         </tbody>
         </table>

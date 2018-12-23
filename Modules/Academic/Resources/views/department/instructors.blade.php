@@ -172,7 +172,7 @@
 	            'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
 	        },
 	        success: function (data) {
-            
+            location.reload();
 	          // console.log("success",data)
 	          // var rr = '<span class="badge bg-blue">'+t+'</span>';
 	          // mydiv = document.getElementById(list);

@@ -122,6 +122,12 @@ class SchoolController extends Controller
                 array_push($a, $temp_a);
             }
         }
+        $a = Collect($a)->unique();
+        $unique = $a->unique(function ($item) {
+            return $item->staff;
+            // return $item['brand'].$item['type'];
+        });
+        $a2 = $unique->values()->all();
         // return sizeof($a);
         // $a = $aa->reject(function ($value, $key) {
         //     return !$mySchool->departments->contains($value->institution);
@@ -130,7 +136,7 @@ class SchoolController extends Controller
         return view('staffevaluation::school.evaluation_sessions',[
             'assignments' => $a,
             'staff' => Employee::all(),
-            'sessions' => $a,
+            'sessions' => $a2,
             'this_year'=> 2011,
             'this_semester' => 1
         ]);

@@ -8,7 +8,7 @@ return [
     'admin-routes' => [
     	(object)['r'=>url('/staffevaluation/admin'), 'n' => 'Index' ],
     	(object)['r'=>url('/staffevaluation/admin/evaluations'), 'n' => 'Evaluation Forms' ],
-    	(object)['r'=>url('/staffevaluation/admin/sessions'), 'n' => 'Evaluation Sessions' ],
+    	// (object)['r'=>url('/staffevaluation/admin/sessions'), 'n' => 'Evaluation Sessions' ],
     	(object)['r'=>url('/staffevaluation/admin/setting'), 'n' => 'Setting' ],
     	// (object)['r'=>url('/staffevaluation/admin/sessions'), 'n' => 'Evaluation Sessions' ],
     	// (object)['r'=>url('/academic/admin/department'), 'n' => 'Department' ],

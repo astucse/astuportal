@@ -1,16 +1,40 @@
 @extends('layouts.admin')
 
 @section('content')
+<section class="content">
+  <div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title">Import / Export</h3>
+      <div class="box-tools pull-right">
+        <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
+                title="Collapse">
+          <i class="fa fa-minus"></i></button>
+        <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+          <i class="fa fa-times"></i></button>
+      </div>
+    </div>
+    <div class="box-body">
+      <div class="col-md-6">
+      Export:  
+        <a class="btn btn-primary btn-sm" href="{{route('admin.employees.export')}}">Export</a> 
+      </div>
+      <div class="col-md-6"> 
+      Import:  
+       <form enctype="multipart/form-data" action="{{route('admin.import.employee')}}" method="POST">{{ csrf_field() }}<input type="file" name="thefile" id="thefile" required class=""><button type="submit" class="btn btn-primary btn-sm">Import</button></form>
+      </div>
+    </div>
+    <div class="box-footer">
+      <!-- Footer -->
+    </div>
+  </div>
+
+
 
 <div class="nav-tabs-custom">
       <ul class="nav nav-tabs pull-right">
         <li class="pull-left header"><i class="fa fa-th"></i> Employees</li>
-        <a class="btn btn-primary" href="{{route('admin.employees.export')}}">Export</a>
-        <form enctype="multipart/form-data" action="{{route('admin.import.employee')}}" method="POST">
-          {{ csrf_field() }}
-          <input type="file" name="thefile" id="thefile" class="form-control">
-          <button type="submit" class="btn btn-primary">Import</button>
-        </form>
+
+        
       </ul>
       @if(null !== session('importResponse'))
       @if(sizeof(session('importResponse')['error'])  > 0 )
@@ -93,6 +117,9 @@
         </div>
       </div>
     </div>
+
+
+</section>
 @endsection
 
 

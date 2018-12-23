@@ -22,24 +22,17 @@
         <table id="EvaluationTable" class="table table-bordered table-striped">
           <thead>
             <tr>
-            <!-- <th>Evaluation Name</th> -->
             <th>Instructor Name</th>
             <th>Department</th>
-            <th>Target Year</th>
-            <th>Target groups</th>
-            <th>Target head</th>
-            <th>Target collegue</th>
-            <th>Result</th>
+            <th>Result Net</th>
+            <th>Result Student</th>
+            <th>Result Collegue</th>
+            <th>Result Head</th>
             </tr>
           </thead>
           <tbody>
             @foreach($sessions as $es)
             <tr class="">
-              <!-- <td>
-                <li>{{$es->student_evaluation->name}}</li>
-                <li>{{$es->collegue_evaluation->name}}</li>
-                <li>{{$es->head_evaluation->name}}</li>
-              </td> -->
               <td>{{$es->staff->name}}</td>
               <td>
                 @if($es->target_year==1)
@@ -48,16 +41,17 @@
                 {{$es->target_institution->name}}
                 @endif
               </td>
-              <td>{{$es->target_year}}</td>
-              <td>{{$es->target_groups}}</td>
-              <td>{{$es->target_head->name}}</td>
               <td>
-                @foreach($es->collegues as $c)
-                <li>{{$c->name}}</li>
-                @endforeach
+                {{$es->staff->net_performance[$this_year][$this_semester]['all']}}
               </td>
               <td>
-                {{$es->staff->performance[$this_year][$this_semester]['result']}}
+                {{$es->staff->net_performance[$this_year][$this_semester]['student']}}
+              </td>
+              <td>
+                {{$es->staff->net_performance[$this_year][$this_semester]['collegue']}}
+              </td>
+              <td>
+                {{$es->staff->net_performance[$this_year][$this_semester]['head']}}
               </td>
             </tr>
             @endforeach
