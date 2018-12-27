@@ -10,7 +10,7 @@
       <h2>Reports</h2>
       <p>
         Key:-<br>
-        &#60;&#60;Studnet&#62;&#62; : Student result <br>
+        &#60;&#60;Student&#62;&#62; : Student result <br>
         &#60;&#60;Collegue&#62;&#62; : Collegue result <br>
         &#60;&#60;Head&#62;&#62; : Head result <br>
         &#60;&#60;Instructor&#62;&#62; : Instructor Name <br>

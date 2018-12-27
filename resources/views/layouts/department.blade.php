@@ -47,7 +47,7 @@ Astu Portal: @yield('title')
   <aside class="main-sidebar" id="menu">
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
-        <li id="users" class="treeview">
+        <!-- <li id="users" class="treeview">
           <a href="">
             <i class="fa fa-files-o"></i>
             <span>Users</span>
@@ -59,7 +59,7 @@ Astu Portal: @yield('title')
             <li id="students"><a href="{{route('department.students.view')}}"><i class="fa fa-circle-o"></i>Students</a></li>
             <li id="employees"><a href="{{route('department.employees.view')}}"><i class="fa fa-circle-o"></i>Employees</a></li>
           </ul>
-        </li>
+        </li> -->
         @foreach(Module::collections() as $m)
         @if(null !== config($m->getLowerName().'.department-routes'))
         @if(sizeof(config($m->getLowerName().'.department-routes'))>0)
@@ -85,7 +85,7 @@ Astu Portal: @yield('title')
 
         <!-- <li id=""><a href=""><i class="fa fa-group"></i> <span> lll</span></a></li> -->
         <li>
-          <!-- <a class="dropdown-item" href="{{ route('logout') }}" ><i class="fa fa-sign-out"></i><span>Logout</span></a> -->
+          <a class="dropdown-item" href="{{ route('employee.index') }}" ><i class="fa fa-sign-out"></i><span>leave department dashboard</span></a>
         </li>
       </ul>
     </section>

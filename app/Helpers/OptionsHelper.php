@@ -35,4 +35,15 @@ class OptionsHelper {
             'bad' => Option::where(['code' => 'SES_BAD_REPORT_LETTER','parameter_1'=>$id])->first()->value,
         ];
     }
+    public static function ses_point_label($point){
+        $good = Option::where(['code' => 'SES_GOOD_POINT'])->first()->value;
+        $bad = Option::where(['code' => 'SES_BAD_POINT'])->first()->value;
+        if ($point > $good) {
+            return "good";
+        }
+        if ($point < $bad) {
+            return "bad";
+        }
+        return "medium";
+    }
 }

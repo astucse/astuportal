@@ -65,3 +65,6 @@ class Kernel extends HttpKernel
         'schoolDean' => \Modules\Academic\Http\Middleware\SchoolDean::class,
     ];
 }
+
+
+

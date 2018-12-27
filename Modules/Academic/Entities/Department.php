@@ -8,9 +8,9 @@ class Department extends Model
 {
     protected $table = "academic-departments";
 
-    protected $fillable = ['school_id','name','code'];
+    protected $fillable = ['school_id','name','code','description'];
 
-    public $table_attributes = ['name','code','school'];
+    public $table_attributes = ['name','code','school','description'];
     public $table_attribute_relations = ['name','code','school.name'];
 
     

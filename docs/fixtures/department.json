@@ -1,0 +1,94 @@
+[
+    {
+        "name": "Civil Engineering",
+        "code": "CivE",
+        "school": "SoCEA",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Architectural Engineering",
+        "code": "AE",
+        "school": "SoCEA",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Construction Technology Management",
+        "code": "CTM",
+        "school": "SoCEA",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Geomatics Engineering",
+        "code": "GE",
+        "school": "SoCEA",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Urban Engineering",
+        "code": "UE",
+        "school": "SoCEA",
+        "description": ""
+    ,         "duration": 5 
+    },{
+        "name": "Hydraulics Engineering",
+        "code": "HE",
+        "school": "SoCEA",
+        "description": ""
+    ,         "duration": 5 },{
+        "name": "Applied Mathematics",
+        "code": "AM",
+        "school": "SoANS",
+        "description": ""
+    ,         "duration": 4 },{
+        "name": "Applied Chemistry",
+        "code": "AC",
+        "school": "SoANS",
+        "description": ""
+    ,         "duration": 4 },{
+        "name": "Applied Physics",
+        "code": "AP",
+        "school": "SoANS",
+        "description": ""
+    ,         "duration": 4 },{
+        "name": "Applied Biology",
+        "code": "AB",
+        "school": "SoANS",
+        "description": ""
+    ,         "duration": 4 },{
+        "name": "Applied Geology",
+        "code": "AG",
+        "school": "SoANS",
+        "description": ""
+    ,         "duration": 4 },{
+        "name": "Mechanical Engineering",
+        "code": "MCE",
+        "school": "SoMCME",
+        "description": ""
+    ,         "duration": 5 },{
+        "name": "Thermal and Aerospace Engineering Program",
+        "code": "TAE",
+        "school": "SoMCME",
+        "description": "Thermal and Aerospace Engineering  a field of study that is a combination of two very similar fields of mechanical engineering namely, thermal and aerospace engineering. Thermal and aerospace engineering is a branch of engineering that applies scientific knowledge to the design, analysis and modelling of thermal and aerospace equipments and systems. The fundamental principles of thermal and aerospace engineering apply to all equipments and systems that involve, heat generation, heat transfer, cooling, heating, and fluid flow; and to all bodies and vehicles whose applied loads are influenced by aerodynamic forces. "
+    ,         "duration": 5 },{
+        "name": "Mechanical Systems and Vehicle Engineering",
+        "code": "MSVE",
+        "school": "SoMCME",
+        "description": "Trained human resource is by far the most decisive components of the development period. The training program must be proper and aligned with the objective factor of specific area. Mechanical Systems and Vehicle Engineering Program of Adama Science and Technology University will be introduced for 2014/15 entry students after the university has been distinguished as one of Science and Technology University of the country. This program is the composition of Automotive, Farm Machinery and Mechanical Systems Engineering. It deals with application of mechanical, physical and electronic principles to solve the real-life problems based on the issues in design, construction, operation and maintenance related to mechanical systems and vehicle engineering. The program  is believed to be motive force  to cultivate  the  potential  of  students,  and  the advancement  of  all  forms  of  knowledge  keeping  in  pace  with  international standards  of  academic  quality,  including  the  high  skilled  employment, to meet the  growing economy operating in global environment."
+    ,         "duration": 5 },{
+        "name": "Mechanical Design and Manufacturing",
+        "code": "MDME",
+        "school": "SoMCME",
+        "description": "Mechanical Engineering Department of Adama Science and Technology University has been established in September 2007, with the objective of responding to the need for rapid industrialization and the changing societal needs of the country for sustainable development. It has graduated 5 batches of engineers. The department believes in cultivating the full potential of students, and the advancement of all forms of knowledge keeping in pace with international standards of academic quality, including the high skilled employment needs presented by a growing economy operating in global environment."
+    ,         "duration": 5 },{
+        "name": "Materials Science and Engineering Program",
+        "code": "MSE",
+        "school": "SoMCME",
+        "description": ""
+    ,         "duration": 5 },{
+        "name": "Chemical Engineering Program",
+        "code": "ChemE",
+        "school": "SoMCME",
+        "description": "Chemical Engineering is a profession that principally hub on the conversion of raw materials into variety of products, and deals with the design, construction and operation of plants and equipments to achieve an optimum quality and efficiency. In addition to producing useful materials, Chemical Engineering is also concerned with investigating valuable materials and techniques which contribute to dynamic Research & Development world. Chemical Engineering, therefore, focuses on various processes that cause chemical, physical, biological, energy content changes in addition to designing and inventing the way to do so. Sustainable development can be realized by having profitable, efficient and environmentally friendly industries. In relation to this, Chemical Engineering has a great contribution in the area of Design, Operations, Control, Optimization & Modification of processes and plants. The profession is needed for the conception, creation (design), operation, control, optimization, and improvement of the process industries. Examples of products that are the results of the works of chemical engineers include various chemicals, petrochemicals, plastics, pharmaceuticals and other medicines, agrochemicals, processed foods, energy (fuels, nuclear energy, others), pulp and paper, beverages, cement, ceramics, and many others. It is the chemical engineer who is responsible for conceiving (product, process, and equipment), designing, operating, controlling, optimizing, and improving (modifying and modernizing) the industries that produce the aforementioned products and myriads of others."
+    ,         "duration": 5 }
+]
+

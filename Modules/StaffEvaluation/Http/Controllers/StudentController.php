@@ -5,7 +5,7 @@ namespace Modules\StaffEvaluation\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-
+use Auth;
 use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
 
 use Modules\StaffEvaluation\Entities\Evaluation;
@@ -39,11 +39,14 @@ class StudentController extends Controller{
         return redirect()->route('staffevaluation.student.evaluations');
     }
     public function evaluations_single($id){
+        $g= Auth::user()->group;
         $es = EvaluationSession::find($id);
-        // $uid = Auth::user()->id;
-        // $s =  ToEvaluateHelper::sessionsToBeFilled('student');
-        // return $s;
-        // $es  = EvaluationSession::where(['id'=>$id])->get()[0];
+        // if( Collect($es->groups)->contains($g) ){
+        //     return "sss";
+        // }
+        // return $g;
+        // return $es->groups;
+        // dd($es->target_institution,Auth::user()->my_institution);
         if(!ToEvaluateHelper::canEvaluate($id,"student")){
            return abort(404); 
         }

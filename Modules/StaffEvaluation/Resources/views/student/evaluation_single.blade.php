@@ -16,7 +16,113 @@
 @endsection
 
 
+
+
 @section('content')
+<section class="content">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Profile Image -->
+          <div class="box box-primary">
+            <div class="box-body box-profile">
+              <img class="profile-user-img img-responsive img-circle" src="{{route('employee.image',['id'=>$evaluationsession->staff->id])}}" alt="User profile picture">
+              <h3 class="profile-username text-center">{{$evaluationsession->staff->name}}</h3>
+              <p class="text-muted text-center">Instructor</p>
+              <ul class="list-group list-group-unbordered">
+                <li class="list-group-item">
+                  <b>Course code</b> <a class="pull-right">{{$evaluationsession->course->code}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Course Title</b> <a class="list">{{$evaluationsession->course->name}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Semester</b> <a class="pull-right">{{$evaluationsession->semester}}</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Year</b> <a class="pull-right">{{$evaluationsession->academic_year}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="col-md-9">
+        <div class="box box-primary">
+        <form action="{{route('staffevaluation.student.evaluate') }}" method="POST">
+          {{ csrf_field() }}
+          <input type="number" name="evaluationsession_id" value="{{$evaluationsession->id}}" hidden>
+          <input type="number" name="evaluation_id" value="{{$evaluationsession->student_evaluation->id}}" hidden>
+          <input type="number" name="user_id" value="{{Auth::user()->id}}" hidden>
+            <table class="table table-bordered">
+              <tr>
+                <td style="width: 10px">#</td>
+                <td>Question</td>
+                <!-- <th>Progress</th> -->
+<!--                 <th style="width: 40px">Very low / በጣም ዝቅተኛ</th>
+                <th style="width: 40px">Low / ዝቅተኛ</th>
+                <th style="width: 40px">Medium / መካከለኛ</th>
+                <th style="width: 40px">High /  ከፍተኛ</th>
+                <th style="width: 40px">Very High / በጣም ከፍተኛ</th> -->
+              </tr>
+              @foreach($evaluationsession->student_evaluation->questions as $k=>$eeq)
+              <tr>
+                <td>{{$k+1}}</td>
+                <td>{{$eeq->question_amharic}} <br>{{$eeq->question_english}}</td>
+              </tr>
+              @if($eeq->type == "rate")
+              <tr>
+                <!-- <td>
+                  <div class="progress progress-xs">
+                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                  </div>
+                </td> -->
+                <td>
+                </td>
+                <td>
+                  <input required type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="1" >  
+                    <i class="fa fa-star"></i> | 
+                
+                  <input required type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="2" >  
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i> | 
+                
+                  <input required type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="3" >  
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> | 
+                
+                  <input required type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="4" >  
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> | 
+              
+                  <input required type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="5" >  
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                </td>
+              </tr>
+              @else
+              <tr>
+                <td></td>
+                <td>
+                  <div class="box-footer">
+                    <textarea rows="5" required type="text" name="question{{$eeq->id}}" class="form-control" required></textarea>
+                  </div>
+                </div>
+              </td>
+              </tr>
+              @endif
+              @endforeach
+              <tr>
+                <td></td>
+                <td>
+                  <button class="btn btn-primary form-control" type="submit">Finish</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+@endsection
+
+
+
+@section('content2')
 
 <section class="content">
 
@@ -44,6 +150,7 @@
                 <li class="list-group-item">
                   <b>Year</b> <a class="pull-right">{{$evaluationsession->academic_year}}</a>
                 </li>
+
               </ul>
               <!-- <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a> -->
             </div>
@@ -86,7 +193,7 @@
                 </div>
                 <div class="col-sm-2 border-right">
                   <div class="description-block">
-                    <input type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="3" checked>
+                    <input type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="3">
                     <h5 class="description-header"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h5>
                     <span class="description-text"> Medium / መካከለኛ</span>
                   </div>

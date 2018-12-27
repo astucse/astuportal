@@ -20,6 +20,63 @@ Artisan::command('inspire', function () {
 // Artisan::command('build {project}', function ($project) {
 //     $this->info("Building {$project}!");
 // });
+Artisan::command('migrate:system', function () {
+	Artisan::call('migrate', [
+	    '--path' => 'database/migrations'
+	]);
+	// Artisan::call('module:migrate Academic');
+	// Artisan::call('module:migrate StaffEvaluation');
+});
+// Artisan::command('migrate:system', function () {
+	// $d = dir(database_path('migrations'));
+	// $this->info($d);
+	// Artisan::call('migrate', [
+	//     '--path' => 'database/migrations'
+	// ]);
+	// while (false !== ($entry = $d->read())) {
+	// 	if($entry!="." && $entry!=".."){
+	// 		// $folder = $entry;
+	// 		$this->info("Seeded!!! ".$entry);
+	// 		// $json_path = base_path('Themes/'.$folder.'/config/theme.json');
+	// 		// $handle = file_get_contents($json_path, "r");
+	// 		// $zjson = json_decode($handle);
+	// 		// if($this->theme==$entry){
+	// 			// $zjson->active = true;
+	// 		// }else{
+	// 			// $zjson->active = false;
+	// 		// }
+	// 		// $themeSettings[$entry] = $zjson;
+	// 	}
+	// }
+	// $d->close();
+    // $handle = file_get_contents($json_path, "r");
+	// $zjson = json_decode($handle);
+	// foreach ($zjson->options as $option) {
+    //     $row_name = "themes_".$theme."_".$option->name;
+    //     $exists = sizeof(DB::table('options')->where('name',$row_name)->get());
+    //     if($exists==0){
+    //         DB::table('options')->insert(
+    //             ['name' => $row_name, 'value' => $option->value]
+    //         );
+    //         $this->info($row_name." inserted");
+    //     }
+    // }
+// });
+Artisan::command('lll', function () {
+	for ($i=1; $i < 21; $i++) { 
+		Modules\Academic\Entities\Group::create([
+			'name' => $i.'',
+			'batch_year' => '1',
+			'semester' => '1',
+			'year' => '2011',
+			'freshman' => '',
+			'school' => '',
+			'institution_id' => '',
+			'institution_type' => '',
+			'curriculum_id' => ''
+		]);
+	}
+});
 Artisan::command('seed:module {module} {file?}', function ($module, $file="all") {
 	if($file=="all"){
 		// $in  =  '\\Modules\\'.$module.'\\Database\\Seeders\\Seed.php';
@@ -37,3 +94,35 @@ Artisan::command('seed:module {module} {file?}', function ($module, $file="all")
 	}
     $this->info("Seeded!!! ".$file);
 });
+
+
+Artisan::command('kdrop', function () {
+    $list = $this->ask('list tables?');
+    $todrop = explode(' ',$list);
+    $migrations = DB::table('migrations')->get();
+    foreach($todrop as $table){
+        foreach($migrations as $migration){
+            $m = substr($migration->migration,25);
+            if ($m==$table."_table") {
+                DB::table('migrations')->where('id', $migration->id)->delete();
+                $this->info($migration->migration.' removed');
+                break;
+            }
+        }
+        Schema::dropIfExists($table);
+        $this->info($table." dropped");
+    }
+})->describe('Dropping database and migration file');
+
+
+
+// Artisan::command('kkk', function(){
+// 	$users = App\Models\Student::all();
+	
+// 	$bar = $this->output->createProgressBar(count($users));
+// 	$bar->start();
+// 	foreach ($users as $user) {
+// 	    $bar->advance();
+// 	}
+// 	$bar->finish();
+// });

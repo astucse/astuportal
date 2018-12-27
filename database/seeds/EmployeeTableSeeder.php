@@ -11,6 +11,11 @@ class EmployeeTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Models\Employee::class, 70)->create();
+        factory(App\Models\Employee::class, 170)->create();
+        // $user = factory(App\Models\Student::class, 1250)->create();
+        // [
+		//     'name' => 'Abigail',
+        // ]);
+        
     }
 }

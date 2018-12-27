@@ -11,7 +11,7 @@ class Group extends Model
     protected $table = "academic-groups";
 
     protected $fillable = [
-        'name','batch_year','semester','year','freshman','school','institution_id','institution_type','curriculum_id'
+        'name','batch_year','semester','year','freshman','school','institution_id','institution_type'
     ];
 
     public $table_attributes = ['name','freshman','pre-school','institution'];

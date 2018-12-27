@@ -12,9 +12,9 @@ class OptionTableSeeder extends Seeder
     public function run()
     {
         $items = [
-            ['code' =>'system_academic', 'value'=> 'active'],
-            ['code' =>'system_mms', 'value'=> 'inactive'],
-            ['code' =>'system_ses', 'value'=> 'active'],
+            // ['code' =>'system_academic', 'value'=> 'active'],
+            // ['code' =>'system_mms', 'value'=> 'inactive'],
+            // ['code' =>'system_ses', 'value'=> 'active'],
         ];                          
         foreach ($items as $item) {
            \App\Models\Option::create($item);

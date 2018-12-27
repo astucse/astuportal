@@ -41,7 +41,6 @@ class DepartmentController extends Controller
     }
 
     public function setting(){
-
         $reports = OptionsHelper::ses_reports(Auth::user()->MyInstitution->id);
         return view('staffevaluation::department.setting',['reports'=>$reports]);
     }
@@ -77,19 +76,25 @@ class DepartmentController extends Controller
         $performance = $staff->net_performance[$y][$s];
         $idI = Auth::user()->MyInstitution->id;
         // $a = EvaluationSession::find($id);
-        $v = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        $performance_name = OptionsHelper::ses_point_label($performance['all']);
+        if ($performance_name =="good") {
+            $v = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }elseif ($performance_name =="medium") {
+            $v = Option::where(['code' => 'SES_MEDIUM_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }else{
+            $v = Option::where(['code' => 'SES_BAD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }
+        // print_r($performance);
+        // return "";
+        // return $performance_name;
         $v = str_replace("&lt;&lt;Instructor&gt;&gt;",$staff->name,$v);
         $v = str_replace("&lt;&lt;Student&gt;&gt;",$performance['student'],$v);
         $v = str_replace("&lt;&lt;Collegue&gt;&gt;",$performance['collegue'],$v);
         $v = str_replace("&lt;&lt;Head&gt;&gt;",$performance['head'],$v);
         $v = str_replace("&lt;&lt;Result&gt;&gt;",$performance['all'],$v);
-        // replace  
-
-        // return $v;  
-        // return $a;
         $pdf = PDF::loadView('staffevaluation::department.report', ['content'=>$v]);
         return $pdf->download('report.pdf');
-        // return OfficeHelper::word("the title",$v);
+
     }
 
     public function session_single($id){

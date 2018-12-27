@@ -133,6 +133,7 @@ class ToEvaluateHelper {
     }
     public static function canEvaluate($id,$type){
         $uid = Auth::user()->id;
+        $es = EvaluationSession::findOrFail($id);
         
         if($type == "collegue" ){
             if (!collect(EvaluationSession::find($id)->collegues)->pluck('id')->contains($uid)) {
@@ -143,14 +144,23 @@ class ToEvaluateHelper {
             }
         }elseif ($type =="student") {
             if (StudentEvaluation::where(['student_id'=> $uid])->pluck('evaluation_session_id')->contains($id)) {
-                        return false;
-                    }
+                return false;
+            }
+            if($es->target_year != Auth::user()->batch_year){
+                return false;
+            }
+            // if($es->target_institution != Auth::user()->my_institution){
+            //     return false;
+            // }
+            if( !Collect($es->groups)->contains(Auth::user()->group) ){
+                return false;
+            }
         }elseif ($type == "head") {
             if (EvaluationSession::find($id)->target_head_id!=$uid) {
                 return false;
             }
             if(HeadEvaluation::where(['staff_id'=> $uid])->pluck('evaluation_session_id')->contains($id)) {
-                    return false;
+                return false;
             }
         }
         return true;

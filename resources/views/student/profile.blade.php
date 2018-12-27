@@ -49,7 +49,6 @@
       		@csrf
           <div class="form-group">
             <label for="inputName" class="col-sm-2 control-label">Name</label>
-
             <div class="col-sm-10">
               <input type="email" class="form-control" id="inputName" placeholder="Name" value="{{Auth::user()->name}}" disabled>
             </div>
@@ -66,6 +65,14 @@
               <input type="file"  name="picture" id="inputSkills" >
             </div>
           </div>
+          @if(null != Auth::user()->group)
+          <div class="form-group">
+            <label for="inputEmail" class="col-sm-2 control-label">Group</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="inputEmail" value="{{Auth::user()->group->name}}" disabled>
+            </div>
+          </div>
+          @endif
                   <!-- <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">

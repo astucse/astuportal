@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Enrollment extends Model
 {
 	protected $table = "academic-enrollments";
+	// protected $table = "enrollments";
     protected $fillable = ['student_id','group_id','assigned'];
     public function student(){
         return $this->belongsTo('App\Models\Student');

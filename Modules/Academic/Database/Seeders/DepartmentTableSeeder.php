@@ -4,10 +4,12 @@ namespace Modules\Academic\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-
+use Modules\Academic\Entities\School;
+use Modules\Academic\Entities\Department;
 class DepartmentTableSeeder extends Seeder
 {
     /**
+
      * Run the database seeds.
      *
      * @return void
@@ -15,20 +17,21 @@ class DepartmentTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        $items = [
-            ['name' => 'Computer Science and Engineering','code' =>'CSE', 'school_id'=> 1],
-            ['name' => 'Power and Control Engineering','code' =>'PCE', 'school_id'=> 1],
-            ['name' => 'Electronics and Communication Engineering','code' =>'ECE', 'school_id'=> 1],
-            ['name' => 'Chemical Engineering','code' =>'CE', 'school_id'=> 2],
-            ['name' => 'Architecture','code' =>'AE', 'school_id'=> 3],
-            ['name' => 'Construction Technology Management','code' =>'CTM', 'school_id'=> 3],
-            ['name' => 'Applied Biology','code' =>'AB', 'school_id'=> 4],
-            ['name' => 'Applied Chemistry','code' =>'AC', 'school_id'=> 4],
-            ['name' => 'Applied Physics','code' =>'AP', 'school_id'=> 4],
-        ];
-        foreach ($items as $item) {
-            \Modules\Academic\Entities\Department::create($item);
+        $json_path = base_path('docs/fixtures/department.json');
+        $handle = file_get_contents($json_path, "r");
+        $zjson = json_decode($handle);
+        foreach($zjson as $j){
+            $s_id = School::where(['code'=>$j->school])->first()->id;
+            Department::create([
+                "name" => $j->name,
+                "code" => $j->code,
+                "school_id" => $s_id,
+                "description" => $j->description,
+                "duration" => $j->duration,
+            ]);
         }
+        // foreach ($items as $item) {
+        // }
         // $this->call("OthersTableSeeder");
     }
 }

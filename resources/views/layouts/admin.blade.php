@@ -56,12 +56,11 @@ Staff evaluation Admin: @yield('title')
             <li id="employees"><a href="{{route('admin.employees.view')}}"><i class="fa fa-circle-o"></i>Employees</a></li>
           </ul>
         </li>
-
-        @foreach(Module::all() as $m)
+        @foreach(Module::collections() as $m)
           <li id="{{$m->getLowerName()}}" class="treeview">
           <a href="">
             <i class="fa fa-files-o"></i>
-            <span>{{$m}}</span>
+            <span>{{config($m->getLowerName().'.name')}}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>

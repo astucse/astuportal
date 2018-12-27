@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/officeautomation",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\OfficeAutomation\\Providers\\OfficeAutomationServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\OfficeAutomation\\": ""
+        }
+    }
+}
