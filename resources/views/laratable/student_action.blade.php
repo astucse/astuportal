@@ -1,0 +1,2 @@
+<button type="button" data-id="{{$student}}" class="edit-staff btn btn-default" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i>Edit</button>
+<a class="edit-staff btn btn-default" href="{{route('login_as_sth',['type'=>'student','id'=>$student->id])}}">Login as User</a>

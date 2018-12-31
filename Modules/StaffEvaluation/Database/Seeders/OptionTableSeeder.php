@@ -4,7 +4,7 @@ namespace Modules\StaffEvaluation\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
-use Modules\Academic\Entities\Department;
+use Modules\Org\Entities\Department;
 class OptionTableSeeder extends Seeder
 {
     /**
@@ -27,9 +27,9 @@ class OptionTableSeeder extends Seeder
            \App\Models\Option::create($item);
         }
         foreach (Department::all() as $key => $dep) {
-            ['code' =>'SES_GOOD_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id],
-            ['code' =>'SES_MEDIUM_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id],
-            ['code' =>'SES_BAD_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id],
+            \App\Models\Option::create(['code' =>'SES_GOOD_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id]);
+            \App\Models\Option::create(['code' =>'SES_MEDIUM_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id]);
+            \App\Models\Option::create(['code' =>'SES_BAD_REPORT_LETTER', 'value'=> ''.$this->the_value(),'parameter_1'=>''.$dep->id]);
         }
     }
 

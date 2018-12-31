@@ -16,8 +16,10 @@ Route::prefix('academic')->group(function() {
 	
 	Route::prefix('department')->group(function() {
 		Route::get('/instructors', 'DepartmentController@instructors')->name('academic.department.instructors');
-
+		Route::get('/curriculum', 'DepartmentController@curriculum')->name('academic.department.curriculum');
 		Route::post('/instructors', 'DepartmentController@instructors_assign_api')->name('academic.department.instructors.assign.api');
+		Route::post('/instructorss', 'DepartmentController@instructors_assign')->name('academic.department.instructors.assign');
+		
 	});
 	
 	Route::prefix('admin')->group(function() {

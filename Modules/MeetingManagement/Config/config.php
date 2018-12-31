@@ -8,7 +8,7 @@ return [
     ],
     'student-routes' => [
     ],
-    'employee-routes' => [
+    'employee-routes' => [  
     	(object)['r'=>url('/meetingmanagement/employee/create'), 'n' => 'Create' ],
     	(object)['r'=>url('/meetingmanagement/employee/mygroups'), 'n' => 'My Groups' ],
     ],

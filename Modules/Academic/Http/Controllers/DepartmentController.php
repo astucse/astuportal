@@ -12,9 +12,12 @@ use App\Models\Employee;
 use App\Models\Student;
 use Auth;
 use App\Helpers\OptionsHelper;
-use Modules\Academic\Entities\Group;
+use Modules\Org\Entities\Department;
+use Modules\Academic\Entities\Course;
 use Modules\Academic\Entities\Assignment;
 use Modules\Academic\Entities\CourseBreakdown;
+
+use Modules\Registration\Entities\InstructorAssignment;
 
 class DepartmentController extends Controller
 {
@@ -24,53 +27,73 @@ class DepartmentController extends Controller
     public function instructors_assign_api(Request $request){
         // return ;
         $institution = Auth::user()->MyInstitution;
-    	Assignment::create([
+        Assignment::create([
             'batch_year' => $request['year'], 
             'institution_id' => $institution->id, 
             'institution_type' => 'Academic\\Department',
-    		'academic_year' => OptionsHelper::current_year(),
-    		'semester' => OptionsHelper::current_semester(),
-    		'course_id' => $request['course'],
-    		'instructor_id' => $request['instructor'],
-    		// 'group_id' => 0
-    	]);
-    	// Assignment::where()
-    	return response()->json(['name'=>Employee::find($request['instructor'])->name]);
+            'academic_year' => OptionsHelper::current_year(),
+            'semester' => OptionsHelper::current_semester(),
+            'course_id' => $request['course'],
+            'instructor_id' => $request['instructor'],
+            // 'group_id' => 0
+        ]);
+        // Assignment::where()
+        return response()->json(['name'=>Employee::find($request['instructor'])->name]);
     }
+    public function instructors_assign(Request $request){
+        $institution = Auth::user()->MyInstitution;
+        // return $request['instructor_id'];
+        InstructorAssignment::create([
+            'batch_year' => $request['year'], 
+            'institution_id' => $institution->id, 
+            'institution_type' => 'Academic\\Department',
+            'academic_year' => OptionsHelper::current_year(),
+            'semester' => OptionsHelper::current_semester(),
+            'course_id' => $request['course_id'],
+            'instructor_id' => $request['instructor_id'],
+            // 'group_id' => 0
+        ]);
+        return redirect()->back();
+    }
+
+    public function curriculum(){
+        $institution = Auth::user()->MyInstitution;
+        $curriculum =  OptionsHelper::current_curriculum();
+        $breakdown =  $curriculum->breakdown->where('department',$institution)->first();
+        
+        $r = Role::where(['code'=>'P_INS'])->first();
+        return view('academic::department.curriculum',[
+            'curriculum'=>$curriculum,
+            'breakdown'=>$breakdown,
+            'instructors'=>Collect($r->assignment)
+                            ->where('rolegiver_type',"Org\Department")
+                            ->where('rolegiver_id',$institution->id),
+            'current_semester' => OptionsHelper::current_semester(), 
+            'assigned' => InstructorAssignment::where([
+                // 'batch_year' => $request['year'], 
+                'institution_id' => $institution->id, 
+                'institution_type' => 'Academic\\Department',
+                'academic_year' => OptionsHelper::current_year(),
+                'semester' => OptionsHelper::current_semester(),
+                // 'course_id' => $request['course_id'],
+                // 'instructor_id' => $request['instructor_id'],
+            ])->get()
+        ]);
+        
+    }
+
     public function instructors(){
     	$institution = Auth::user()->MyInstitution;
     	$c = CourseBreakdown::where(['semester' => OptionsHelper::current_semester(),'institution_id' => $institution->id,'institution_type' => 'Academic\\Department','curriculum_id'=>OptionsHelper::current_curriculum()->id])->get();
 
         foreach ($c as $cbd) {
-            // $cbd->kkk = "kkksss";
-            // $cbd->assignment = Assignment::all();
-            // $cbd->year
             $cbd->assignment = Assignment::where([
                 'academic_year' => OptionsHelper::current_year(),
                 'semester' => $cbd->semester,
-                // 'batch_year' => $request['year'], 
                 'institution_id' => $institution->id, 
                 'institution_type' => 'Academic\\Department',
-                // 'group_id' => $cbd->year
-                // 'group_id' => $cbd->institution_id
-                // 'group.institution_type' => $cbd->institution_type,
-                // 'group.institution_id' => $cbd->institution_id,
             ])->get();
-            // $cbd->assignment->reject(function ($value, $key) {
-            //     return $value->group ==  $institution;
-            //     // return $value > 2;
-            // });
-
         }
-        // $collection = collect([1, 2, 3, 4]);
-
-        // $filtered = $collection->reject(function ($value, $key) {
-        //     return $value > 2;
-        // });
-
-        // $filtered->all();
-    	
-
         return view('academic::department.instructors',[
         	'breakdowns'=>$c,
         	'instructors' => Employee::all()

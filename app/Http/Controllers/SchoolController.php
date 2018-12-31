@@ -11,8 +11,8 @@ use App\Models\Student;
 use Auth;
 use App\Helpers\OptionsHelper;
 
-use Modules\Academic\Entities\Group;
-use Modules\Academic\Entities\School;
+use Modules\Org\Entities\School;
+use Modules\Org\Entities\Group;
 class SchoolController extends Controller
 {
     public function __construct(){

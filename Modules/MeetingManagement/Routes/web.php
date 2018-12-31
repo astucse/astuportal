@@ -32,5 +32,7 @@ Route::prefix('meetingmanagement')->group(function() {
 
 		Route::get('/group/{id}', 'EmployeeController@group_single')->name('meetingmanagement.employee.group_single');
 		Route::get('/mygroups', 'EmployeeController@mygroups')->name('meetingmanagement.employee.mygroups');
+
+		Route::get('/minute/{id}/download', 'EmployeeController@minute_download')->name('meetingmanagement.employee.minute_download');
 	});
 });

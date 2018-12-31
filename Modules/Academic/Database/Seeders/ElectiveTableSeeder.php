@@ -13,7 +13,6 @@ class ElectiveTableSeeder extends Seeder
      * @return void
      */
     public function run(){
-
         Model::unguard();
         $json = $this->hehe();
         foreach ($json->body as $elective) {
@@ -29,8 +28,6 @@ class ElectiveTableSeeder extends Seeder
                 'code' => $elective->code,
             ]);
         }
-
-        
     }
 
 

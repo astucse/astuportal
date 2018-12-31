@@ -16,9 +16,13 @@ class CreateCurriculaTable extends Migration
         Schema::create('academic-curricula', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->longText('courses');
+            $table->longText('electives');
             $table->integer('version')->unique();
             $table->timestamps();
-        });
+        }); 
+        //elective = options, crhr, courses, code, type
+        //courses = year, semester, institution
     }
 
     /**

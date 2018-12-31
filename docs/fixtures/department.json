@@ -1,5 +1,23 @@
 [
     {
+        "name": "Computer Science and Engineering",
+        "code": "CSE",
+        "school": "SoEEC",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Electronics and communication Engineering",
+        "code": "ECE",
+        "school": "SoEEC",
+        "description": "",         
+        "duration": 5 
+    },{
+        "name": "Power and Control Engineering",
+        "code": "PCE",
+        "school": "SoEEC",
+        "description": "",         
+        "duration": 5 
+    },{
         "name": "Civil Engineering",
         "code": "CivE",
         "school": "SoCEA",

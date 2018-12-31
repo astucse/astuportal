@@ -2,9 +2,11 @@
 
 @section('css')
 <link href="{{url('bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet">
-
 @endsection
+
 @section('content')
+
+@widget('SillyPack',['ckeditor' => true ])
 
 <div class="nav-tabs-custom">
 	<ul class="nav nav-tabs">
@@ -62,11 +64,17 @@
 	          <!-- <input type="text" name="title" class="form-control" required> <br> -->
 	          Decision <br> 
 	          @if($meeting->group->admin->is(Auth::user()))
-	          <textarea name="decision" class="form-control" rows="10" required>{{$meeting->decision}}</textarea><br>
+	          <!-- <textarea name="decision" class="form-control" rows="10" required>{{$meeting->decision}}</textarea><br> -->
+	          <textarea id="editor1"  name="decision"  rows="10" >{{$meeting->decision}}</textarea>
 	          <button type="submit" class="btn btn-primary">Update</button>
-	          @else
-	          <textarea name="decision" class="form-control" rows="10" disabled="">{{$meeting->decision}}</textarea><br>
+	          @if(!$meeting->participants->contains(Auth::user()))
 	          <a class="btn btn-primary" href="{{route('meetingmanagement.employee.meeting.sign',['id'=>$meeting->id])}}"><i class="fa fa-check-square"></i>Sign</a>
+	          @endif
+	          @else
+	          <textarea id="editor1"  name="decision"  rows="10" disabled="">{{$meeting->decision}}</textarea>
+	          @if(!$meeting->participants->contains(Auth::user()))
+	          <a class="btn btn-primary" href="{{route('meetingmanagement.employee.meeting.sign',['id'=>$meeting->id])}}"><i class="fa fa-check-square"></i>Sign</a>
+	          @endif	
 	          @endif
 	      	</form>
 		</div>
@@ -83,24 +91,14 @@
   // $( "#meetingmanagement-Create" ).addClass( "active" );
 </script>
 <script src="{{url('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
-
+<script src="{{url('bower_components/ckeditor/ckeditor.js')}}"></script>
 <script>
   $(function () {
-    $('.select2').select2()
-    $('#EvaluationTable').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : true,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : true
-    })
+    CKEDITOR.replace('editor1')
+    // CKEDITOR.replace('editor2')
+    // CKEDITOR.replace('editor3')
+    // $('.textarea').wysihtml5()
   })
-
-  $('#level').on('change', function() {
-    // alert( this.value );
-    $("#theSelect option:selected").attr('disabled','disabled').siblings().removeAttr('disabled');
-  });
 </script>
 
 @endsection

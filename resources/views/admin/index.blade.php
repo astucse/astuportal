@@ -8,7 +8,7 @@
 <div class="col-lg-3 col-xs-6">
   <div class="small-box bg-yellow">
     <div class="inner">
-      <h3>{{$students->count()}}</h3>
+      <h3>{{$stats['students_count']}}</h3>
       <p>Students</p>
     </div>
     <div class="icon">
@@ -23,7 +23,7 @@
 <div class="col-lg-3 col-xs-6">
   <div class="small-box bg-yellow">
     <div class="inner">
-      <h3>{{$employees->count()}}</h3>
+      <h3>{{$stats['employees_count']}}</h3>
       <p>Employees</p>
     </div>
     <div class="icon">
@@ -117,14 +117,25 @@
       </div>
     </div>
     <div class="col-md-6">
-      @widget('Chart.pie',[
-          'header' => 'Users Sex ratio',
-          'value1' => $males,
-          'label1' => 'Male',
-          'value2' => $females,
-          'label2' => 'Female',
-      ])
+      <div class="box box-danger">
+        <div class="box-header with-border">
+          <h3 class="box-title">Sex ratios</h3>
+          <div class="box-tools pull-right">
+            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+          </div>
+        </div>
+        <div id="chart-div" class="box-body"></div>
+        {!! $lava->render('PieChart', 'STUD_SEX', 'chart-div') !!}
     </div>
+  </div>
+  <div class="col-md-12">
+            <div id="chart-div2" class="box-body"></div>
+        {!! $lava->render('BarChart', 'TheBar', 'chart-div2') !!}
+  </div>
+  <div class="col-md-12">
+            <div id="chart-div3" class="box-body"></div>
+        {!! $lava->render('BarChart', 'TheBar', 'chart-div3') !!}
   </div>
 </section>
 

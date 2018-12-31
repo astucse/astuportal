@@ -13,4 +13,10 @@
 
 Route::prefix('officeautomation')->group(function() {
     Route::get('/', 'OfficeAutomationController@index');
+	
+
+	Route::prefix('employee')->group(function() {
+    	Route::get('/letter/new', 'EmployeeController@new_letter');
+    	Route::get('/letter/all', 'EmployeeController@all_letter');
+	});
 });

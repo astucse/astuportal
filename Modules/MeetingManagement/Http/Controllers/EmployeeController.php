@@ -11,7 +11,8 @@ use App\Models\Employee;
 use Modules\MeetingManagement\Entities\Group;
 use Modules\MeetingManagement\Entities\Meeting;
 use Modules\MeetingManagement\Entities\Agenda;
-
+use PDF;
+// use Knp\Snappy\Pdf;
 
 class EmployeeController extends Controller
 {
@@ -49,13 +50,18 @@ class EmployeeController extends Controller
         return redirect()->back();
     }
     public function meeting_sign($id){
-        $ps = Meeting::findOrFail($id)->participants();
-        foreach ($ps as $p) {
-            if($p->is(Auth::user())){
-                $p->pivot->sign = true;
-                $p->save();
-            }
-        }
+        $m = Meeting::findOrFail($id);
+        // $ps = Meeting::findOrFail($id)->participants()->count();
+        $m->participants()->attach(Auth::user()->id, ['signed' => 1]);
+        // return $m;
+        // foreach ($ps as $p) {
+        //     echo $p->name."<br>";
+        //     // if($p->is(Auth::user())){
+        //     //     $p->pivot->sign = true;
+        //     //     $p->save();
+        //     // }
+        // }
+        // return "ss";
         return redirect()->back();
     }
     public function decision_create(Request $request){
@@ -101,6 +107,24 @@ class EmployeeController extends Controller
         return view('meetingmanagement::employee.mygroups',[
             'groups' => $gs3
         ]);
+    }
+
+
+    public function minute_download($id){
+        // $snappy = new Pdf();
+        // header('Content-Type: application/pdf');
+        // header('Content-Disposition: attachment; filename="file.pdf"');
+        // return  $snappy->getOutput('http://www.github.com');
+        // return "";
+        // $snappy->setOption('toc', true);
+        // // $snappy->setOption('xsl-style-sheet', 'http://path/to/stylesheet.xsl') //or local file;
+        // $snappy->generateFromHtml('<p>Some content</p>', 'test.pdf');
+        // return "";
+        $minute = Meeting::findOrFail($id)->decision;
+        $people = Meeting::findOrFail($id)->participants;
+        // return view('meetingmanagement::employee.minute',['minute'=>$minute]);
+        $pdf = PDF::loadView('meetingmanagement::employee.minute2', ['content'=>$minute,'people'=>$people]);
+        return $pdf->download('minute.pdf');
     }
 
 }

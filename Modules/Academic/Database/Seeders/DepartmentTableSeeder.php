@@ -21,7 +21,7 @@ class DepartmentTableSeeder extends Seeder
         $handle = file_get_contents($json_path, "r");
         $zjson = json_decode($handle);
         foreach($zjson as $j){
-            $s_id = School::where(['code'=>$j->school])->first()->id;
+            $s_id = School::where(['code'=>$json->school])->first()->id;
             Department::create([
                 "name" => $j->name,
                 "code" => $j->code,

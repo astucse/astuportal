@@ -3,66 +3,32 @@
 @section('content')
 
 @widget('breadcumb',['header'=>'Students','link0'=>'Home','link1'=>'Users','link9'=>'students'])
+
+
+
 <section class="content">
-  
-  <div class="box">
-    <div class="box-header with-border">
-      <h3 class="box-title">Actions</h3>
-    </div>
-    <div class="box-body">
-      Export : <a class="btn btn-primary" href="{{route('admin.students.export')}}">Export</a><br>
-      <!-- <form enctype="multipart/form-data" action="@{{route('admin.super.import', ['type'=>'student'])}}" method="POST">
-        {{ csrf_field() }}
-        <input type="file" name="zzzz" id="zzzz" class="">
-        <button type="submit" class="btn btn-primary">Import</button>
-      </form> -->
-    </div>
-    <!-- /.box-body -->
-    <div class="box-footer">
-      <!-- Footer -->
-    </div>
-    <!-- /.box-footer-->
-  </div>
-  <!-- /.box -->
-
-
-<div class="nav-tabs-custom">
-      <!-- <ul class="nav nav-tabs pull-right">
-        <li class="pull-left header"><i class="fa fa-th"></i> Students</li>
-        
-        
-      </ul> -->
+  <div class="nav-tabs-custom">
       <div class="tab-content">
-        <table id="StudentsTable" class="table table-bordered table-striped">
+        <!-- <table id="StudentsTable" class="table table-bordered table-striped"> -->
+        <!-- </table> -->
+        <table id="simple-datatable-example" class="display" style="width:100%">
           <thead>
-            <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Sex</th>
-            <th>Initial Password</th>
-            <th></th>
-            </tr>
+              <tr>
+                  <th>Name</th>
+                  <th>Id Number</th>
+                  <th>Entry Year</th>
+                  <th>Sex</th>
+                  <th>Action</th>
+              </tr>
           </thead>
-          <tbody>
-              @foreach($students as $s)
-            <tr class="">
-              <td>{{$s->name}}</td>
-              <td>{{$s->email}}</td>
-              <td>{{$s->sex}}</td>
-              <td>{{$s->initial_password}}</td>
-              <td>
-                <!-- <button type="button" data-id="{{$s}}" class="edit-staff btn btn-default" data-toggle="modal" data-target="#modal-edit"><i class="fa fa-edit"></i>Edit</button> -->
-                <a href="{{route('user.password_reset',['type'=>'student','id'=>$s->id])}}" class="btn btn-default" ><i class="fa fa-edit"></i> Reset Password </a> 
-              </td>
-            </tr>
-            @endforeach
-          </tbody>
-        </table>
+      </table>
       </div>
     </div>
+</section>
 
 
-    <div class="modal fade" id="modal-edit">
+
+<div class="modal fade" id="modal-edit">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -70,7 +36,7 @@
               <span aria-hidden="true">&times;</span></button>
             <h4 class="modal-title">Edit Student Info</h4>
           </div>
-          <form enctype="multipart/form-data" action="@{{route('admin.edit.students')}}" method="POST">
+          <form enctype="multipart/form-data" action="{{route('admin.students.update')}}" method="POST">
             {{ csrf_field() }}
             <div class="modal-body-detail">
               <h5>Name</h5>
@@ -95,10 +61,8 @@
         </div>
       </div>
     </div>
-
-
-</section>
 @endsection
+
 
 
 
@@ -111,16 +75,57 @@
 <script src="{{ url('adminlte/plugins/datatables/dataTables.select.min.js') }}"></script>
 <script src="{{ url('adminlte/plugins/datatables/dataTables.editor.min.js') }}"></script>
 <script>
-  $('#modal-edit').on('show.bs.modal', function(e) {
-    var obj = $(e.relatedTarget).data('id');
-    $("#modalId").val(obj.id);
-    $("#modalName").val(obj.name);
-    $("#modalEmail").val(obj.email);
-    $("#modalGroup").val(obj.enrolls[0].group);
-    $("#modalGroupId").val(obj.enrolls[0].id);
-    $("#modalSex").val(obj.sex).change();
-    // console.log(obj)
+  $(function () {
+    $('#modal-edit').on('show.bs.modal', function(e) {
+      var obj = $(e.relatedTarget).data('id');
+      $("#modalId").val(obj.id);
+      $("#modalName").val(obj.name);
+      $("#modalEmail").val(obj.email);
+      $("#modalSex").val(obj.sex).change();
+      console.log(obj)
+    });
   });
+</script>
+ <script>
+        $(document).ready(function() {
+            $('#simple-datatable-example').DataTable({
+                serverSide: true,
+                processing: true,
+                responsive: true,
+                ajax: "{{ route('admin.students.datatables') }}",
+                columns: [
+                    { name: 'name' },
+                    { name: 'id_number' },
+                   // { name: 'action', orderable: false, searchable: false }
+                    { name: 'batch_year' },
+                    { name: 'sex' },
+                    // { name: 'laratablesCustomGroup' },
+                    // { name: 'gender' },
+                    { name: 'action', orderable: false, searchable: false}
+                ],
+            });
+        });
+    </script>
+<script type="text/javascript">
+  $( "#users" ).addClass( "active" );
+  $( "#students" ).addClass( "active" );
+</script>
+@endsection
+
+
+
+
+
+@section('js2')
+
+
+<script src="{{ url('adminlte/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url('adminlte/plugins/datatables/dataTables.bootstrap.min.js') }}"></script>
+<script src="{{ url('adminlte/plugins/datatables/dataTables.buttons.min.js') }}"></script>
+<script src="{{ url('adminlte/plugins/datatables/dataTables.select.min.js') }}"></script>
+<script src="{{ url('adminlte/plugins/datatables/dataTables.editor.min.js') }}"></script>
+<script>
+  
   $(function () {
     $('#StudentsTable').DataTable({
       'paging'      : true,

@@ -17,6 +17,7 @@ class CreateOptionsTable extends Migration
             $table->increments('id');
             $table->string('code');
             $table->longText('value');
+            $table->longText('list')->nullable();
             $table->string('description')->nullable();
             $table->string('parameter_1')->nullable();
             $table->string('parameter_2')->nullable();

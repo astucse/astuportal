@@ -12,11 +12,12 @@ AstuPortal: @yield('title')
 
   <link rel="stylesheet" href="{{ url('bower_components/Ionicons/css/ionicons.min.css') }}">
 
+@yield('css')
   <link rel="stylesheet" href="{{ url('dist/css/AdminLTE.min.css') }}">
   <link rel="stylesheet" href="{{ url('adminlte/css/skins/skin-green.css') }}">
 
 
-@yield('css')
+
 @stack('css-scripts')
 </head>
 
@@ -63,6 +64,22 @@ AstuPortal: @yield('title')
   <aside class="main-sidebar" id="menu">
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
+
+          @if(Auth::user()->isSecretary)
+          <li id="secretary" class="treeview">
+            <a href="">
+              <i class="fa fa-files-o"></i>
+              <span>Secretary stuffs</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li id="secretary-1"><a href="{{route('staffevaluation.secretary.evaluationresults')}}"><i class="fa fa-circle-o"></i>Staff Evaluation Results</a></li>
+              <!-- <li id="secretary-2"><a href="dd"><i class="fa fa-circle-o"></i>Employee2</a></li> -->
+            </ul>
+          </li>
+          @endif
         @foreach(Module::collections() as $m)
         @if(null !== config($m->getLowerName().'.employee-routes'))
         @if(sizeof(config($m->getLowerName().'.employee-routes'))>0)

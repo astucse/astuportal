@@ -8,9 +8,9 @@ use App\Models\Employee;
 use App\Models\Role;
 
 use Modules\Academic\Entities\Course;
-use Modules\Academic\Entities\School;
-use Modules\Academic\Entities\Department;
-use Modules\Academic\Entities\Enrollment;
+use Modules\Org\Entities\School;
+use Modules\Org\Entities\Department;
+use Modules\Registration\Entities\StudentEnrollment as Enrollment;
 
 use Modules\StaffEvaluation\Entities\AnsweredQuestion;
 
@@ -183,7 +183,9 @@ class ToEvaluateHelper {
                 'target_institution_type'=>$enroll->group->institution_type,
                 'target_year'=> $enroll->group->batch_year,
                 'target_institution_id'=> $enroll->group->institution_id
-            ])->get();    
+            ])->get();
+            // return $enroll->group->institution_type;
+            // return $evalsess;    
             $s = array();
             foreach ($evalsess as $ee) {
                 $gs = $ee->target_groups;

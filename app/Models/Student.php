@@ -13,7 +13,7 @@ class Student extends Authenticatable
         'id', 
         'id_number', 
         'name', 
-        'email', 
+        'email',  
         'password', 'initial_password', 'disability','graduated','batch_year', 'sex'
     ];
 
@@ -21,7 +21,7 @@ class Student extends Authenticatable
         return $this->morphMany('App\Models\AssignedRole', 'roletaker');
     }
     public function enrollments(){
-        return $this->hasMany('Modules\Academic\Entities\Enrollment');
+        return $this->hasMany('Modules\Registration\Entities\StudentEnrollment');
     }
 
 
@@ -42,6 +42,21 @@ class Student extends Authenticatable
         }
         return null;
     }
+
+    /**
+     * Returns the action column html for datatables.
+     *
+     * @param \App\User
+     * @return string
+     */
+    public static function laratablesCustomAction($student){
+        return view('laratable.student_action', compact('student'))->render();
+    }
+    public static function laratablesCustomGroup($student)  {
+        return "".$student->group;
+    }
+
+
     //     $g = null;
     //     foreach ($this->enrollments as $e) {
     //         if($e->group->semester == 1 && $e->group->year == 2011){

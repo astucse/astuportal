@@ -12,10 +12,8 @@ class EvaluationTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        Model::unguard();
-
+    public function run(){
+        Model::unguard();   
         // $this->call("OthersTableSeeder");
         $item2 = [
             ['target' => 'student','name' => 'Instructor 1'],

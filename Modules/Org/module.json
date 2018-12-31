@@ -1,0 +1,14 @@
+{
+    "name": "Org",
+    "alias": "org",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Org\\Providers\\OrgServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

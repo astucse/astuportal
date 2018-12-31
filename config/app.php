@@ -163,6 +163,7 @@ return [
 
         Arrilot\Widgets\ServiceProvider::class,
         Barryvdh\DomPDF\ServiceProvider::class,
+        Khill\Lavacharts\Laravel\LavachartsServiceProvider::class,
 
 
         // Nwidart\Modules\LaravelModulesServiceProvider::class,
@@ -219,7 +220,7 @@ return [
         'Widget'       => Arrilot\Widgets\Facade::class,
         'AsyncWidget'  => Arrilot\Widgets\AsyncFacade::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
-
+        'Lava' => Khill\Lavacharts\Laravel\LavachartsFacade::class,
 
     ],
 

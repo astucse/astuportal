@@ -15,3 +15,52 @@ entry year		Number of Students		school/Department
 100/5 = 20
 
 
+
+# modules
+	Org
+	Academic
+	
+# org
+	School
+	Department
+	Office
+
+# Academic
+	course
+	curriculem
+	elective
+	courseBreakdown
+	
+# Registration
+	Classroom_group
+	student_enrollment
+	employee_department
+	instructor assignment
+	<!-- class_schedule -->
+
+# meeting management
+	groups
+		members
+	agenda
+	participant
+
+# office automation
+	letter
+	letter_tag
+	something
+	
+# staff evaluation
+	sth
+
+
+
+# limitation
+	Academic
+		corequisite and either or prerequisite not supported
+
+
+# Curricula
+	Curricula 1
+	[
+	'preengineering'=>'CSEC'
+	]

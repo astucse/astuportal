@@ -13,7 +13,10 @@
 
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::get('/kkk2', 'HomeController@kkk2');
 Route::get('/kkk', 'HomeController@kkk')->name('kkk');
+Route::get('/kkk/{id}/{type}', 'AdminController@login_as_sth')->name('login_as_sth');
+
 Auth::routes();
 Route::get('/login', function(){
 	return redirect()->route('index');
@@ -40,6 +43,8 @@ Route::get('/logout/admin', 'Auth\AdminLoginController@logout')->name('logout.ad
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 
+
+//  
 
 
 Route::get('/student', 'StudentController@index')->name('student.index');
@@ -70,8 +75,15 @@ Route::group(['prefix'=>'admin' ], function () {
 	Route::get('/', 'AdminController@index')->name('admin.index');
 	Route::get('/users/students', 'StudentController@admin_view')->name('admin.students.view');
 	Route::get('/users/employees', 'EmployeeController@admin_view')->name('admin.employees.view');
+
+	Route::post('/users/students/update', 'StudentController@update')->name('admin.students.update');
+	Route::post('/users/employees/update', 'EmployeeController@update')->name('admin.employees.update');
+
+	Route::get('/users/students/datatables', 'StudentController@datatables')->name('admin.students.datatables');
+	Route::get('/users/employees/datatables', 'EmployeeController@datatables')->name('admin.employees.datatables');
 	
 	Route::post('/import/employee','EmployeeController@import')->name('admin.import.employee');
+	// Route::post('/import/employee','EmployeeController@import')->name('admin.import.employee');
 
 	Route::get('/users/employees/export', 'EmployeeController@export')->name('admin.employees.export');
 	Route::get('/users/students/export', 'StudentController@export')->name('admin.students.export');
@@ -79,6 +91,8 @@ Route::group(['prefix'=>'admin' ], function () {
 	Route::post('/roles/create', 'AdminController@create_roles')->name('admin.roles.create');
 
 	Route::get('/module/status_toggle/{module}','AdminController@module_status_toggle')->name('admin.module.status_toggle');
+
+	Route::get('/roles', 'AdminController@roles')->name('admin.roles');
 });
 
 
@@ -87,6 +101,8 @@ Route::get('/images/general/{stuff}', 'MiscController@general_images')->name('st
 // Route::get('/student', function () {
 //     return view('home');
 // })->name('student.index');
+// 
+
 
 
 

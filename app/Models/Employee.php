@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Support\Facades\Hash;
 use App\Models\AssignedRole;
 use App\Models\Role;
+use Modules\Org\Entities\School;
+use Modules\Org\Entities\Department;        
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -17,25 +19,31 @@ class Employee extends Authenticatable
     public function roles(){
         return $this->morphMany('App\Models\AssignedRole', 'roletaker');
     }
-
     public function meeting_groups(){
         return $this->belongsToMany('Modules\MeetingManagement\Entities\Group','meeting-management-group-members','member_id','group_id');
     }
-
     public function assignments(){
         return $this->hasMany('Modules\Academic\Entities\Assignment');
     }
-
+    public static function laratablesCustomAction($employee){
+        return view('laratable.employee_action', compact('employee'))->render();
+    }
     public function getOriginalPasswordAttribute(){
         if (Hash::check($this->initial_password, $this->password)) {
             return true;
         }
         return false;
     }
-
     public function getMyInstitutionAttribute(){
         $dep_head = Role::where(['code'=>'A_DHN'])->first()->id;
         $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
+        $sec_role_id = Role::where(['code'=>'P_SEC'])->first()->id; 
+        if ($this->isSecretary) {
+            $office = AssignedRole::where(['role_id'=>$sec_role_id, 'roletaker_id' => $this->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();
+            if($office->option['institution_type']=='department'){
+                return Department::find($office->option['institution_id']);
+            }
+        }
         if($this->isDepartmentHead){
             return AssignedRole::where(['role_id'=>$dep_head, 'roletaker_id' => $this->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();
         }
@@ -44,6 +52,29 @@ class Employee extends Authenticatable
         }
         return null;
     }
+
+    public function getIsInstructorAttribute(){
+        $ids = collect($this->roles()->get())->pluck('role_id');
+        $ins_role_id = Role::where(['code'=>'P_INS'])->first()->id;
+        return $ids->contains($ins_role_id);
+    }
+    public function getIsSecretaryAttribute(){
+        $ids = collect($this->roles()->get())->pluck('role_id');
+        $sec_role_id = Role::where(['code'=>'P_SEC'])->first()->id;
+        return $ids->contains($sec_role_id);
+    }
+    public function setSetRoleAttribute($sth){
+        // if ($sth=="instructor") {
+        //     $this->roles == 
+        // }elseif ($sth=="secretary") {
+        //     # code...
+        // }
+        // $this->attributes['name'] = "someone";
+        // $this->attributes['name'] = strtolower($value);
+    }
+    // public function setKibruNameAttribute($pass){
+    //     $this->attributes['name'] = strtolower($value);
+    // }
     public function getIsDepartmentHeadAttribute(){
         $ids = collect($this->roles()->get())->pluck('role_id');
         $dep_head = Role::where(['code'=>'A_DHN'])->first()->id;
@@ -87,45 +118,18 @@ class Employee extends Authenticatable
                     $ans[$year][$semester]['student'] = 0;
                     $ans[$year][$semester]['collegue'] = 0;
                     $ans[$year][$semester]['head'] = 0;
-                    // $semesters['resultAll'] = 0;
-                    // $semesters['resultStudent'] = 0;
-                    // $semesters['resultCollegue'] = 0;
-                    // $semesters['resultHead'] = 0;
                 }else{
                     $ans[$year][$semester]['all'] = $valueAll/sizeof($semesters);
                     $ans[$year][$semester]['student'] = $valueStudent/sizeof($semesters);
                     $ans[$year][$semester]['collegue'] = $valueCollegue/sizeof($semesters);
                     $ans[$year][$semester]['head'] = $valueHead/sizeof($semesters);
-                    // $semesters['resultAll'] = ;
-                    // $semesters['resultStudent'] = ;
-                    // $semesters['resultCollegue'] = ;
-                    // $semesters['resultHead'] = ;
                 }
             }
         }
         return $ans;
     }
-    // public function getMyInstitutionAttribute(){
-    //     $ids = collect($model->roles()->get())->pluck('role_id');
-    //     $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
-    //     $dep_head = Role::where(['code'=>'A_DHN'])->first()->id;
-    //     AssignedRole::where(['role_id'=>$dep_head, 'roletaker_id' => $model->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();
-    // }
 
-    // public function administrator(){
-    //     return $this->morphTo();
-    // }
-    // protected  static function boot(){
-     //  parent::boot();
-     //  self::retrieved(function ($model) {
-     //    $ids = collect($model->roles()->get())->pluck('role_id');
-     //    $dep_head = Role::where(['code'=>'A_DHN'])->first()->id;
-     //    $school_dean = Role::where(['code'=>'A_SDN'])->first()->id;
-     //    $model->isDepartmentHead =  $ids->contains($dep_head);
-     //    $model->isSchoolDean =  $ids->contains($school_dean);
-     //    if($model->isDepartmentHead){
-     //        $model->myInstitution = AssignedRole::where(['role_id'=>$dep_head, 'roletaker_id' => $model->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();
-     //    }
-     // });
-  // }
+
+
+
 }

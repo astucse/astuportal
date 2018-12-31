@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>
-Staff evaluation Admin: @yield('title')
+Astu Portal Admin: @yield('title')
 </title>
 
   <link rel="stylesheet" href="{{ url('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
@@ -54,6 +54,8 @@ Staff evaluation Admin: @yield('title')
           <ul class="treeview-menu">
             <li id="students"><a href="{{route('admin.students.view')}}"><i class="fa fa-circle-o"></i>Students</a></li>
             <li id="employees"><a href="{{route('admin.employees.view')}}"><i class="fa fa-circle-o"></i>Employees</a></li>
+            <li id="Roles"><a href="{{route('admin.roles')}}"><i class="fa fa-circle-o"></i>Roles</a></li>
+
           </ul>
         </li>
         @foreach(Module::collections() as $m)

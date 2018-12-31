@@ -5,7 +5,10 @@
 @section('content')
 @widget('breadcumb',['header'=>'Courses','sub-header'=>'','link0'=>'Academics','link9'=>'courses'])
     <!-- <h2></h2> -->
-      <select class="form-control select2" name="course" id="course">
+
+  <section class="content">
+    
+<!--       <select class="form-control select2" name="course" id="course">
           @foreach($courses as $e)
           <option value="0"></option>
           <option value="{{$e->id}}">{{$e->code}} : {{$e->name}}</option>
@@ -17,7 +20,7 @@
           <option value="{{$e->id}}">{{$e->code}} : {{$e->name}}</option>
           @endforeach
       </select>
-      <button onclick="add_elective()" class="btn btn-default btn-sm">Add</button>
+      <button onclick="add_elective()" class="btn btn-default btn-sm">Add</button> -->
 
 
         <table id="StudentsTable" class="table table-bordered table-striped">
@@ -44,8 +47,8 @@
                 @endforeach
               </tbody>
               </table>
-
-
+              
+  </section>
 
 @stop
 

@@ -11,4 +11,7 @@ class Course extends Model
     public function prerequisite(){
         return $this->belongsTo('Modules\Academic\Entities\Course','prequisite_id','id');
     }
+    public function prerequisite2(){
+        return $this->belongsTo('Modules\Academic\Entities\Course','prequisite_id2','id');
+    }
 }

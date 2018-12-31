@@ -15,25 +15,45 @@ class CourseTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-        $json = $this->hehe();
-        foreach ($json->body as $course) {
+        // Model::unguard();
+        $json_path = base_path('docs/fixtures/courses.json');
+        $handle = file_get_contents($json_path, "r");
+        $zjson = json_decode($handle);
+        foreach($zjson as $j){
             \Modules\Academic\Entities\Course::create([
-                'code' => $course->code ,
-                'name' =>  $course->name,
-                'description' =>  $course->detail,
-                'crhr' => $course->crhr
+                "name" => $j->name,
+                "code" => $j->code,
+                "description" => $j->description,
+                "crhr" => $j->crhr,
             ]);
         }
-        foreach ($json->body as $course) {
-            if($course->pre != "NONE"){
-                $qwerty = \Modules\Academic\Entities\Course::where(['code'=>$course->pre])->get();
-                if(sizeof($qwerty)!=0){
-                    $c = \Modules\Academic\Entities\Course::where('code',$course->code)->first();
-                    $c->prequisite_id = $qwerty[0]->id;
-                    $c->save();
-                }
+        foreach($zjson as $j){
+            if ($j->prerequisite) {
+                $c = \Modules\Academic\Entities\Course::all()->where('code',$j->prerequisite)->first()->id;
+                $jj = \Modules\Academic\Entities\Course::all()->where('code',$j->code)->first();
+                $jj->prequisite_id = $c;
+                $jj->save();
             }
         }
+        // $json = $this->hehe();
+        // foreach ($json->body as $course) {
+        //     \Modules\Academic\Entities\Course::create([
+        //         'code' => $course->code ,
+        //         'name' =>  $course->name,
+        //         'description' =>  $course->detail,
+        //         'crhr' => $course->crhr
+        //     ]);
+        // }
+        // foreach ($json->body as $course) {
+        //     if($course->pre != "NONE"){
+        //         $qwerty = \Modules\Academic\Entities\Course::where(['code'=>$course->pre])->get();
+        //         if(sizeof($qwerty)!=0){
+        //             $c = \Modules\Academic\Entities\Course::where('code',$course->code)->first();
+        //             $c->prequisite_id = $qwerty[0]->id;
+        //             $c->save();
+        //         }
+        //     }
+        // }
 
     }
 

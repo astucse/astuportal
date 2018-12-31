@@ -13,6 +13,5 @@ class StudentEvaluation extends Model
     }
     public function evaluation_session(){
         return $this->belongsTo('Modules\StaffEvaluation\Entities\EvaluationSession');
-    }
-    
+    }   
 }

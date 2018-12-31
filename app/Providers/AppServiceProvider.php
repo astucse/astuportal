@@ -21,8 +21,9 @@ class AppServiceProvider extends ServiceProvider
             'employee' => 'App\Models\Employee',
             'student' => 'App\Models\Student',
             'admin' => 'App\Models\Admin',
-            // 'Academic\Department' => 'Modules\Academic\Entities\Department',
-            // 'Academic\School' => 'Modules\Academic\Entities\School',
+            'Org\Department' => 'Modules\Org\Entities\Department',
+            'Org\School' => 'Modules\Org\Entities\School',
+            'Org\Office' => 'Modules\Org\Entities\Office',
         ]);   
         // Relation::morphMap([
         // ]);

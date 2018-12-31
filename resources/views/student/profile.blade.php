@@ -59,12 +59,14 @@
               <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="{{Auth::user()->email}}" disabled>
             </div>
           </div>
+          @if(Auth::user()->myInstitution)
           <div class="form-group">
-            <label for="inputSkills" class="col-sm-2 control-label">Picture</label>
+            <label for="inputEmail" class="col-sm-2 control-label">Institution</label>
             <div class="col-sm-10">
-              <input type="file"  name="picture" id="inputSkills" >
+              <input type="text" class="form-control" id="inputEmail" value="{{Auth::user()->myInstitution->name}}" disabled>
             </div>
           </div>
+          @endif
           @if(null != Auth::user()->group)
           <div class="form-group">
             <label for="inputEmail" class="col-sm-2 control-label">Group</label>
@@ -73,6 +75,12 @@
             </div>
           </div>
           @endif
+          <div class="form-group">
+            <label for="inputSkills" class="col-sm-2 control-label">Picture</label>
+            <div class="col-sm-10">
+              <input type="file"  name="picture" id="inputSkills" >
+            </div>
+          </div>
                   <!-- <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">

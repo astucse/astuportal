@@ -8,14 +8,28 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use App\Helpers\ImportExportHelper;
 use Auth;
+use Lava;
+use \Khill\Lavacharts\Lavacharts;
+use Freshbitsweb\Laratables\Laratables;
 class EmployeeController extends Controller
 {
     public function __construct(){
         $this->middleware('auth:employee')->only(['index','profile','image_upload','profile_edit']);
-        $this->middleware('auth:admin')->only(['admin_view','export']);
+        $this->middleware('auth:admin')->only(['admin_view','export','update']);
+    }
+    public function datatables(){
+        return Laratables::recordsOf(Employee::class);
     }
     public function index(){
         return view('employee.index');
+    }
+    public function update(Request $request){
+        $student = Employee::findOrFail($request['id']);
+        $student->name = $request['name'];
+        $student->email = $request['email'];
+        $student->sex = $request['sex'];
+        $student->save();
+        return redirect()->back(); 
     }
     public function profile(){
         return view('employee.profile');

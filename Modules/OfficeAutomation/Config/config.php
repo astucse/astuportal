@@ -9,7 +9,8 @@ return [
     'student-routes' => [
     ],
     'employee-routes' => [
-    	// (object)['r'=>url('/meetingmanagement/employee/create'), 'n' => 'Create' ],
+        (object)['r'=>url('/officeautomation/employee/letter/new'), 'n' => 'Create letter' ],
+    	(object)['r'=>url('/officeautomation/employee/letter/all'), 'n' => 'All letters' ],
     	// (object)['r'=>url('/meetingmanagement/employee/mygroups'), 'n' => 'My Groups' ],
     ],
 ];

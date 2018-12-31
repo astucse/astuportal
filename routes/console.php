@@ -21,9 +21,23 @@ Artisan::command('inspire', function () {
 //     $this->info("Building {$project}!");
 // });
 Artisan::command('migrate:system', function () {
-	Artisan::call('migrate', [
-	    '--path' => 'database/migrations'
-	]);
+	// Artisan::call('seed:module',[
+	// 	'module' => 'Org',
+	// 	'file' => 'School'
+	// ]);
+	// Artisan::call('seed:module',[
+	// 	'module' => 'Org',
+	// 	'file' => 'Department'
+	// ]);
+	// foreach (['Course','Curriculum'] as $key => $value) {
+	foreach (['Curriculum'] as $key => $value) {
+		Artisan::call('seed:module',[
+			'module' => 'Academic',
+			'file' => $value
+		]);	
+	}
+	
+	// Artisan::call('module:');
 	// Artisan::call('module:migrate Academic');
 	// Artisan::call('module:migrate StaffEvaluation');
 });
@@ -77,16 +91,32 @@ Artisan::command('lll', function () {
 		]);
 	}
 });
-Artisan::command('seed:module {module} {file?}', function ($module, $file="all") {
-	if($file=="all"){
-		// $in  =  '\\Modules\\'.$module.'\\Database\\Seeders\\Seed.php';
-		$in  =  'Modules/'.$module.'/Database/Seeders/Seed.php';
-		$myArray = include "$in";
-		foreach ($myArray as $seedFile) {
+Artisan::command('seed:modules {module} {file?}', function ($module, $file="all") {
+	if($module=="main"){
+		// $in  =  database_path('migrations');
+		// $d = dir($in);
+		// while (false !== ($entry = $d->read()) && $entry!="." && $entry!=".." && $entry!=".gitkeep"  ) {
+		// 	$seedFile = substr($entry,18,strlen($entry)-4);
+		// 	$this->info($seedFile);
+			
+			Artisan::call('db:seed', [
+				// CreateStudentsTable
+		        // '--class' => 'CreateStudentsTable'
+			]);
+		// 	break;
+		// }
+		// $d->close();
+	}elseif($file=="all"){
+		$in  =  base_path('Modules/'.$module.'/Database/Seeders');
+		$d = dir($in);
+		while (false !== ($entry = $d->read()) && $entry!="." && $entry!=".gitkeep"  ) {
+			$this->info($entry);
+			$seedFile = substr($entry,0,strlen($entry)-4);
 			Artisan::call('db:seed', [
 		        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$seedFile
 		    ]);
 		}
+		$d->close();
 	}else{
 	    Artisan::call('db:seed', [
 	        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$file.'TableSeeder'
@@ -126,3 +156,23 @@ Artisan::command('kdrop', function () {
 // 	}
 // 	$bar->finish();
 // });
+
+
+
+Artisan::command('seed:module {module} {file?}', function ($module, $file="all") {
+	if($file=="all"){
+		// $in  =  '\\Modules\\'.$module.'\\Database\\Seeders\\Seed.php';
+		$in  =  'Modules/'.$module.'/Database/Seeders/Seed.php';
+		$myArray = include "$in";
+		foreach ($myArray as $seedFile) {
+			Artisan::call('db:seed', [
+		        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$seedFile
+		    ]);
+		}
+	}else{
+	    Artisan::call('db:seed', [
+	        '--class' => '\\Modules\\'.$module.'\\Database\\Seeders\\'.$file.'TableSeeder'
+	    ]);
+	}
+    $this->info("Seeded!!! ".$file);
+});

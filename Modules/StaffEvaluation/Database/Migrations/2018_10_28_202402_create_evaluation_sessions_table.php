@@ -15,6 +15,7 @@ class CreateEvaluationSessionsTable extends Migration
     {
         Schema::create('ses-evaluation_sessions', function (Blueprint $table) {
             $table->increments('id');
+            // $table->string('uuid');
             $table->integer('student_evaluation_id')->unsigned();
             $table->integer('collegue_evaluation_id')->unsigned();
             $table->integer('head_evaluation_id')->unsigned();
@@ -51,7 +52,7 @@ class CreateEvaluationSessionsTable extends Migration
             $table->foreign('target_head_id')
                   ->references('id')->on('astu-employees');
             $table->foreign('assignment_id')
-                  ->references('id')->on('academic-assignments');
+                  ->references('id')->on('registration-instructor_assignments');
                   // 
         });
     }

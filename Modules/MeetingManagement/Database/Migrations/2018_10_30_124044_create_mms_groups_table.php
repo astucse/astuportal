@@ -8,13 +8,13 @@ class CreateMmsGroupsTable extends Migration
 {
     /**
      * Run the migrations.
-     *
+     *s
      * @return void
      */
     public function up()
     {
         Schema::create('meeting-management-groups', function (Blueprint $table) {
-            $table->increments('id');
+            $table->date_interval_create_from_date_string()ements('id');
             $table->string('name');
             $table->integer('creator_id')->unsigned();
             $table->integer('admin_id')->unsigned();

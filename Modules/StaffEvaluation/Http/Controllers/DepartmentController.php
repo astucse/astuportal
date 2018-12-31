@@ -8,10 +8,11 @@ use App\Models\Employee;
 use App\Models\Role;
 
 use Modules\Academic\Entities\Course;
-use Modules\Academic\Entities\School;
-use Modules\Academic\Entities\Department;
-use Modules\Academic\Entities\Group;
-use Modules\Academic\Entities\Assignment;
+use Modules\Org\Entities\School;
+use Modules\Org\Entities\Department;
+use Modules\Registration\Entities\ClassroomGroup as Group;
+// use Modules\Academic\Entities\Assignment;
+use Modules\Registration\Entities\InstructorAssignment as Assignment;
 use Modules\Academic\Entities\CourseBreakdown;
 
 use Illuminate\Http\Request;
@@ -27,6 +28,7 @@ use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
 use App\Helpers\OptionsHelper;
 use App\Helpers\OfficeHelper;
 use PDF;
+use Illuminate\Support\Str;
 class DepartmentController extends Controller
 {
     public function __construct(){
@@ -129,8 +131,9 @@ class DepartmentController extends Controller
         $academic_year = 2011;
         $semester = "1";
         $assignment = Assignment::find($request['assignment_id']);
-        
+        // use Illuminate\Support\Str;
         EvaluationSession::create([
+            'uuid' => Str::uuid(),
             'academic_year' => $assignment->academic_year,
             'student_evaluation_id' => $request['student_evaluation_id'],
             'head_evaluation_id' => $request['head_evaluation_id'],
@@ -140,7 +143,7 @@ class DepartmentController extends Controller
             'staff_id' => $assignment->instructor->id,
             'semester' => $assignment->semester,
             'target_year' => $assignment->batch_year,
-            'target_institution_type' => 'Academic\Department',
+            'target_institution_type' => 'Org\Department',
             'target_institution_id' => $institution->id,
             'course_id' => $assignment->course->id,
             'target_groups' => implode(",", $request['group']),
@@ -160,13 +163,13 @@ class DepartmentController extends Controller
         $a = Assignment::where([
             // 'batch_year', 
             'institution_id' => $institution->id, 
-            'institution_type' => 'Academic\\Department'
+            'institution_type' => 'Org\\Department'
         ])->get();
         // return sizeof($a);
         $sessionss =  EvaluationSession::where([
             'academic_year' => 2011,
             'semester' => 1,
-            'target_institution_type' => 'Academic\Department',
+            'target_institution_type' => 'Org\Department',
             'target_institution_id' => $institution->id,
         ])->get()->groupBy('staff_id');
         // dd($sessions);

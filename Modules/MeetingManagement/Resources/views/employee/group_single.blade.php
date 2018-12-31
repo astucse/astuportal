@@ -11,6 +11,7 @@
 		<li class="active"><a href="#tab_0" data-toggle="tab">General</a></li>
 		<li><a href="#tab_1" data-toggle="tab">Meetings</a></li>
 		<li><a href="#tab_2" data-toggle="tab">Members</a></li>
+		<li><a href="#tab_3" data-toggle="tab">Minutes</a></li>
 		<li class="pull-right"><a class="text-muted" href="#tab_666" data-toggle="tab"><i class="fa fa-gear"> For Admins </i></a></li>
 	</ul>
 	<div class="tab-content">
@@ -63,6 +64,24 @@
 						<li>Admin</li>
 						@endif
 						<li>Member</li>
+					</td>
+				</tr>
+				@endforeach
+			</table>
+		</div>
+		<div class="tab-pane " id="tab_3">
+			<table class="table table-striped">
+				<tr style="font-weight: bold;">
+					<td>Name</td>
+					<td></td>
+				</tr>
+				@foreach($group->meetings as $meeting)
+				<tr>
+					<td>{{$meeting->title}}</td>
+					<td>
+						@if($meeting->decision)
+						<a target="_blank" href="{{route('meetingmanagement.employee.minute_download',['id'=>$meeting->id])}}">View</a>
+						@endif
 					</td>
 				</tr>
 				@endforeach

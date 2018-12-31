@@ -4,8 +4,8 @@ namespace Modules\StaffEvaluation\Entities;
 
 use App\Models\Employee;
 use App\Models\Student;
-use Modules\Academic\Entities\Enrollment;
-use Modules\Academic\Entities\Group;
+use Modules\Registration\Entities\StudentEnrollment as Enrollment;
+use Modules\Registration\Entities\ClassroomGroup as Group;
 use Modules\StaffEvaluation\Entities\AnsweredQuestion;
 use Illuminate\Database\Eloquent\Model;
 use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
@@ -25,7 +25,7 @@ class EvaluationSession extends Model
         return $this->belongsTo('Modules\StaffEvaluation\Entities\Evaluation','student_evaluation_id');
     }
     public function assignment(){
-        return $this->belongsTo('Modules\Academic\Entities\Assignment');
+        return $this->belongsTo('Modules\Registration\Entities\InstructorAssignment');
     }
     public function head_evaluation(){
         return $this->belongsTo('Modules\StaffEvaluation\Entities\Evaluation','head_evaluation_id');

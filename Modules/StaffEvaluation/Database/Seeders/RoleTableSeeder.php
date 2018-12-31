@@ -15,23 +15,18 @@ class RoleTableSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
-
         $items = [
             ['name' => 'Assistant Professor','code' =>'AR_APS','category' => 'ACADEMIC_RANK'],
             ['name' => 'Professor','code' =>'AR_PSR','category' => 'ACADEMIC_RANK'],
-            
             ['name' => 'School Dean','code' =>'A_SDN','category' => 'AUTHORITY'],
             ['name' => 'Department Head','code' =>'A_DHN','category' => 'AUTHORITY'],
-            
             ['name' => 'Secretary','code' =>'P_SEC','category' => 'POSITION'],
             ['name' => 'Instructor','code' =>'P_INS','category' => 'POSITION'],
+            ['name' => 'Student','code' =>'P_STU','category' => 'POSITION'],
         ];                          
         foreach ($items as $item) {
            \App\Models\Role::create($item);
         }
-
-
         // $this->call("OthersTableSeeder");
     }
 }

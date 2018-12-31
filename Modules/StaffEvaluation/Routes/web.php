@@ -56,15 +56,18 @@ Route::prefix('staffevaluation')->group(function() {
 		Route::post('/setting/report', 'DepartmentController@update_report')->name('staffevaluation.department.setting.report.update');
 
 		Route::get('/evaluation_sessions', 'DepartmentController@evaluation_sessions')->name('staffevaluation.department.evaluation_sessions');
-
 		// 
 		Route::post('/sessions', 'DepartmentController@sessions_create')->name('staffevaluation.department.sessions.create');
 
-
 		Route::get('/session/{id}/letter', 'DepartmentController@session_report')->name('staffevaluation.department.session_report');
-
 		Route::get('/session/{id}', 'DepartmentController@session_single')->name('staffevaluation.department.session_single');
 		Route::get('/evaluation/{id}/{action}', 'DepartmentController@evaluation_toggle')->name('staffevaluation.department.evaluation_toggle');
+
+		Route::prefix('secretary')->group(function() {
+			Route::get('/evaluationresults','SecretaryController@evaluationresults')->name('staffevaluation.secretary.evaluationresults');
+			Route::get('/session/{id}/letter', 'SecretaryController@session_report')->name('staffevaluation.secretary.session_report');
+		});
+
 	});
 
 
