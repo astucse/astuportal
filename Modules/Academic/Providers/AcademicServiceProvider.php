@@ -22,10 +22,10 @@ class AcademicServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Relation::morphMap([
-            'Academic\Department' => 'Modules\Academic\Entities\Department',
-            'Academic\School' => 'Modules\Academic\Entities\School',
-        ]);
+        // Relation::morphMap([
+        //     'Academic\Department' => 'Modules\Academic\Entities\Department',
+        //     'Academic\School' => 'Modules\Academic\Entities\School',
+        // ]);
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();

@@ -15,8 +15,12 @@ class CreateEmployeesTable extends Migration
     {
         Schema::create('astu-employees', function (Blueprint $table) {
             $table->increments('id');
+            
+            // $table->integer('department_id')->unsigned()->nullable();
             $table->string('id_number')->unique();
             $table->string('name');
+            // $table->string('username')->unique();
+            // $table->string('username')->unique();
             $table->string('email')->unique();
             $table->string('password');
             $table->string('initial_password');
@@ -26,6 +30,9 @@ class CreateEmployeesTable extends Migration
             $table->timestamps();
 
             $table->unsignedInteger('change_id')->nullable();
+
+            // $table->foreign('department_id')
+            //       ->references('id')->on('astu-roles')->nullable();
 
         });
     }

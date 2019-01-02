@@ -36,4 +36,8 @@ class OptionTableSeeder extends Seeder
     private function the_value(){
         return '<p><img alt="ASTU LOGO" src="http://localhost/astuportal/public/images/general/astu-logo" style="float:left; height:50px; width:50px" /><tt>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <samp>Adama Science and Technology Univeristy</samp></tt></p><p><tt><samp>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</samp></tt></p><p><strong>To&nbsp;&nbsp;<ins>&lt;&lt;Instructor&gt;&gt;</ins></strong></p><p>Subject: Evaluation Result of 2nd semester of 2017/18 Academic Year</p><p>As per the university legislation, performance evaluation of every staff member is conducted at the end of each semester. Staffs are evaluated by ...</p><p>The evaluation done by students, colleagues, and department head weight 50%, 15% and 35% respectively. Accordingly, you have been evaluated by the above three entities and the result shows &lt;&lt;Student&gt;&gt;, &lt;&lt;Collegue&gt;&gt; and &lt;&lt;Head&gt;&gt; respectively which results in <strong>&lt;&lt;Result&gt;&gt;</strong> overall performance out of 5 points.</p><p>I would like to congradulate on your result and wish a successful year.</p><p>&nbsp;</p><p>&nbsp;</p>';
     }
+
+    private function the_value2(){
+        return '';
+    }
 }

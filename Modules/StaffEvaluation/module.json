@@ -8,7 +8,7 @@
     "providers": [
         "Modules\\StaffEvaluation\\Providers\\StaffEvaluationServiceProvider"
     ],
-    "aliases": {},
+    "aliases": [],
     "files": [],
     "requires": []
 }

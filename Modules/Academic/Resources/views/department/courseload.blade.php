@@ -6,7 +6,7 @@
 
     <section class="content-header">
       <h1>
-        Curriculum
+        Courseload
         <small>
             <div class="btn-group">
                   <!-- <button type="button" class="btn btn-default">V{{$curriculum->version}} - {{$curriculum->name}} (Change)</button>
@@ -24,7 +24,7 @@
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Academics</a></li>
-        <li class=" ">Curriculum</li>
+        <li class=" ">Courseload</li>
       </ol>
     </section>
 
@@ -37,59 +37,39 @@
           <div class="tab-content">
               <div class="tab-pane active" id="tab_1">
                  <div class="row">
-                    <div class="box-header with-border">
-                        <h3 class="box-title">
-                            <form method="post" action="@{{route('academic.department.instructors.assign')}}">
-                            @csrf  
-                            <select name="course_id">
-                              @foreach($courses as $in)
-                              <option class="select2 form-control" value="{{$in->id}}">{{$in->name}}</option>
-                              @endforeach
-                            </select>
-                            <select name="semester_id">
-                              @foreach([1,2,3,4,5] as $y)
-                                @foreach([1,2] as $s)
-                                <option class="select2 form-control" value="{{$y}}-{{$s}}">Year {{$y}} Semester {{$s}}</option>
-                                @endforeach
-                              @endforeach
-                            </select>
-                            <button>Assign</button>
-                            </form>
-                        </h3>
-                    </div>
                     @foreach($breakdown['schedules'] as $cbd)
+                    @if($current_semester == $cbd['semester'])
                     <div class="col-md-12">
                         <div class="box box-solid">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Year {{$cbd['year']}}: Semester {{$cbd['semester']}}
-                                </h3>
+                                <h3 class="box-title">Year {{$cbd['year']}}: Semester {{$cbd['semester']}}</h3>
                             </div>
-
                             <div class="box-body">
-                              <h3>Courses</h3>
-                              @foreach($cbd['courses'] as $c)
-                                    {{$c->code}} : {{$c->name}} , 
-                              @endforeach
-                            </div>
-                            {{-- dd 
-                            <div class="box-body">
-                              <h3>Electives</h3>
-                              @foreach($cbd['electives'] as $ele)
-                                @foreach($ele as $e)
-                                  @if(isset($e[0]))
-                                    {{$e}} ,
-                                  @else
-                                    {{$e}} 
-                                  @endif
-                                  <br>
+                              @foreach($cbd['all'] as $c)
+                              <li>
+                                <form method="post" action="{{route('academic.department.instructors.assign')}}">
+                                @csrf  
+                                <input type="hidden" name="year" value="{{$cbd['year']}}">
+                                <input type="hidden" name="course_id" value="{{$c->id}}">
+                                {{$c->code}} : {{$c->name}}
+                                <select name="instructor_id">
+                                @foreach($instructors as $in)
+                                <option value="{{$in->roletaker->id}}">{{$in->roletaker->name}}</option>
                                 @endforeach
+                                </select>
+                                <button>Assign</button>
+                                </form>
+                                @foreach(collect($assigned)->where('batch_year',$cbd['year'])->where('course_id',$c->id)   as $a )
+                                <b> {{$a->instructor->name}}</b> , 
+                                @endforeach
+                              </li>
                               @endforeach
                             </div>
                             <div class="box-body">  
                             </div>
-                            --}}
                         </div>
                     </div>
+                    @endif
                     @endforeach
                 </div>
               </div>
@@ -114,7 +94,7 @@
 @section('js')
 <script type="text/javascript">
   $( "#academic" ).addClass( "active" );
-  $( "#academic-Curriculum" ).addClass( "active" );
+  $( "#academic-Courseload" ).addClass( "active" );
 </script>
 <script src="{{url('bower_components/select2/dist/js/select2.full.min.js')}}"></script>
 

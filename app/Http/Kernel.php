@@ -64,6 +64,8 @@ class Kernel extends HttpKernel
         'departmetHead' => \Modules\Academic\Http\Middleware\DepartmentHead::class,
         'schoolDean' => \Modules\Academic\Http\Middleware\SchoolDean::class,
         'secretary' =>\App\Http\Middleware\Secretary::class,
+
+        'officeautomation.officeholder' => \Modules\OfficeAutomation\Http\Middleware\OfficeHolder::class,
     ];
 }
 

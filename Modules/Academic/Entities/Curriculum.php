@@ -60,16 +60,34 @@ class Curriculum extends Model
                 foreach ($schedule['courses'] as $cc) {
                     $c = Course::all()->where('code',$cc)->first();
                     $courses->push($c);
+                    // $cc = Course::all()->where('name',$cc)->first();
+                    // $courses->push($cc);
                 }
 	            $electives = Collect([]);
-	            // foreach ($schedule['electives'] as $value) {
-	            	// $cc = $eee->where('code',$value)->first();
+	            foreach ($schedule['electives'] as $value) {
+	            	$cc = $eee->where('code',$value)->first();
 	            	// $cc = $eee['code']
 
 	            	// $electives->push($this->electivess->where('code',$value)->first());
-	            	// $electives->push($value);
-	            // }
-                $schedules->push(Collect(['year'=>$schedule['year'],'semester'=>$schedule['semester'],'courses'=>$courses]));
+	            	$electives->push($cc);
+	            }
+                $allc = $courses;
+                // $allc = Collect([]);
+                foreach ($electives as $value) {
+                    if (isset($value['courses'][0])) {
+                        # code...
+                        foreach ($value['courses'] as $valuec) {
+                            # code...
+                            if ($valuec!=null) {
+                                # code...
+                                $allc->push($valuec);
+                            }
+                        // $allc->push($value['courses']);
+                        }
+                    }
+                }
+
+                $schedules->push(Collect(['year'=>$schedule['year'],'semester'=>$schedule['semester'],'courses'=>$courses,'electives'=>$electives,'all'=>$allc->unique()    ]));
                 // $schedules->push(Collect(['year'=>$schedule['year'],'semester'=>$schedule['semester'],'courses'=>$courses,'electives'=>$electives]));
             }
             $ans->push(Collect(['department'=>$d,'schedules'=>$schedules,'electives'=>$electives]));

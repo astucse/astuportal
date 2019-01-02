@@ -2,6 +2,8 @@
 
 namespace Modules\Org\Entities;
 
+use Modules\Org\Entities\Office;
+
 use Illuminate\Database\Eloquent\Model;
 
 class Department extends Model
@@ -22,6 +24,18 @@ class Department extends Model
 
     public function roles(){
         return $this->morphMany('App\Role', 'rolegiver');
+    }
+
+    public function getOfficeAttribute(){
+        // return "ss";
+        foreach (Office::all() as $office) {
+            $type =  $office->option['institution_type']; 
+            $id =  $office->option['institution_id'];
+            if($type == "Org\\Department" && $id == $this->id){
+                return $office;
+            }
+        }
+        return null;
     }
 
 }

@@ -3,7 +3,7 @@
 namespace Modules\Org\Entities;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Modules\Org\Entities\Office;
 class School extends Model
 {
     protected $table = "org-schools";
@@ -19,4 +19,17 @@ class School extends Model
     public function roles(){
         return $this->morphMany('App\Role', 'rolegiver');
     }
+
+    public function getOfficeAttribute(){
+        // return "ss";
+        foreach (Office::all() as $office) {
+            $type =  $office->option['institution_type']; 
+            $id =  $office->option['institution_id'];
+            if($type == "Org\\School" && $id == $this->id){
+                return $office;
+            }
+        }
+        return null;
+    }
+
 }

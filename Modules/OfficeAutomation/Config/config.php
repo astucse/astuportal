@@ -10,7 +10,8 @@ return [
     ],
     'employee-routes' => [
         (object)['r'=>url('/officeautomation/employee/letter/new'), 'n' => 'Create letter' ],
-    	(object)['r'=>url('/officeautomation/employee/letter/all'), 'n' => 'All letters' ],
+        (object)['r'=>url('/officeautomation/employee/letter/outbox'), 'n' => 'Outbox letters' ],
+    	(object)['r'=>url('/officeautomation/employee/letter/inbox'), 'n' => 'Inbox letters' ],
     	// (object)['r'=>url('/meetingmanagement/employee/mygroups'), 'n' => 'My Groups' ],
     ],
 ];

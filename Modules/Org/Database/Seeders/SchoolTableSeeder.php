@@ -20,7 +20,7 @@ class SchoolTableSeeder extends Seeder
             ['name' => 'School of Material Chemical and Mechanical Engineering','code' =>'SoMCME'],
             ['name' => 'School of Civil Engineering and Architechture','code' =>'SoCEA'],
             ['name' => 'School of Applied Natural Science','code' =>'SoANS'],
-            ['name' => 'Division of Liberal Arts','code' =>'DoLS'],
+            ['name' => 'School of Humanity Sciences','code' =>'SoHS'],
         ];
         foreach ($items as $item) {
             \Modules\Org\Entities\School::create($item);

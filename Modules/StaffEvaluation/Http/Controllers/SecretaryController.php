@@ -38,6 +38,7 @@ class SecretaryController extends Controller
 
     public function evaluationresults(){
         $institution = Auth::user()->MyInstitution;
+        // return $institution;
 
         $studentEvaluations = Evaluation::where(['target' => 'student'])->get();
         $collegueEvaluations = Evaluation::where(['target' => 'collegue'])->get();

@@ -17,6 +17,7 @@ return [
     'employee-routes' => [
     ],
     'department-routes' => [
+        (object)['r'=>url('/academic/department/courseload'), 'n' => 'Courseload' ],
         (object)['r'=>url('/academic/department/curriculum'), 'n' => 'Curriculum' ],
     ],
     'school-routes' => [

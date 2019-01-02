@@ -40,9 +40,11 @@ class Employee extends Authenticatable
         $sec_role_id = Role::where(['code'=>'P_SEC'])->first()->id; 
         if ($this->isSecretary) {
             $office = AssignedRole::where(['role_id'=>$sec_role_id, 'roletaker_id' => $this->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();
-            if($office->option['institution_type']=='department'){
-                return Department::find($office->option['institution_id']);
-            }
+            // if($office->option['institution_type']=='department'){
+            //     return Department::find($office->option['institution_id']);
+            // }
+            return $office;
+            // return Department::find(1);
         }
         if($this->isDepartmentHead){
             return AssignedRole::where(['role_id'=>$dep_head, 'roletaker_id' => $this->id,'roletaker_type' => 'employee' ])->get()[0]->rolegiver()->first();

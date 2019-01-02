@@ -22,7 +22,7 @@ use Modules\Registration\Entities\InstructorAssignment;
 class DepartmentController extends Controller
 {
     public function __construct(){
-        $this->middleware(['auth:employee','departmetHead']);
+        $this->middleware(['auth:employee','departmetHead']);//->except('curriculum');
     }
     public function instructors_assign_api(Request $request){
         // return ;
@@ -56,13 +56,12 @@ class DepartmentController extends Controller
         return redirect()->back();
     }
 
-    public function curriculum(){
+    public function courseload(){
         $institution = Auth::user()->MyInstitution;
         $curriculum =  OptionsHelper::current_curriculum();
         $breakdown =  $curriculum->breakdown->where('department',$institution)->first();
-        
         $r = Role::where(['code'=>'P_INS'])->first();
-        return view('academic::department.curriculum',[
+        return view('academic::department.courseload',[
             'curriculum'=>$curriculum,
             'breakdown'=>$breakdown,
             'instructors'=>Collect($r->assignment)
@@ -70,16 +69,30 @@ class DepartmentController extends Controller
                             ->where('rolegiver_id',$institution->id),
             'current_semester' => OptionsHelper::current_semester(), 
             'assigned' => InstructorAssignment::where([
-                // 'batch_year' => $request['year'], 
                 'institution_id' => $institution->id, 
                 'institution_type' => 'Academic\\Department',
                 'academic_year' => OptionsHelper::current_year(),
                 'semester' => OptionsHelper::current_semester(),
-                // 'course_id' => $request['course_id'],
-                // 'instructor_id' => $request['instructor_id'],
             ])->get()
         ]);
-        
+    }
+    public function curriculum(){
+        $institution = Auth::user()->MyInstitution;
+        $curriculum =  OptionsHelper::current_curriculum();
+        $breakdown =  $curriculum->breakdown->where('department',$institution)->first();
+        $r = Role::where(['code'=>'P_INS'])->first();
+        return view('academic::department.curriculum',[
+            'curriculum'=>$curriculum,
+            'breakdown'=>$breakdown,
+            'courses'=>Course::all(),
+            'current_semester' => OptionsHelper::current_semester(), 
+            'assigned' => InstructorAssignment::where([
+                'institution_id' => $institution->id, 
+                'institution_type' => 'Academic\\Department',
+                'academic_year' => OptionsHelper::current_year(),
+                'semester' => OptionsHelper::current_semester(),
+            ])->get()
+        ]);
     }
 
     public function instructors(){

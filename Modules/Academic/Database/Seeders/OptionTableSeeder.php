@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class OptionTableSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         Model::unguard();
@@ -24,6 +19,5 @@ class OptionTableSeeder extends Seeder
         foreach ($items as $item) {
            \App\Models\Option::create($item);
         }
-        // $this->call("OthersTableSeeder");
     }
 }

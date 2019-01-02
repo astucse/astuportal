@@ -16,15 +16,18 @@
             <tr>
               <th style="width: 10px">#</th>
               <th>Name</th>
-              <th></th>
+              <th>username</th>
+              <th>sex</th>
+              <th>pass</th>
               <th style="width: 40px"></th>
             </tr>
             @foreach($instructors as $k=>$ins)
             <tr>
               <td>{{$k+1}}</td>
               <td>{{$ins->roletaker->name}}</td>
-              <td>
-              </td>
+              <td>{{$ins->roletaker->id_number}}</td>
+              <td>{{$ins->roletaker->sex}}</td>
+              <td>{{$ins->roletaker->initial_password}}</td>
               <td></td>
             </tr>
             @endforeach

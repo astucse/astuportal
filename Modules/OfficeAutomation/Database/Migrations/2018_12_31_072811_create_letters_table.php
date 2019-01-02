@@ -14,17 +14,21 @@ class CreateLettersTable extends Migration
      */
     public function up()
     {
-        Schema::create('letters', function (Blueprint $table) {
+        Schema::create('officeautomation-letters', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            // $table->string('title');
             $table->longText('body');
             $table->longText('tags')->nullable();
-            $table->longText('categories')->nullable();
-            $table->longText('owner');
+            $table->string('category');
+            $table->integer('owner_id')->unsigned();
             $table->longText('to');
             $table->longText('cc')->nullable();
             $table->enum('status',['sent','draft'])->default('draft');
             $table->timestamps();
+
+
+            $table->foreign('owner_id')
+                  ->references('id')->on('org-offices');
         });
     }
 
@@ -35,6 +39,6 @@ class CreateLettersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('letters');
+        Schema::dropIfExists('officeautomation-letters');
     }
 }

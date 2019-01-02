@@ -53,6 +53,9 @@ class LoginController extends Controller
         if(Auth::guard('employee')->attempt(['email'=> $request->email , 'password' => $request->password], $request->remember)){
             return redirect()->intended(route('employee.index'));
         }
+        if(Auth::guard('employee')->attempt(['id_number'=> $request->email , 'password' => $request->password], $request->remember)){
+            return redirect()->intended(route('employee.index'));
+        }
         return redirect()->back()->withInput($request->only('email'));
     }
 }
