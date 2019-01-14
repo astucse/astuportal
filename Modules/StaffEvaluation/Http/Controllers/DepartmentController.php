@@ -27,8 +27,11 @@ use Illuminate\Routing\Controller;
 use Modules\StaffEvaluation\Helpers\ToEvaluateHelper;
 use App\Helpers\OptionsHelper;
 use App\Helpers\OfficeHelper;
+use App\Helpers\LetterHelper;
 use PDF;
 use Illuminate\Support\Str;
+use \Modules\Registration\Helpers\StudentHelper as RegistrationStudentHelper;
+use \Modules\Registration\Helpers\EmployeeHelper as RegistrationEmployeeHelper;
 class DepartmentController extends Controller
 {
     public function __construct(){
@@ -71,6 +74,44 @@ class DepartmentController extends Controller
         return redirect()->back();
     }
 
+    public function session_report_view($id){
+        $s = OptionsHelper::current_semester();
+        $y = OptionsHelper::current_year();
+        $staff = Employee::find($id);
+        $performance = $staff->net_performance[$y][$s];
+        $idI = Auth::user()->MyInstitution->id;
+        // $a = EvaluationSession::find($id);
+        $performance_name = OptionsHelper::ses_point_label($performance['all']);
+        // return $idI;
+        if ($performance_name =="good") {
+            $v = Option::where(['code' => 'SES_GOOD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }elseif ($performance_name =="medium") {
+            $v = Option::where(['code' => 'SES_MEDIUM_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }else{
+            $v = Option::where(['code' => 'SES_BAD_REPORT_LETTER','parameter_1'=>$idI])->first()->value;
+        }
+        // print_r($performance);
+        // return "";
+        // return $performance_name;
+        $v = str_replace("&lt;&lt;Instructor&gt;&gt;",$staff->name,$v);
+        $v = str_replace("&lt;&lt;Student&gt;&gt;",$performance['student'],$v);
+        $v = str_replace("&lt;&lt;Colleague&gt;&gt;",$performance['collegue'],$v);
+        $v = str_replace("&lt;&lt;Head&gt;&gt;",$performance['head'],$v);
+        $v = str_replace("&lt;&lt;Result&gt;&gt;",$performance['all'],$v);
+
+        $v = str_replace("<<Instructor>>",$staff->name,$v);
+        $v = str_replace("<<Student>>",round($performance['student'], 2),$v);
+        $v = str_replace("<<Colleague>>",round($performance['collegue'], 2),$v);
+        $v = str_replace("<<Head>>",round($performance['head'], 2),$v);
+        $v = str_replace("<<Result>>",round($performance['all'], 2),$v);
+        $v = LetterHelper::beautify($v);
+        // dd($v);
+        // return $v;
+        return view('staffevaluation::department.report', ['content'=>$v,'staff'=>$staff->name,'department'=>Auth::user()->MyInstitution->name]);
+        // $pdf = PDF::loadView();
+        // return $pdf->download('report.pdf');
+    }
+
     public function session_report($id){
         $s = OptionsHelper::current_semester();
         $y = OptionsHelper::current_year();
@@ -94,6 +135,8 @@ class DepartmentController extends Controller
         $v = str_replace("&lt;&lt;Collegue&gt;&gt;",$performance['collegue'],$v);
         $v = str_replace("&lt;&lt;Head&gt;&gt;",$performance['head'],$v);
         $v = str_replace("&lt;&lt;Result&gt;&gt;",$performance['all'],$v);
+        $v = LetterHelper::beautify($v);
+        // return $v;
         $pdf = PDF::loadView('staffevaluation::department.report', ['content'=>$v]);
         return $pdf->download('report.pdf');
 
@@ -101,6 +144,7 @@ class DepartmentController extends Controller
 
     public function session_single($id){
         $es = EvaluationSession::find($id);
+        // return $es->answered_heads()->get();
         $evaluatedHeads = Employee::find(collect($es->answered_heads()->get())->pluck('staff_id'));
         $evaluatedStudents = Student::find(collect($es->answered_students()->get())->pluck('student_id'));
         $evaluatedCollegues = Employee::find(collect($es->answered_collegues()->get())->pluck('staff_id'));
@@ -154,33 +198,27 @@ class DepartmentController extends Controller
     }
 
     public function evaluation_sessions(){
+        // return "dd";
         $institution = Auth::user()->MyInstitution;
-
         $studentEvaluations = Evaluation::where(['target' => 'student'])->get();
         $collegueEvaluations = Evaluation::where(['target' => 'collegue'])->get();
         $headEvaluations = Evaluation::where(['target' => 'head'])->get();
-
         $a = Assignment::where([
             // 'batch_year', 
             'institution_id' => $institution->id, 
-            'institution_type' => 'Org\\Department'
+            'institution_type' => 'Org\Department'
         ])->get();
-        // return sizeof($a);
+        // return Assignment::all();
         $sessionss =  EvaluationSession::where([
             'academic_year' => 2011,
             'semester' => 1,
             'target_institution_type' => 'Org\Department',
             'target_institution_id' => $institution->id,
         ])->get()->groupBy('staff_id');
-        // dd($sessions);
-        // foreach ($sessionss as $key => $sessions) {
-        //     echo " ".$sessions[0]->staff;
-        //     echo "<br>";
-        // }
-        // return "";
+
         return view('staffevaluation::department.evaluation_sessions',[
             'assignments' => $a,
-            'staff' => Employee::all(),
+            'staff' => RegistrationEmployeeHelper::registered($institution->id),
             'studentEvaluations' => $studentEvaluations,
             'collegueEvaluations' => $collegueEvaluations,
             'headEvaluations' => $headEvaluations,

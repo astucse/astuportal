@@ -23,6 +23,8 @@ use Modules\Registration\Entities\InstructorAssignment;
 use App\Helpers\ImportExport as ImportExportHelper;
 use App\Helpers\OptionsHelper;
 use Auth;
+use \Modules\Registration\Helpers\StudentHelper as RegistrationStudentHelper;
+use \Modules\Registration\Helpers\EmployeeHelper as RegistrationEmployeeHelper;
 class DepartmentController extends Controller
 {
     private $myinstitution="";
@@ -31,11 +33,10 @@ class DepartmentController extends Controller
     }
     public function students(){
         $myinstitution = Auth::user()->MyInstitution;
-        $r = Role::where(['code'=>'P_STU'])->first();
+        $s = RegistrationStudentHelper::registered($myinstitution->id,'department');
+        // $r = Role::where(['code'=>'P_STU'])->first();
         return view('registration::department.students',[
-            'students'=>Collect($r->assignment)
-                            ->where('rolegiver_type',"Org\Department")
-                            ->where('rolegiver_id',$myinstitution->id)
+            'students'=>$s
         ]);
     }
     public function instructors(){

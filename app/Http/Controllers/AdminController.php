@@ -110,6 +110,11 @@ class AdminController extends Controller
         return redirect()->back(); 
         
     }
+    public function destroy_roleassign($id){
+        $a = AssignedRole::find($id);
+        $a->delete();
+        return redirect()->back();
+    }
 
     public function roles(){
         return view('admin.roles',['employees'=>Employee::all(), 'students' => Student::all(),'options'=>Option::all(),'roles'=>Role::all(),'schools'=>School::all(),'offices'=>Office::all(),'departments'=>Department::all()]);

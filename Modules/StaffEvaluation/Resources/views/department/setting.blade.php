@@ -19,21 +19,27 @@
         @csrf
       <h3>Good</h3>
       <div id="hey">
-        <textarea id="editor1"  rows="12" name="good">{{$reports['good']}}</textarea>
+        <textarea id="editor1" class="areaa"  rows="12" name="good">{{$reports['good']}}</textarea>
       </div>
       <h3>MEDIUM</h3>
       <div id="hey">
-        <textarea id="editor2"  rows="12" name="medium">{{$reports['medium']}}</textarea>
+        <textarea id="editor2" class="areaa"  rows="12" name="medium">{{$reports['medium']}}</textarea>
       </div>
       <h3>BAD</h3>
       <div id="hey">
-        <textarea id="editor3"  rows="12" name="bad">{{$reports['bad']}}</textarea>
+        <textarea id="editor3" class="areaa"  rows="12" name="bad">{{$reports['bad']}}</textarea>
       </div>
       <button class="form-control btn btn-primary" type="submit">Update</button>
       
       </form>
     </div>
 </section>
+
+<style type="text/css">
+  .areaa{
+    width: 100%
+  }
+</style>
 
 @stop
 
@@ -45,9 +51,9 @@
 </script>
 <script>
   $(function () {
-    CKEDITOR.replace('editor1')
-    CKEDITOR.replace('editor2')
-    CKEDITOR.replace('editor3')
+    // CKEDITOR.replace('editor1')
+    // CKEDITOR.replace('editor2')
+    // CKEDITOR.replace('editor3')
     // $('.textarea').wysihtml5()
   })
 </script>

@@ -50,7 +50,7 @@
 				<td></td>
 				<td>
 					@foreach(collect($roles)->where('code','A_SDN')->first()->assignment as $a )
-					{{$a->roletaker->name}} -> {{$a->rolegiver->name}}<br>
+					{{$a->roletaker->name}} -> {{$a->rolegiver->name}} <a href="{{route('admin.roleassign.destroy',['id'=>$a->id])}}" class="btn btn-danger">Delete</a> <br>
 					@endforeach
 				</td>
 			</tr>
@@ -87,7 +87,7 @@
 				<td></td>
 				<td>
 					@foreach(collect($roles)->where('code','A_DHN')->first()->assignment as $a )
-					{{$a->roletaker->name}} -> {{$a->rolegiver->name}}<br><br>
+					{{$a->roletaker->name}} -> {{$a->rolegiver->name}} <a href="{{route('admin.roleassign.destroy',['id'=>$a->id])}}" class="btn btn-danger">Delete</a><br>
 					@endforeach
 				</td>
 			</tr>
@@ -168,6 +168,7 @@
         </td>
       </tr>
       <tr>
+        {{-- 
         <td></td>
         <td></td>
         <td>
@@ -175,6 +176,7 @@
           {{$a->roletaker->name}} -> {{$a->rolegiver->name}}<br>
           @endforeach
         </td>
+        --}}
       </tr>
       <tr>
         <td></td>

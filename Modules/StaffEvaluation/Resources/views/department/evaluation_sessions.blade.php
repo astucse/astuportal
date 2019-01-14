@@ -122,7 +122,8 @@
               <td></td>
               <td></td>
               <td>
-                <a href="{{route('staffevaluation.department.session_report',['id'=>$staff_id])}}" class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i> Generate Letter </a> </td>
+                <!-- <a href="{{route('staffevaluation.department.session_report',['id'=>$staff_id])}}" class="btn btn-primary btn-sm" ><i class="fa fa-edit"></i> Generate Letter </a> </td> -->
+                <a href="{{route('staffevaluation.department.session_report.view',['id'=>$staff_id])}}" class="btn btn-primary btn-sm" target="_blank"><i class="fa fa-edit"></i> Generate Letter </a> </td>
             </tr>
             @foreach($sessions as $es)
             <tr class="">

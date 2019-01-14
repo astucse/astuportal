@@ -60,6 +60,7 @@ Route::prefix('staffevaluation')->group(function() {
 		Route::post('/sessions', 'DepartmentController@sessions_create')->name('staffevaluation.department.sessions.create');
 
 		Route::get('/session/{id}/letter', 'DepartmentController@session_report')->name('staffevaluation.department.session_report');
+		Route::get('/session/{id}/letter/view', 'DepartmentController@session_report_view')->name('staffevaluation.department.session_report.view');
 		Route::get('/session/{id}', 'DepartmentController@session_single')->name('staffevaluation.department.session_single');
 		Route::get('/evaluation/{id}/{action}', 'DepartmentController@evaluation_toggle')->name('staffevaluation.department.evaluation_toggle');
 

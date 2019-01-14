@@ -22,8 +22,8 @@
             @foreach($students as $k=>$ins)
             <tr>
               <td>{{$k+1}}</td>
-              <td>{{$ins->roletaker->name}}</td>
-              <td>{{$ins->roletaker->id_number}}</td>
+              <td>{{$ins->name}}</td>
+              <td>{{$ins->id_number}}</td>
               <td></td>
             </tr>
             @endforeach

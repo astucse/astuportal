@@ -18,12 +18,12 @@ class Department extends Model
         return $this->belongsTo('Modules\Org\Entities\School');
     }
 
-    // public function groups(){
-    //     return $this->morphMany('Modules\Org\Entities\Group', 'institution');
-    // }
+    public function groups(){
+        return $this->morphMany('Modules\Registration\Entities\ClassroomGroup', 'institution');
+    }
 
     public function roles(){
-        return $this->morphMany('App\Role', 'rolegiver');
+        return $this->morphMany('App\Models\Role', 'rolegiver');
     }
 
     public function getOfficeAttribute(){
@@ -36,6 +36,14 @@ class Department extends Model
             }
         }
         return null;
+    }
+
+
+    public function getStaffAttribute(){
+        $r = \App\Models\Role::where(['code'=>'P_INS'])->first();
+        return Collect($r->assignment)
+                    ->where('rolegiver_type',"Org\Department")
+                    ->where('rolegiver_id',$this->id)->pluck('roletaker');
     }
 
 }

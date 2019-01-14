@@ -13,6 +13,7 @@ use App\Helpers\ImportExport as ImportExportHelper;
 use JavaScript;
 use Lava;
 use \Khill\Lavacharts\Lavacharts;
+use Modules\Org\Entities\Department;
 class StudentController extends Controller
 {
     public function __construct()
@@ -80,7 +81,7 @@ class StudentController extends Controller
         //     'age' => 29
         // ]);
         // return View::make('admin.students');
-        return view('admin.students',['lava'=>$lava]);
+        return view('admin.students',['departments'=>Department::all()]);
     }
 
     public function datatables(){

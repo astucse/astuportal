@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-sm-2 border-right">
                   <div class="description-block">
-                    <input type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="3" checked>
+                    <input type="radio" name="question{{$eeq->id}}" id="optionsRadios{{$eeq->id}}" value="3">
                     <h5 class="description-header"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h5>
                     <span class="description-text"> Medium / መካከለኛ</span>
                   </div>

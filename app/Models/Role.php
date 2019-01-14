@@ -11,5 +11,6 @@ class Role extends Model
 
     public function assignment(){
         return $this->hasMany('App\Models\AssignedRole');
+        return $this->hasMany('App\Models\AssignedRole');
     }
 }

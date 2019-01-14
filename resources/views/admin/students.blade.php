@@ -5,8 +5,21 @@
 @widget('breadcumb',['header'=>'Students','link0'=>'Home','link1'=>'Users','link9'=>'students'])
 
 
-
+  
 <section class="content">
+  <div class="nav-tabs-custom">
+      <div class="tab-content">
+        Year: <input type="number" name="year" max="5" min="3">
+        Number: <input type="number" name="year" max="10" min="3">
+        Department: 
+        <select name="dep">
+        @foreach($departments as $d)
+        <option value="{{$d->id}}">{{$d->name}}</option>
+        @endforeach
+        </select>
+        <button>Generate</button>
+      </div>
+    </div>
   <div class="nav-tabs-custom">
       <div class="tab-content">
         <!-- <table id="StudentsTable" class="table table-bordered table-striped"> -->

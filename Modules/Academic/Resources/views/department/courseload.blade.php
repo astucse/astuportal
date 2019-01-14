@@ -37,8 +37,10 @@
           <div class="tab-content">
               <div class="tab-pane active" id="tab_1">
                  <div class="row">
+                    @if(isset($breakdown['schedules']))
+                    @if(sizeof($breakdown['schedules'])>0)
                     @foreach($breakdown['schedules'] as $cbd)
-                    @if($current_semester == $cbd['semester'])
+                    @if($current_semester == $cbd['semester'] && $cbd['year']>2)
                     <div class="col-md-12">
                         <div class="box box-solid">
                             <div class="box-header with-border">
@@ -71,6 +73,8 @@
                     </div>
                     @endif
                     @endforeach
+                    @endif
+                    @endif
                 </div>
               </div>
 

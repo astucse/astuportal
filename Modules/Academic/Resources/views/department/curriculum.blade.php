@@ -39,24 +39,27 @@
                  <div class="row">
                     <div class="box-header with-border">
                         <h3 class="box-title">
-                            <form method="post" action="@{{route('academic.department.instructors.assign')}}">
+                            <form method="post" action="{{route('academic.department.coursetocurr')}}">
                             @csrf  
+                            <input type="number" hidden name="dep_id" value="{{Auth::user()->myInstitution->id}}">
                             <select name="course_id">
                               @foreach($courses as $in)
                               <option class="select2 form-control" value="{{$in->id}}">{{$in->name}}</option>
                               @endforeach
                             </select>
                             <select name="semester_id">
-                              @foreach([1,2,3,4,5] as $y)
+                              @foreach([3,4,5] as $y)
                                 @foreach([1,2] as $s)
                                 <option class="select2 form-control" value="{{$y}}-{{$s}}">Year {{$y}} Semester {{$s}}</option>
                                 @endforeach
                               @endforeach
                             </select>
-                            <button>Assign</button>
+                            <button type="submit">Assign</button>
                             </form>
                         </h3>
                     </div>
+                    @if(isset($breakdown['schedules']))
+                    @if(sizeof($breakdown['schedules'])>0)
                     @foreach($breakdown['schedules'] as $cbd)
                     <div class="col-md-12">
                         <div class="box box-solid">
@@ -91,6 +94,8 @@
                         </div>
                     </div>
                     @endforeach
+                    @endif
+                    @endif
                 </div>
               </div>
 

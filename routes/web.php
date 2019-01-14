@@ -44,7 +44,9 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name(
 
 
 
-//  
+Route::group(['prefix'=>'dev' ], function () {
+	Route::get('/', 'SeederController@index');
+});
 
 
 Route::get('/student', 'StudentController@index')->name('student.index');
@@ -89,6 +91,7 @@ Route::group(['prefix'=>'admin' ], function () {
 	Route::get('/users/students/export', 'StudentController@export')->name('admin.students.export');
 
 	Route::post('/roles/create', 'AdminController@create_roles')->name('admin.roles.create');
+	Route::get('/roleassign/destroy/{id}', 'AdminController@destroy_roleassign')->name('admin.roleassign.destroy');
 
 	Route::get('/module/status_toggle/{module}','AdminController@module_status_toggle')->name('admin.module.status_toggle');
 

@@ -3,7 +3,7 @@
     "alias": "officeautomation",
     "description": "",
     "keywords": [],
-    "active": 0,
+    "active": 1,
     "order": 0,
     "providers": [
         "Modules\\OfficeAutomation\\Providers\\OfficeAutomationServiceProvider"

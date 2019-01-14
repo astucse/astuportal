@@ -98,14 +98,14 @@ class ToEvaluateHelper {
             $es_averageHead = $t/$n;
 
         $s_p = Option::where(['code'=> 'SES_STUDENT_PERCENT'])->first()->value;
-        $h_p = Option::where(['code'=> 'SES_COLLEGUE_PERCENT'])->first()->value;
-        $c_p = Option::where(['code'=> 'SES_HEAD_PERCENT'])->first()->value;
+        $c_p = Option::where(['code'=> 'SES_COLLEGUE_PERCENT'])->first()->value;
+        $h_p = Option::where(['code'=> 'SES_HEAD_PERCENT'])->first()->value;
         $all = ($es_averageStudent*$s_p + $es_averageCollegue*$c_p + $es_averageHead*$h_p)/100;
         return [
-            'all' => $all,
-            'student'  => $es_averageStudent,          
-            'collegue'  => $es_averageCollegue,          
-            'head'  => $es_averageHead,          
+            'all' => round($all,2),
+            'student'  => round($es_averageStudent,2),          
+            'collegue'  => round($es_averageCollegue,2),          
+            'head'  => round($es_averageHead,2),          
         ];
     }
     public static function eligibles($es,$type){
@@ -226,6 +226,9 @@ class ToEvaluateHelper {
         
         $a = Auth::user();
         if($type == 'student'){
+            if (StudentEvaluation::where(['student_id'=> Auth::user()->id])->pluck('evaluation_session_id')->contains($eval_id)) {
+                return "";
+            }
             StudentEvaluation::create(['student_id' => $a->id,'evaluation_session_id' => $evalsession_id]);
             // $a->filled_evaluation_sessions()->attach($evalsession_id);
         }elseif($type == 'collegue'){
@@ -253,5 +256,7 @@ class ToEvaluateHelper {
             }
         }
     }
+
+
 
 }
