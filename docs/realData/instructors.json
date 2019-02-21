@@ -1,0 +1,3983 @@
+{
+  "instructors": [
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Sleshi Ambachew Abtew",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bereket Kassahun Yifru",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "M.Eng.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Jemal Salih Adem",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulubrhan Berihu Gidey",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Eshetu Temesgne Gelon Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Biyadglign Tagesse Buntashi",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fisseha Fekadu Moshaga",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdnago Gezahegn Sahlu",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getahun Ayele Tessema",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Manaye Teshome Sewnet",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Antonio Patruno",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "B.Naresh Kumar",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Architecture",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yeshimebet Major Deneka Dr.",
+      "Gender": "F",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ofgaa Djirata Dako Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Getahun Debelo Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mesele Admasu Meresha Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Feyissa Hamde Kofe",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Haftu Abraha Tesfaye",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Lemessa Kumsa Bekure",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulugeta Kebede Tesissa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Zerihun Belay Gemta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hunduma Dinka Terefe Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bayisa Chala Lengissa,Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Teshome Geremew Biru., Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Geleta Dugassa Barka Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getachew Bantihun Belay",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "MSc",
+      "Rank": "Senior lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Mohammed Naimuddin Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Ir. Sreenivas Reddy Bathula Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Senthilkumar Subramanian Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Biology",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tewodros Abebe Debele",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yilak F/silassie Abebe",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fikadu Lemesa Teso Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdulfetah Sherefa Arega",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Goitom Afera Tesfu",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Melaku Tesfaye Aleme, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulugeta Yilma Tsegaye",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mustefa Kemal Usman",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hunegnaw Baylie Mengstie",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tatek Temesgen Terfasa, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Jibril Goli Buta",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "M.Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Alemu Gizaw Wakene",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Desta Getachew Gizaw",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Adane Muche Abebe",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tariku Ayala Chamada",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Alemu Gonfa Robi Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Zelalem Tumsa Tefera",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "K.S.K. Rao Patnaik,Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Nedumaran BalasubramaniamDr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Hong Ku Kang",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Chemical Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Korean"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dereje Tsegaye Liku Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Eshetu Bekele W/Agegew Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gemechu Deressa Edossa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "H/Michael Teso Bayu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tegene Desalegn Zeleke Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Teshome Abdo Sangi Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yadesa Melaku Ayana Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Enyew Amare Zereffa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Defaru Negera Duke",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hadgu H/Kiros Belay Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Milkyas Endale Annisa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bedasa Abdisa Gonfa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fedlu Kedir Sabir Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Aschalew Tadesse Mergya Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Veerabhadram Guttena Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Rajalakshmanan Eswaramoorthy DR.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "H.C. Ananda Murthy Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "R.K.Mahajan Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Neeraj Kumar Gupta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Tajeldin Alansi Prof.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Chemistry",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Yemenite"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Helen Tafesse Cheryie",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hana Yitages Moges",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Thirumoorthy Meenambal Dr.",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdulkerim Bedewi Serur Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hiyaw Hatiya Ware",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Birhane Gebru Tekie",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Argaw Asha Ashangu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Firezer Birhanu Mendere",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "M.Eng.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tsegaye Kassa Wanore",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gemechis Kebede Likasa",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abda Berisso Bame",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dagim Legesse Tilahun",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "M.Eng.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdi Mohammed Ibrahim",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kefale Fufa Goboto",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Estifanos Berhanu Atnafu",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bekele Kushu Chala",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Samson Yonas Aga",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yasin Abdu Areru",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mengistu Mekonnen Yadete",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Teshome Chal Addune",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Chimdi Gadafa Benti",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Negese Eshetu Darge",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Natnael Fantu Wondimu",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Vijay Singh Rawat",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "M.Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "R. Divahar,Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Kumer Shanteerayya",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Civil Engineering",
+      "Degree": "ME",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Serkalem Yirdaw Asfaw",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yordanos Gebeyehu Mhiretu",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Akey sungheetha,Dr.",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mesfin Abebe Haile Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kasahun Tamir Fetene",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Simegnew Yihune Alaba",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Anteneh Alemu Maru",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Natnael Alemayehu Tamire",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Addisu Mandefro Eshete",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Amir Ebrahim Tahir",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Tsegaye Haile",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ketema Adere Gemeda",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kidane Mebrahatom T/giorgis",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Shumet Fikadesilase Tasew",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Elias Lemuye Jimale",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Girma Debele Dinegdie",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kassahun Gelana Micho",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bushera Ali Yasin",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gulelat Abebe Assefa",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belayneh Mengistu Hailu",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Desta Zerihun Abebe",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Nemera Jira Ide",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ashenafi Duguma Eido",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Endale Aregu Beyene",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Amanuel Asmelash G/Silase",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tariku Debela Wako",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yoseph Bizuneh Amenu",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Zena Giday Alemayehu",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Jemal Nuraddis Yimam",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tilahun Melak Sitote, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Frezewd Lemma Tena Dr.-Ing",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Teklu Urgesa Abebe Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tesfaye Gidey Hagos",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bahiru Shifaw Yimer Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Desalegn Abebaw Zeleke",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tibebu Beza Abate",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Rajesh Sharma Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Gopi Krishna Tiruveedala Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Thippeswamy.B.M, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Jayant Shekhar, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Satheesh Kumar Nagineni Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Ravindra Babu Bellam Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Mohammad Wazih Ahmed Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Yun Koo Chung",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Computer Science and Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Korean"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kokebe Yifru W/gab",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Construction of Technology Management",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Surafel Leul W/mechale",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Construction of Technology Management",
+      "Degree": "M.Eng.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bahiru Bewket Mitiku Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Construction of Technology Management",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fitsum Zerihun Abate",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Meskerem Tadesse Gebre",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Netsanet Tadiwos Anshebo",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "BSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Molla Biweta yimer Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tafesse Asrat Abera Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ahmed Mohamed Umer",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Jemal Hayato Weyo",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Shimelis Demise Melaku",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dagne Alemayehu Shiferaw",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Feleke Fanta Mitta",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fikadu Wale Nega",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Melaku Desta Gebru",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tefera Terefe Yitayew",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mati Oljira Regassa",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belete Tekie Akele",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getachew Biru Worku Ing. Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Alemante Abeje Tizie",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hinsermu Alemayehu Garbaba",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Addisu Teshale Afeta",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kena Likasa Nefabas",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "M. Ajay Kumar Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Selvarasu Ranganathan Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "M.Mahesh Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Ravikumar hiremath Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Selvarasu Ranganathan",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "N. Ramaraj, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Chandramouli Bethi Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Palanivel Panjamoorthy Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Venkata Lakshmi Narayana K. Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "C.S. Reddy Bhoomireddy Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Santoshkumar Hampannavar Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electrical Power and Control Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Shankarappa F. Kodad Dr.",
+      "Gender": "F",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Anteneh Assefa Kitaw",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tadesse Abegaz Yimam",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Elias Desalegn Biru",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "G/tsadkan Abrha Asfha",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dereje Tekilu Aseffa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Frew Tadele Kebede",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Silewendim Eshetu Ayana",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Feyisa Debo Diba Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kedir Beshir Bushuro",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tadesse Hailu Ayana",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "V.Ellappan, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Harish Kalla Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Satyasis Mishra Dr.",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Gangiregula Subba Rao",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Vinyl Ho Oquino",
+      "Gender": "M",
+      "SchoolName": "SoEEC",
+      "DepartmentName": "Electronics and Communication Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Philippin"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yadeta Chemdesa Chemeda Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hassen Shube Sheko",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Solomon Kassa Feleke Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulubrhan Gebreslassie Gebreyesus",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "A.V.George Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Praveen Raj Saxena Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "V.Shreendhara Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Shankar Karuppannan Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Sreepat Jain Prof.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Murigeppa Adiveppa Malapur Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Geology",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Meseret Tadesse H/gabrel",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yosef Abebe Ligaba",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getachew B/Meskel Gudeta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tilahun Erduno Henkebo Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Anteneh Lemi Eshete",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gemechu Kaba Eaba",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Habtemicheal Wude Diga",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yohannes Dhuguma Welo",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mesfin Dufera Keno",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Alemayehu Demsie Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Roba Gemechu Mamo Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Mohammed Abdul Athick",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Geomatics Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Habtamu Kebu Gemeda Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kumsa Donis Likisa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gemechis Asfaw Duguma",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Tessema Firrisa",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tekelu Hunde Chala",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "ML",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Shelema Regasa Tufa",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belisa Jemal Guye",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdi Yuya Ahmad Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bonsa Duressa Wirtu",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Humanities",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Sena Gonfa Tullu",
+      "Gender": "F",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hintsa Tadesse Gzaw",
+      "Gender": "F",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Sewunet Bora Jima",
+      "Gender": "F",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Shemelis Tesfa G/Igziabher",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Jeyilan Aman Tura Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Alemu Disassa Mulleta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kasaye Gutema Jebesa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Meseret Teshome Rumicha Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mekuria Abera Fantaye Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kelbessa Beyene Disassa",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fasil Assefa Tasew",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Natnael Lemma Tekle",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Demisew Abishu Kabtiymer",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hussen Ebrahim Adem",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Beyene Gebru Wonta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tarekegn Tesema Muleta",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulugeta Shumye Fantaw Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Girma Megerssa Badane",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Language, English",
+      "Degree": "MA",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tefera Ambago Gagtiro Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Liberal Art",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Girum Getu Adera",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kalid Ahmed Seid Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Melaku Assefa Adafrei",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belete Kefarge Azmite",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fekadu Gochole Aga,Dr",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "OSman Ahmed Zelekew Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dinsefa Mensur Andoshe Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bekele Gaddisa Hordofa",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gabisa Bekele Fayisa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Peter Martin Jebaraj,Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Thothadrl Ganesh Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Sunuk Kim Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PHd",
+      "Rank": "Professor",
+      "Nationality": "Korean"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Jeong Kyun Kim Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Material Science & Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Korean"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Sidise Geyssa Kitila",
+      "Gender": "F",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Parcha Kalyani Dr.",
+      "Gender": "F",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Legesse Lemecha Obsu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Lemmi Guta Enyadenie Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Shiferaw Feyissa Balcha Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tamirat Temesgen Dufera Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tekle Gemuchu Dinka Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Genene W/Amanuel W/Sadik",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MEd",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belay Mitiku Damtew,Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "F/Mariam Shitaye Astawesegn",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gedefa Adugna Tamuni",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MEd",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Goshu Geleta Amenu",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Solomon Balcha Bedhasa",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hussien Kontery Chebsi",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Moybon Wolde Bedada",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yadeta Chemdesa Seboka",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Zena Sahlemariam Haile",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abebe Girma Regasa",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Natea Hunde Berie Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tibebu Worku Hunde Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bullo Endebu Rikitu",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "MSc",
+      "Rank": "Senior Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Dr. Mahausoodanan Nair M. Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "V.Govindaswamy Naidu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Seshagiri Rao Namana Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Srinivasarao Thota Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Mathematics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yeshialem Zewdie G/kidan",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hailu Beyecha Deti",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Woldetnsaye Gutu Jiru",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getaw Ayay Tefera",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mulugeta Hagos T/medin",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kuba Defaru Nedi",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Elias Habtu G/mikael",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kashun Niguse Asfew",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdulmelik Husen Meda",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Solomon Dufera Tolcha",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Barisso Bino Safayo",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Guteta Kabeta Woyessa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belay Birhanu Tsfamariam Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dawit Gudeta Gunjo Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "G.Somasundaram, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Purushothaman Sirinvasan Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "C.Venkatesh Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Anbusagar Nadesan Rathinavelu Rani Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Prakash C.H.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Janaki Ramulu Perumalla Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "J. Bhaskaran Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical Design & Manufacturing Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Aliyi Umer Ibrahim",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fissha Biruke Teshome",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Balkeshwar Singh, Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "PhD",
+      "Rank": "Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Simie Tolla Teklu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mekonnen Liben Nekar",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Siraj Kedir Busse",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tsedeke Yewendwosen Libsie",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tsegaye Teferi Malie",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Niguse Assefa Araya",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tamiru Bekele Uma",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Chernet Girma Dunbushe",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Idiris Ilmi Winso",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Geremew Birbirsa Robelie",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "BEd",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tamirat Moges G/hiwot",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gessese Gebru Jemaneh",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "BEd",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Amana Wako Koroso Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Melese Haile Mamo",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dejene Mengistu Sime",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Devendra Kumar Sinha Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "N. Ramesh Babu",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Mechanical System & Vehicle Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Alemu Kebede Wordofa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Megersa Wedajo Shura Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mesfin Asfaw Afrasa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abdi Derarso Bedaso",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abebe Belay Gemta Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Muhdin Abdo Wodedo",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fitsum Ayalew Abebe",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Leta Tesfaye Jule Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Demissie Jobir Gulmecha Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "T. Gurumurthi Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "khan Arif Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "A.S.Madhusudhan Rao Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Applied Physics",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Pagadala Suganda Devi",
+      "Gender": "F",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ziyin Engdasew Weldab Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Assefa Abahumna W/Tsadik Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Solomon Alemu Tesfaye Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Amenu Oljira Gemedie Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Ayele Abebe Adem Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Birku Reta Entele",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Bayera Tujo",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MBA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mesay Barekew Liche",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Robiel Hailie Embaye",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MBA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fetene Bogale Hunegnaw Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Addis Abe Kedir",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abebaw Woldetensay Argaw",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Fasika Firew Mosissa",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Social Science",
+      "Degree": "MBA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Daniel Mamo Anjelo",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Anteneh Million Nega",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Destaw Mekonen Meledy",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MA",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Elias Fikadu Chekol",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Eshetu Tadesse Legesse",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Getachew Zewde Beka",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tesfaye Birhane Masho",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Yohannes Girma Zeleke",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Seid Suleiman Mohammed Dr.",
+      "Gender": "M",
+      "SchoolName": "SoHS",
+      "DepartmentName": "Sport Science",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hana Tefera Dibaba",
+      "Gender": "F",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Dame Kedir Nuna",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bacha Edosa Ameya",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Desta Nigussu Tesema",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Meseret Tadesse Ejeta",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tatek Getachew H/Michael Dr.",
+      "Gender": "M",
+      "SchoolName": "SoANS",
+      "DepartmentName": "Statistics",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Gezahegn HabtamuTafesse",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Addisu Bekele Alemayehu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mebratu Yisehak G/Giorgis",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Samuel G/mariam Haile",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tewodros Belay Ashagre",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Muzeyin Ahimed Husen",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hussen Nemo Meskele",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Natnael Mesfin Derash",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "BSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Chandraprabu Venkatachalam Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Suresh Guluwadi Dr.",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Mukesh Didwania (Khatik)",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "MD Irfan Ali",
+      "Gender": "M",
+      "SchoolName": "SoMCME",
+      "DepartmentName": "Thermal & Aerospace Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Marta Mulugeta Kebede",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Kalayu Assefa W/mariam",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tesfu G/selase Aregawi",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Solomon Mekonnen Welde",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Berhane Mehary Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Expatriate",
+      "FullName": "Petta Esward Rao",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Urban Planning & Design",
+      "Degree": "MSc",
+      "Rank": "Assistant Professor",
+      "Nationality": "Indian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Hawinet Teso Dinsa",
+      "Gender": "F",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Abel Tadesse Woldemichael Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopia"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mengistu Sime Biratu Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PHd",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Boja Mekonnen Manyazew Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PHd",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Zelalem Biru Gonfa Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mitiku Kinfe Abdissa",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Belete Takele Hordofa",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "M. Tech.",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tadesse Tufa Borji",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Manaye Getu Tsige",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Seifu Tesfaye Gurmu",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tamirat Desalegn Hailu",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Keredin Tamam Siraj",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Beka Benti Teshome",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Negese Roba Tufa",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Assistant Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Bewuket Bekele Tefera",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Mekonen Ayana Gebul Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PhD",
+      "Rank": "Associate Professor",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Endalew Ashagire Fenta",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Samuel Kassa Beyene",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Million Teshome Legese",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Tolera Kabeto Dode",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "MSc",
+      "Rank": "Lecturer",
+      "Nationality": "Ethiopian"
+    },
+    {
+      "StaffId": "Local Instructor",
+      "FullName": "Andinet Kebede Tekle Dr.",
+      "Gender": "M",
+      "SchoolName": "SoCEA",
+      "DepartmentName": "Water Resources Engineering",
+      "Degree": "PhD",
+      "Rank": "Assistant Professor",
+      "Nationality": "Ethiopian"
+    }
+  ]
+}

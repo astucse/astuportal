@@ -1,0 +1,2123 @@
+[
+  {
+    "id_number": "R/0001/08",
+    "name": "Ababiya Bedada Girma",
+    "sex": "M",
+    "batch_year": "4",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0036/08",
+    "name": "Abeba Gebreyohannes Gidey",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "16",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0045/08",
+    "name": "Abeje Lambamo Lamduno",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0046/08",
+    "name": "Abel Ashagrie Derbew",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0054/08",
+    "name": "Abel Mesfin Akalu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Somali",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0064/08",
+    "name": "Abenezer Yohannes Hailu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0072/08",
+    "name": "Abraham Gizaw Sahile",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0078/08",
+    "name": "Abrehat Belay Lema",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0081/08",
+    "name": "Abrham Gebremedhin Gebrekidan",
+    "sex": "M",
+    "batch_year": "4",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0086/08",
+    "name": "Adam Wubalem Tashu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0101/08",
+    "name": "Adonay Yirga Gebru",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "1999",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0131/08",
+    "name": "Alemseged Teshome Eshetu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "15",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0142/08",
+    "name": "Amanuel Asfaw Zewde",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0149/08",
+    "name": "Amanuel Loeta Sapo",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0150/08",
+    "name": "Amanuel Mebrahtu Gebreslasse",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0161/08",
+    "name": "Amare Chekile Alemu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0168/08",
+    "name": "Amir Kheiru Jemal",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "20",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0226/08",
+    "name": "Andualem Megose Desalegn",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "0",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0177/08",
+    "name": "Antenyismu Yirsaw Wubete",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0197/08",
+    "name": "Atinkut Worku Mekonnen",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "30",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0199/08",
+    "name": "Atsbha Mebrahtu Lemma",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0200/08",
+    "name": "Awoke Kassaw Demssie",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0220/08",
+    "name": "Barok Firew Ololo",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0228/08",
+    "name": "Befikadu Abebe Magnecho",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0234/08",
+    "name": "Belay Eba Birasa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "15",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0242/08",
+    "name": "Bereket Asfaw Demeke",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0245/08",
+    "name": "Bereket Mathewos Gatiso",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0248/08",
+    "name": "Bereket Zerihun Tadesse",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "29",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0255/08",
+    "name": "Besufikad Shibru Hassen",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0267/08",
+    "name": "Bethelhem Mesfin Teferra",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0268/08",
+    "name": "Bethelihem Tadesse Tiku",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0280/08",
+    "name": "Biniam Hailemariam Zebre",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0306/08",
+    "name": "Bisrat Takelle Emnetu",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "14",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0307/08",
+    "name": "Bisrat Tesfaye Gebre",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0317/08",
+    "name": "Bushra Mustofa Abedri",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0330/08",
+    "name": "Dame Hirpa Olika",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0348/08",
+    "name": "Dawit Elias Keba",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0356/08",
+    "name": "Dawit Mechal Woldeyes",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0368/08",
+    "name": "Debebe Asefa Edao",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0384/08",
+    "name": "Desalegn Bushashe Godebo",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0394/08",
+    "name": "Duguma Yeshitla Habtemariam",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0407/08",
+    "name": "Elias Alemayehu Kitaba",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0409/08",
+    "name": "Elias Nursefa Mohammed",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Dire Dawa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0426/08",
+    "name": "Engida Lishan Gashaw",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0427/08",
+    "name": "Ephrem Demelash Demse",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0433/08",
+    "name": "Ermias Kefelegn Gossem",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0436/08",
+    "name": "Ermiyas Kasahun Bizuayehu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0446/08",
+    "name": "Esubalew Getachew Menber",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "1",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0447/08",
+    "name": "Etsehiwot Eshetu Ayele",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0468/08",
+    "name": "Fanuel Hassen Andeta",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0471/08",
+    "name": "Fasil Getasew Ayalew",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0480/08",
+    "name": "Feven Getu Tilahun",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Somali",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0481/08",
+    "name": "Feven Mulugeta Woldetsadik",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0495/08",
+    "name": "Fikru Mamo Besha",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromya",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0497/08",
+    "name": "Filimoi Worku Shifera",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0498/08",
+    "name": "Fillimon Gebrealif Weldegebreal",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0508/08",
+    "name": "Fozia Nurye Mohammed",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0513/08",
+    "name": "Galana Jote Sima",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0546/08",
+    "name": "Getu Deboch Aga",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0547/08",
+    "name": "Gezachew Amare Berhan",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0550/08",
+    "name": "Girma Moges Desta",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0554/08",
+    "name": "Gudeta Mengistu Negesso",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0573/08",
+    "name": "Habtamu Tesfaye Ayele",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0574/08",
+    "name": "Habtamu Tolu Kitata",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0575/08",
+    "name": "Habtamu Wossen Kassahun",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "0",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0582/08",
+    "name": "Hailabe Tadesse Ahmed",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "20",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0613/08",
+    "name": "Hawlet Esmael Abdullahi",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0617/08",
+    "name": "Haymanot Tsegaye Andualem",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0626/08",
+    "name": "Henok Endeshaw Getnet",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0632/08",
+    "name": "Heran Tsegaye Belachew",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0638/08",
+    "name": "Heyo Guta Oda",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0153/08",
+    "name": "Jaarraa Mosisa Ejeta",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "25",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0665/08",
+    "name": "Jemal Mohamedngus Abrahim",
+    "sex": "M",
+    "batch_year": "4",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0687/08",
+    "name": "Kasa Mengesha Guji",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0692/08",
+    "name": "Kebede Urgecha Gonfa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0695/08",
+    "name": "Kelil Harar Kasim",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0703/08",
+    "name": "Khalid Mohammed Abdi",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Dire Dawa",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0707/08",
+    "name": "Kibru Demeke Tadesse",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0709/08",
+    "name": "Kidist Alemayehu Bedada",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0724/08",
+    "name": "Kinfe Tadesse Chernet",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0745/08",
+    "name": "Leul Dereje Bonsa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0748/08",
+    "name": "Leulseged Tilahun Tesera",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0754/08",
+    "name": "Lioul Behailu Desta",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0756/08",
+    "name": "Loza Birhan Assefa",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0760/08",
+    "name": "Maeruf Fetu Nassir",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/02825/07",
+    "name": "Mahlet Birhanu Hailu",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromya",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0772/08",
+    "name": "Margis Zelalem Tarekegn",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0784/08",
+    "name": "Mebatsion Yifru Woldeyohannes",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1185/06",
+    "name": "Melaku Fikre Berega",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "25",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0805/08",
+    "name": "Melat Kebede Abraham",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0820/08",
+    "name": "Menor Birhanu Tadesse",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0827/08",
+    "name": "Meron Gebremariam Gidey",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0835/08",
+    "name": "Meskerem Abebaw Workneh",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0841/08",
+    "name": "Michael Tesfaye Teshome",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0847/08",
+    "name": "Mihiretab Taye Hordofa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0876/08",
+    "name": "Mohammed Hassen Wodaje",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0879/08",
+    "name": "Mohammed Seid Adem",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0880/08",
+    "name": "Mohammee Beharu Tegegn",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromo",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0887/08",
+    "name": "Mukerem Ali Nur",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0894/08",
+    "name": "Muluken Bogale Megersa",
+    "sex": "M",
+    "batch_year": "4",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0905/08",
+    "name": "Mustefa Kamil Mohammed",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "23",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0932/08",
+    "name": "Natnael Alemneh Hiruy",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0934/08",
+    "name": "Natnael Ameha Yirgu",
+    "sex": "M",
+    "batch_year": "4",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0943/08",
+    "name": "Natnael Tsegazeab Gebretsadik",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0944/08",
+    "name": "Nazrawi Solomon Abera",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0950/08",
+    "name": "Nebyou Elias Chernet",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0960/08",
+    "name": "Newera Aman Aliyi",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "23",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0977/08",
+    "name": "Olyad Temesgen Beyene",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/0997/08",
+    "name": "Roba Mengesha Asefa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1021/08",
+    "name": "Samson Tsegay Beyene",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1025/08",
+    "name": "Samuel Eshetu Workneh",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "24",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1045/08",
+    "name": "Selamu Sinebo Silkebo",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "9",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1047/08",
+    "name": "Semere Hiluf Gebremedhin",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1049/08",
+    "name": "Semira Murad Redi",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1055/08",
+    "name": "Shambel Mebratu Mekete",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1064/08",
+    "name": "Siham Ahmed Hassen",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1065/08",
+    "name": "Sipara Tadesse Korsa",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1069/08",
+    "name": "Sisay Damtew Gugsa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "24",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1070/08",
+    "name": "Sisay Melaku Aberie",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "26",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1074/08",
+    "name": "Solen Abera Deressa",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1080/08",
+    "name": "Solomon Tekleab Wasihun",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1082/08",
+    "name": "Solomon Wondale Mengistu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "29",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1090/08",
+    "name": "Surafel Zenebe Nigussie",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1095/08",
+    "name": "Tadele Yideg Zerihun",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "25",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1098/08",
+    "name": "Tadesse Ketema Dadi",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "24",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1113/08",
+    "name": "Teame Gebreabiyezgi Hayefom",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1118/08",
+    "name": "Tedros Haileslassie Gebrezgabher",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1124/08",
+    "name": "Teklat Fisseha Kidanemariam",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1143/08",
+    "name": "Tesfaye Gudeat Kebede",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "23",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1157/08",
+    "name": "Tihetna Mesfin Gebeyehu",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1189/08",
+    "name": "Tsion Habteslassie Assefa",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1199/08",
+    "name": "Walelgn Dagne Bekele",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1216/08",
+    "name": "Yabets Hailemariam Hailu",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1220/08",
+    "name": "Yadesa Berchu Beriso",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1221/08",
+    "name": "Yafet Girum Tesfaye",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1232/08",
+    "name": "Yeabsera Endalkachew Asfaw",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "20",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01038/07",
+    "name": "Yonas Endale Deti",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "23",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1264/08",
+    "name": "Yordanos Beneberu Demissie",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1266/08",
+    "name": "Yordanos Negussie Anekeresa",
+    "sex": "F",
+    "batch_year": "4",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1274/08",
+    "name": "Yunus Ali Hassen",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1295/08",
+    "name": "Ziade Weldesialassie Kahsay",
+    "sex": "M",
+    "batch_year": "4",
+    "Region": "Tigray",
+    "Age": "22",
+    "section": "3",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00001/07",
+    "name": "Ababiya Bayisa Kenate",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "oromo",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00009/07",
+    "name": "Abdin Tekalign Duguma",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/02050/07",
+    "name": "Abeanezer Kapital Ketena",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Gamo",
+    "Age": "1",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00029/07",
+    "name": "Abel Kibrom Mekonen",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Tigray",
+    "Age": "2003",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00030/07",
+    "name": "Abel Tesfaye Getahun",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00049/07",
+    "name": "Abrham Mengistu Beyene",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Guragie",
+    "Age": "24",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00077/07",
+    "name": "Alemayehu Girma Lema",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00103/07",
+    "name": "Amanuel Legese Tadese",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "31",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00106/07",
+    "name": "Amanuel Mesfin Deribe",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "1",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00142/07",
+    "name": "Atekelet Afework Teferi",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Tigray",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00188/07",
+    "name": "Betelhem Yimar Nigatuu",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00232/07",
+    "name": "Bontu Berhanu Gebisa",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Oromo",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00277/07",
+    "name": "Debela Kejela Dinka",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "1",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00294/07",
+    "name": "Dereje Mulu Baye",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromo",
+    "Age": "26",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00299/07",
+    "name": "Dilnegod Gebrechirstos Ergena",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Sidama",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00341/07",
+    "name": "Endagegnehu Dansamo Tafesse",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "11",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00354/07",
+    "name": "Eshita Addisu Berisso",
+    "sex": "F",
+    "batch_year": "5",
+    "Age": "0",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00401/07",
+    "name": "Fikadu Filipos Shanko",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": [
+      "Southern Nations",
+      "Nationalities",
+      "and Peoples"
+    ],
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00420/07",
+    "name": "Fisha Laiku Wube",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00436/07",
+    "name": "Galata Girma Amante",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromya",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00457/07",
+    "name": "Getachew Alemu Lolamo",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "20",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00466/07",
+    "name": "Getu Lakew Amare",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00470/07",
+    "name": "Girma Kebede Abdisa",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00471/07",
+    "name": "Girmaye Yacha Yajila",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "southern nation and nationalities",
+    "Age": "1994",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00511/07",
+    "name": "Hanna Kebede Asfaw",
+    "sex": "F",
+    "batch_year": "5",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00516/07",
+    "name": "Hayat Muzemil Abdela",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00518/07",
+    "name": "Haymanot Gebeyehu Gaga",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00524/07",
+    "name": "Henok Adugna Reta",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00530/07",
+    "name": "Henok Endeshaw Tesema",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00532/07",
+    "name": "Henok Fikadu Biru",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00546/07",
+    "name": "Hiwot Habtamu Aderaw",
+    "sex": "F",
+    "batch_year": "5",
+    "Age": "1",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00568/07",
+    "name": "Kaleab Tebebe Tekelemariam",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00569/07",
+    "name": "Kaleab Yidnekachew Girma",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00603/07",
+    "name": "Kerose Abay Tafere",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "12",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00607/07",
+    "name": "Kidist Berhanu Gebre",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "1",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00621/07",
+    "name": "Lamesa Olika Hirpa",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromo",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00688/07",
+    "name": "Mengistu Abebe Legesse",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "amhara",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00691/07",
+    "name": "Merga Woldeyohannes Enkossa",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00712/07",
+    "name": "Mihiretu Kassaye Kemiro",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "24",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00716/07",
+    "name": "Mikiyas Tilahun Kebede",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/02819/07",
+    "name": "Misikir Damenu Tsegaye",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00752/07",
+    "name": "Muluken Chifraye Molla",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00766/07",
+    "name": "Nahusenay Twedros Getachew",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "0",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00771/07",
+    "name": "Nardos Teklemariam Shewamene",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Tigray",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00785/07",
+    "name": "Nebiyu Girma Kebede",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromo",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00803/07",
+    "name": "Nuredin Siraj Bedane",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "0",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00807/07",
+    "name": "Oda Nure Benti",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00827/07",
+    "name": "Riad Musa Guye",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00840/07",
+    "name": "Sabet Siraj Eshak",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Oromya",
+    "Age": "23",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01073/07",
+    "name": "Sagni Regasa Hunde",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "15",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00847/07",
+    "name": "Samrawit Tewolde Rezene",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Somali",
+    "Age": "1991",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1561/06",
+    "name": "Sancho Mulu Abebe",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "24",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/1564/06",
+    "name": "Sebbona Meteka Demisse",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Oromia",
+    "Age": "15",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00865/07",
+    "name": "Selamawit Mekonnen Wakgary",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Oromya",
+    "Age": "21",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00883/07",
+    "name": "Simon Bekele Barassa",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "SNNP",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00889/07",
+    "name": "Sisay Darcho Henjero",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Welayta",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00891/07",
+    "name": "Sitemera Tasfamekonnen Yadeta",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Oromya",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00892/07",
+    "name": "Sitotaw Ayele Argago",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "SNNP",
+    "Age": "23",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00958/07",
+    "name": "Tizita Daba Ayu",
+    "sex": "F",
+    "batch_year": "5",
+    "Region": "Oromya",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00968/07",
+    "name": "Tsegaye Fekadu Gebreyes",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Guragie",
+    "Age": "1997",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/00969/07",
+    "name": "Tsegaye Fikadu Weldemariyam",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "25",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01009/07",
+    "name": "Yared Teklewold Yemanewold",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Addis Ababa",
+    "Age": "21",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01024/07",
+    "name": "Yilkal Fikre Hailu",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Amhara",
+    "Age": "22",
+    "section": "1",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01040/07",
+    "name": "Yonas Negash Tesfaye",
+    "sex": "M",
+    "batch_year": "5",
+    "Region": "Gurage",
+    "Age": "22",
+    "section": "2",
+    "department": "CSE"
+  },
+  {
+    "id_number": "R/01045/07",
+    "name": "Yonatane Fekadu Kebede",
+    "sex": "M",
+    "batch_year": "5",
+    "Age": "0",
+    "section": "2",
+    "department": "CSE"
+  }
+]
