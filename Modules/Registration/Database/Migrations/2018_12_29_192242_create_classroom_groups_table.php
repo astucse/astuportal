@@ -26,7 +26,7 @@ class CreateClassroomGroupsTable extends Migration
             $table->string('institution_type')->nullable();
 
             $table->timestamps();
-            
+
             $table->unsignedInteger('change_id')->nullable();
         });
     }
